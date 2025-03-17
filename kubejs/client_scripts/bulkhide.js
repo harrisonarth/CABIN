@@ -39,7 +39,9 @@ JEIEvents.hideItems(event => {
 	event.hide(/incomplete/)
 	event.hide(/kubejs:growing/)
 	event.hide(/kubejs:failed/)
-
+	event.hide('kubejs:silver_coin')
+	event.hide('kubejs:gold_coin')
+	
 	event.hide('decorative_blocks:blockstate_copy_item')
 
 	event.hide('occultism:obsidian_dust')
