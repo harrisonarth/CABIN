@@ -80,14 +80,6 @@
 								}
 								{
 									Count: 1b
-									id: "minecraft:gray_dye"
-								}
-								{
-									Count: 1b
-									id: "minecraft:light_gray_dye"
-								}
-								{
-									Count: 1b
 									id: "minecraft:pink_dye"
 								}
 								{
@@ -125,10 +117,6 @@
 								{
 									Count: 1b
 									id: "minecraft:red_dye"
-								}
-								{
-									Count: 1b
-									id: "minecraft:black_dye"
 								}
 							]
 						}
