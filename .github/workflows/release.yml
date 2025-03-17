@@ -52,6 +52,7 @@ permissions: {}
 jobs:
   pre-build:
     uses: ./.github/workflows/get_version_info.yml
+    
 
   build:
     needs: [pre-build]
@@ -127,7 +128,7 @@ jobs:
           for file in ./*; do
             if [[ $file == *.zip ]]; then
               base=$(basename $file)
-              versioned_file="PanPack-${{steps.name.outputs.name}}-$base"
+              versioned_file="CABIN-${{steps.name.outputs.name}}-$base"
               mv "$file" "$versioned_file"
             fi
           done
