@@ -59,16 +59,6 @@ ServerEvents.recipes(event => {
     thermalPulverizer(event, [KJ("zinc_dust")], F("#plates/zinc"), 2000)
     thermalSmelter(event, [CR("zinc_ingot")], F("#plates/zinc"), 1600)
 
-    // use dust instead of raw ore for occultism recipes
-    event.replaceInput({ id: OC("ritual/summon_djinni_crusher") }, "#forge:dusts/silver", KJ("zinc_dust"))
-    event.replaceInput({ id: OC("ritual/summon_foliot_crusher") }, "#forge:raw_materials/silver", KJ("zinc_dust"))
-    event.replaceInput({ id: OC("ritual/summon_foliot_crusher") }, "#forge:raw_materials/iron", TE("iron_dust"))
-    event.replaceInput({ id: OC("ritual/craft_miner_foliot_unspecialized") }, "#forge:raw_materials/iron", TE("iron_dust"))
-    event.replaceInput({ id: OC("ritual/craft_miner_djinni_ores") }, "#forge:raw_materials/gold", TE("gold_dust"))
-
-    event.replaceInput({ id: OC("ritual/summon_foliot_crusher") }, "#forge:raw_materials/copper", TE("copper_dust"))
-    event.replaceInput({ id: OC("ritual/summon_foliot_crusher") }, "#forge:raw_materials/gold", TE("gold_dust"))
-
     // Thermal's fire charge ingot crafting recipes. We don't want them
     event.remove({ id: TE("fire_charge/invar_ingot_3") })
     event.remove({ id: TE("fire_charge/enderium_ingot_2") })
@@ -298,14 +288,28 @@ ServerEvents.recipes(event => {
         // raw ore block compression and decompression
         event.replaceInput({type: "minecraft:crafting_shaped"}, rawOreTag, crushedOre)
         event.replaceOutput({type: "minecraft:crafting_shapeless"}, rawOreTag, crushedOre)
+        
+        event.remove([
+            { type: 'minecraft:smelting', input: rawOreTag },
+            { type: 'minecraft:blasting', input: rawOreTag },
+            { type: 'create:crushing', input: rawOreTag },
+            { type: 'occultism:crushing', input: rawOreTag },
+            { type: 'forbidden_arcanus:clibano_combustion', input: rawOreTag },
+            { type: 'tconstruct:ore_melting', input: rawOreTag }
+        ])
 
-        event.remove({ input: rawOreTag })
-        event.remove({ input: oreTag, type: TE("smelter") })
-        event.remove({ input: oreTag, type: TE("pulverizer") })
-        event.remove({ input: oreTag, type: MC("blasting") })
-        event.remove({ input: oreTag, type: MC("smelting") })
-        event.remove({ input: oreTag, type: CR("crushing") })
-        event.remove({ input: oreTag, type: CR("milling") })
+        event.remove({ id: `thermal:machines/pulverizer/pulverizer_raw_${materialName}`})
+        event.remove({ id: `thermal:machines/smelter/smelter_raw_${materialName}`})
+        
+        event.remove([
+            { type: TE("smelter"), input: oreTag },
+            { type: TE("pulverizer"), input: oreTag },
+            { type: MC("blasting"), input: oreTag },
+            { type: MC("smelting"), input: oreTag },
+            { type: CR("crushing"), input: oreTag },
+            { type: CR("milling"), input: oreTag }
+        ])
+        
         event.remove({ id: TC("smeltery/melting/metal/" + materialName + "/raw_block") })
         event.remove({ id: TC("smeltery/melting/metal/" + materialName + "/dust") })
         event.remove({ id: CR("crushing/raw_" + materialName + "_block") })
