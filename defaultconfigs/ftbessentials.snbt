@@ -191,7 +191,7 @@
 			# You can override this with FTB Ranks using ftbessentials.home.warmup
 			# Default: 0
 			# Range: 0 ~ 604800
-			warmup: 0
+			warmup: 10
 		}
 		
 		# Allows admins to jump (teleport) to the focused block
@@ -241,7 +241,7 @@
 			# You can override this with FTB Ranks using ftbessentials.rtp.warmup
 			# Default: 0
 			# Range: 0 ~ 604800
-			warmup: 0
+			warmup: 10
 		}
 		spawn: {
 			# Cooldown between /spawn commands (in seconds)
@@ -257,7 +257,7 @@
 			# You can override this with FTB Ranks using ftbessentials.spawn.warmup
 			# Default: 0
 			# Range: 0 ~ 604800
-			warmup: 0
+			warmup: 10
 		}
 		
 		# Allows players to create requests to teleport to other users on the server,
@@ -267,7 +267,7 @@
 			# You can override this with FTB Ranks using ftbessentials.tpa.cooldown
 			# Default: 10
 			# Range: 0 ~ 604800
-			cooldown: 10
+			cooldown: 300
 			
 			# Default: true
 			enabled: false
@@ -276,7 +276,7 @@
 			# You can override this with FTB Ranks using ftbessentials.tpa.warmup
 			# Default: 0
 			# Range: 0 ~ 604800
-			warmup: 0
+			warmup: 10
 		}
 		
 		# Allows admins to teleport to the location a user was last seen at
