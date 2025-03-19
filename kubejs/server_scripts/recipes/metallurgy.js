@@ -375,8 +375,20 @@ ServerEvents.recipes(event => {
     dust_process("copper", MC("gold_nugget"), "gold")
     dust_process("zinc", TE("sulfur"), "lead")
 
-    event.remove({ input: TE("raw_silver") })
-    // event.remove({ output: TE("raw_silver") })
+
+    event.remove([
+        { type: "minecraft:crafting_shaped", input: "#forge:raw_materials/silver" },
+        { type: "minecraft:crafting_shapeless", input: "#forge:raw_materials/silver" },
+        { type: 'minecraft:smelting', input: "#forge:raw_materials/silver" },
+        { type: 'minecraft:blasting', input: "#forge:raw_materials/silver" },
+        { type: 'create:crushing', input: "#forge:raw_materials/silver" },
+        { type: 'occultism:crushing', input: "#forge:raw_materials/silver" },
+        { type: 'forbidden_arcanus:clibano_combustion', input: "#forge:raw_materials/silver" },
+        { type: 'tconstruct:ore_melting', input: "#forge:raw_materials/silver" }
+    ])
+    event.remove({ id: `thermal:machines/pulverizer/pulverizer_raw_silver`})
+    event.remove({ id: `thermal:machines/smelter/smelter_raw_silver`})
+
 
     event.replaceInput({ id: TE("machine/smelter/smelter_iron_ore") }, MC("iron_ore"), CR("crushed_raw_iron"))
     event.replaceInput({ id: TE("machine/smelter/smelter_gold_ore") }, MC("gold_ore"), CR("crushed_raw_gold"))
