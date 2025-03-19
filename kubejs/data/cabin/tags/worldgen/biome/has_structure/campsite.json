@@ -10,5 +10,9 @@
         "#forge:is_cold/overworld",
         "#minecraft:is_savanna",
         "#minecraft:is_mountain"
+    ],
+    "remove": [
+        "#minecraft:is_ocean",
+        "#minecraft:is_river"
     ]
 }

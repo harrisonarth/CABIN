@@ -41,7 +41,7 @@ if (Platform.isLoaded("trials")) {
                 "type": "integrated_api:advanced_random_spread",
                 "super_exclusion_zone": {
                     "chunk_count": 12,
-                    "other_set": "#trials:trial_chambers_avoid"
+                    "other_set": "#cabin:trial_chambers_avoid"
                 },
                 "spacing": 32,
                 "separation": 21,

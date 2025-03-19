@@ -1,0 +1,10 @@
+{
+    "values": [
+        "minecraft:strongholds",
+
+        {
+            "id": "integrated_stronghold:stronghold",
+            "required": false
+        }
+    ]
+}
