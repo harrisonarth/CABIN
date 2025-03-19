@@ -1,5 +1,6 @@
 // priority: 1
 ServerEvents.recipes(event => {
+
     // Obsidian pane crafting
     // Not sure where the original recipe went
     event.shaped(TC("obsidian_pane", 8), [
@@ -70,7 +71,22 @@ ServerEvents.tags("item", event => {
     event.get("tconstruct:anvil_metal").add(CR("zinc_block"))
 })
 
-ServerEvents.tags("block", event => {
-    event.add("minecraft:mineable/shovel","tconstruct:mud_bricks_slab")
-    event.add("minecraft:mineable/shovel","tconstruct:mud_bricks_stairs")
+// autosmelt modifier uses crushed ores instead of raw ores
+ServerEvents.highPriorityData( event => {
+    event.addJson("tconstruct:recipes/tools/modifiers/ability/autosmelt", {
+        "type": "tconstruct:modifier",
+        "allow_crystal": true,
+        "check_trait_level": true,
+        "inputs": [
+            { "tag": "create:crushed_raw_materials" },
+            { "item": "minecraft:blast_furnace" },
+            { "tag": "forge:ingots" },
+            { "tag": "forge:storage_blocks/coal" },
+            { "tag": "forge:storage_blocks/coal" }
+        ],
+        "level": 1,
+        "result": "tconstruct:autosmelt",
+        "slots": { "abilities": 1 },
+        "tools": { "tag": "tconstruct:modifiable/harvest" }
+    })
 })
