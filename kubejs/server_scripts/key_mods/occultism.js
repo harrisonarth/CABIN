@@ -18,4 +18,12 @@ ServerEvents.recipes(event => {
     event.replaceInput({ id: OC("ritual/craft_infused_lenses") }, F("#ingots/silver"), F("#ingots/nickel"))
     event.replaceInput({ id: OC("crafting/magic_lamp_empty") }, F("#ingots/silver"), F("#ingots/iron"))
     event.replaceInput({ id: OC("crafting/lens_frame") }, F("#ingots/silver"), F("#ingots/nickel"))
+
+    // crushing unification
+    event.replaceOutput({ type: OC("crushing") }, OC("iron_dust"), TE("iron_dust"))
+    event.replaceOutput({ type: OC("crushing") }, OC("gold_dust"), TE("gold_dust"))
+    event.replaceOutput({ type: OC("crushing") }, OC("copper_dust"), TE("copper_dust"))
+    event.replaceOutput({ type: OC("crushing") }, OC("iron_dust"), TE("iron_dust"))
+    event.replaceOutput({ type: OC("crushing") }, OC("gold_dust"), TE("gold_dust"))
+    event.replaceOutput({ type: OC("crushing") }, OC("silver_dust"), TE("silver_dust"))
 })

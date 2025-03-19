@@ -146,15 +146,16 @@ ServerEvents.recipes(event => {
     moltenAlloy("molten_constantan", TC("molten_copper"), TC("molten_nickel"))
     moltenAlloy("molten_rose_gold", TC("molten_copper"), TC("molten_gold"))
     moltenAlloy("molten_electrum", TC("molten_silver"), TC("molten_gold"))
+    // remove existing smelter recipes because they accept dusts
+    event.remove({ id: TE("machines/smelter/smelter_alloy_constantan")})
+    event.remove({ id: TE("machines/smelter/smelter_alloy_electrum")})
+    event.remove({ id: TE("machines/smelter/smelter_alloy_netherite")})
     // alloy smelter recipes
-    thermalSmelter(event, CR("brass_ingot", 2), [MC("copper_ingot"), CR("zinc_ingot")])
-    thermalSmelter(event, TC("rose_gold_ingot", 2), [MC("copper_ingot"), MC("gold_ingot")])
-    // fix existing alloy smelter recipes to not accept dust
-    event.replaceInput({ id: TE("machines/smelter/smelter_alloy_constantan")}, F("#dusts/copper"), MC("copper_ingot"))
-    event.replaceInput({ id: TE("machines/smelter/smelter_alloy_constantan")}, F("#dusts/nickel"), TE("nickel_ingot"))
-    event.replaceInput({ id: TE("machines/smelter/smelter_alloy_electrum")}, F("#dusts/gold"), MC("gold_ingot"))
-    event.replaceInput({ id: TE("machines/smelter/smelter_alloy_electrum")}, F("#dusts/silver"), TE("silver_ingot"))
-    event.replaceInput({ id: TE("machines/smelter/smelter_alloy_netherite")}, F("#dusts/gold"), MC("gold_ingot"))
+    thermalSmelter(event, Item.of("create:brass_ingot", 2), ["#forge:ingots/copper", "#forge:ingots/zinc"])
+    thermalSmelter(event, Item.of("tconstruct:rose_gold_ingot", 2), ["#forge:ingots/copper", "#forge:ingots/gold"])
+    thermalSmelter(event, Item.of("thermal:constantan_ingot", 2), ["#forge:ingots/copper", "#forge:ingots/gold"])
+    thermalSmelter(event, Item.of("thermal:electrum_ingot", 2), ["#forge:ingots/silver", "#forge:ingots/gold"])
+    thermalSmelter(event, Item.of("minecraft:netherite_ingot", 1), [Item.of("#forge:ingots/netherite_scrap", 4), Item.of("#forge:ingots/gold", 4)])
     // bronze
     thermalSmelter(event, "3x thermal:bronze_ingot", [MC("copper_ingot", 3), "#forge:sand"])
 
@@ -258,13 +259,6 @@ ServerEvents.recipes(event => {
     event.recipes.createMilling(TE("lead_dust"), F("#ingots/lead"))
     event.recipes.createMilling(TE("copper_dust"), F("#ingots/copper"))
     event.recipes.createMilling(KJ("zinc_dust"), F("#ingots/zinc"))
-    // occultism crushing unification
-    event.replaceOutput({ id: OC("crushing/iron_dust_from_ingot") }, OC("iron_dust"), TE("iron_dust"))
-    event.replaceOutput({ id: OC("crushing/gold_dust_from_ingot") }, OC("gold_dust"), TE("gold_dust"))
-    event.replaceOutput({ type: OC("crushing") }, OC("copper_dust"), TE("copper_dust"))
-    event.replaceOutput({ type: OC("crushing") }, OC("iron_dust"), TE("iron_dust"))
-    event.replaceOutput({ type: OC("crushing") }, OC("gold_dust"), TE("gold_dust"))
-    event.replaceOutput({ type: OC("crushing") }, OC("silver_dust"), TE("silver_dust"))
 
     // other metal unification
     event.replaceOutput({}, "#forge:ingots/silver", TE("silver_ingot"))
