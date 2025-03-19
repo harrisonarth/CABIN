@@ -36,28 +36,28 @@ if (Platform.isLoaded("create_crystal_clear")) {
         event.shapeless(CCR("train_glass_casing"), [CR("railway_casing"), MC("glass")]).id(KJ("mods/create_crystal_clear/train_glass_casing"))
         event.shapeless(CCR("train_clear_glass_casing"), [CR("railway_casing"), TC("clear_glass")]).id(KJ("mods/create_crystal_clear/train_clear_glass_casing"))
     })
-}
-
-ServerEvents.blockLootTables(event => {
-    // Fix broken loot tables
-    let cogwheelDrop = {
-        type: "minecraft:block",
-        pools: [
-            {
-                rolls: 1,
-                entries: [
-                    {
-                        type: "minecraft:item",
-                        conditions: [{ condition: "minecraft:survives_explosion" }],
-                        name: "create:large_cogwheel"
-                    }
-                ]
-            }
-        ]
-    }
-    let cogwheelCasings = ["andesite", "brass", "train"]
-    cogwheelCasings.forEach(casing=>{
-        event.addJson(CCR(casing + "_glass_encased_large_cogwheel"), cogwheelDrop)
-        event.addJson(CCR(casing + "_clear_glass_encased_large_cogwheel"), cogwheelDrop)
+    
+    ServerEvents.blockLootTables(event => {
+        // Fix broken loot tables
+        let cogwheelDrop = {
+            type: "minecraft:block",
+            pools: [
+                {
+                    rolls: 1,
+                    entries: [
+                        {
+                            type: "minecraft:item",
+                            conditions: [{ condition: "minecraft:survives_explosion" }],
+                            name: "create:large_cogwheel"
+                        }
+                    ]
+                }
+            ]
+        }
+        let cogwheelCasings = ["andesite", "brass", "train"]
+        cogwheelCasings.forEach(casing=>{
+            event.addJson(CCR(casing + "_glass_encased_large_cogwheel"), cogwheelDrop)
+            event.addJson(CCR(casing + "_clear_glass_encased_large_cogwheel"), cogwheelDrop)
+        })
     })
-})
+}
