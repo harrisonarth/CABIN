@@ -97,7 +97,7 @@ element {
   sticky_anchor = false
   anchor_point = top-centered
   advanced_posy = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"}-{"placeholder":"elementheight","values":{"id":"25c3a9ee-b855-4877-a5f8-25a80bfdfb2c-1741724061018"}}","decimal":"false"}}
-  advanced_height = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"}*0.45","decimal":"false"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"}*0.43","decimal":"false"}}
   x = -520
   y = -209
   width = 1083
