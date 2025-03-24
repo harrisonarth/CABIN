@@ -200,21 +200,34 @@ StartupEvents.registry("block", event => {
     pot("Small Quartz Treasure Pot").box(5, 0, 5, 11, 8, 11)
     pot("Tall Quartz Treasure Pot").box(5, 0, 5, 11, 12, 11)
 
-    for (let i = 0; i < 15; i++)
-        event.create(`failed_alchemy_${i}`)
+    let alchemyBlockBase = (c1, c2, id, name, model) => {
+        let block = event.create(id)
             .soundType("glass")
-            .color(0, 0x394867)
-            .color(1, 0x14274E)
+            .color(0, c1)
+            .color(1, c2)
             .hardness(0.1)
-            .box(.25, 0, .25, .75, 14.0 / 16.0, .75, false)
-            .model("cabin:block/mundane_substrate")
-            .displayName("Mundane Alchemic Blend")
+            .model(model)
+            .displayName(name)
             .renderType("cutout")
+            .material("glass")
             .waterlogged()
-            .item(e => e
-                .color(0, 0x394867)
-                .color(1, 0x14274E)
-            )
+        block.item(e => e
+            .color(0, c1)
+            .color(1, c2)
+        )
+        return block
+    }
+
+    let substrateblock = (c1, c2, id, name, model) => {
+        return alchemyBlockBase(c1, c2, id, name, model).box(.25, 0, .25, .75, 14.0 / 16.0, .75, false)
+    }
+
+    let acceleratorBlock = (c1, id, name, model) => {
+        return alchemyBlockBase(c1, 0, id, name, model).box(.125, 0, .125, .875, 10.0 / 16.0, .875, false)
+    }
+
+    for (let i = 0; i < 15; i++)
+        substrateblock(0x394867, 0x14274E, `failed_alchemy_${i}`, "Mundane Alchemic Blend", "cabin:block/mundane_substrate")
 
     global.substrates = []
     global.substrate_mapping = {}
@@ -229,7 +242,7 @@ StartupEvents.registry("block", event => {
         substrate_index = 0
     }
 
-    let substrate_base = (c1, c2, id, name, model, ingredient, outputItem) => {
+    let createSubstrate = (c1, c2, id, name, model, ingredient, outputItem) => {
         global.substrate_mapping[id] = {
             category: category_index,
             index: substrate_index,
@@ -240,26 +253,17 @@ StartupEvents.registry("block", event => {
             ingredient: ingredient,
             outputItem: outputItem
         })
-        let substrate = event.create(`substrate_${id}`)
-            .soundType("glass")
-            .color(0, c1)
-            .color(1, c2)
-            .hardness(0.1)
-            .box(.25, 0, .25, .75, 14.0 / 16.0, .75, false)
-            .model("cabin:block/" + model)
-            .displayName(name)
-            .renderType("cutout")
-            .waterlogged()
-        substrate.item(item=>{item.color(0, c1).color(1, c2)})
+        let substrate = substrateblock(c1, c2, `substrate_${id}`, name, "cabin:block/" + model)
+
         substrate_index++
         return substrate
     }
 
     let reagent = (c1, c2, id, prefix, ingredient, outputItem) => {
-        return substrate_base(c1, c2, id, `${prefix} Reagent`, "substrate", ingredient, outputItem)
+        return createSubstrate(c1, c2, id, `${prefix} Reagent`, "substrate", ingredient, outputItem)
     }
     let catalyst = (c1, c2, id, prefix, ingredient) => {
-        let substrate = substrate_base(c1, c2, id, `${prefix} Catalyst`, "catalyst", ingredient)
+        let substrate = createSubstrate(c1, c2, id, `${prefix} Catalyst`, "catalyst", ingredient)
         substrate.item(item=>{item.rarity("uncommon")})
         return substrate
     }
@@ -314,67 +318,18 @@ StartupEvents.registry("block", event => {
     catalyst(0x3EDBF0, 0xC0FEFC, "gem", "Gemstone")
     category()
 
-    event.create("substrate_chaos")
-        .soundType("glass")
-        .color(0, 0xb200ed)
-        .color(1, 0xff66cc)
-        .hardness(0.1)
-        .box(.25, 0, .25, .75, 14.0 / 16.0, .75, false)
-        .model("cabin:block/chaos_catalyst")
-        .renderType("cutout")
-        .waterlogged()
-        .item(item => item.rarity('rare')
-            .color(0, 0xb200ed)
-            .color(1, 0xff66cc)
-        )
+    substrateblock(0xb200ed, 0xff66cc, `substrate_chaos`, "Chaos Catalyst", "cabin:block/chaos_catalyst")
+        .item(item => item.rarity('rare'))
 
-    event.create("substrate_silicon")
-        .soundType("glass")
-        .color(0, 0x474449)
-        .color(1, 0x967DA0)
-        .hardness(0.1)
-        .box(.25, 0, .25, .75, 14.0 / 16.0, .75, false)
-        .model("cabin:block/substrate")
-        .renderType("cutout")
-        .waterlogged()
-        .item(item => item.rarity('rare')
-            .color(0, 0x474449)
-            .color(1, 0x967DA0)
-        )
+    substrateblock(0x474449, 0x967DA0, `substrate_silicon`, "Silicon Reagent", "cabin:block/substrate")
+        .item(item => item.rarity('rare'))
 
-    event.create("substrate_silver")
-        .soundType("glass")
-        .color(0, 0x9FADB4)
-        .color(1, 0xBECCD2)
-        .hardness(0.1)
-        .box(.25, 0, .25, .75, 14.0 / 16.0, .75, false)
-        .model("cabin:block/substrate")
-        .renderType("cutout")
-        .waterlogged()
-        .item(item=>{item.rarity('rare')
-            .color(0, 0x9FADB4)
-            .color(1, 0xBECCD2)
-        })
+    substrateblock(0x9FADB4, 0xBECCD2, `substrate_silver`, "Silver Reagent", "cabin:block/substrate")
+        .item(item=>item.rarity('rare'))
 
-    event.create("accellerator_glowstone")
-        .soundType("glass")
-        .color(0, 0xFFBC5E)
-        .hardness(0.1)
-        .box(.125, 0, .125, .875, 10.0 / 16.0, .875, false)
-        .model("cabin:block/accellerator")
-        .renderType("cutout")
-        .waterlogged()
-        .item(item=>{item.color(0, 0xFFBC5E)})
+    acceleratorBlock(0xFFBC5E, "accellerator_glowstone", "Glowstone Accelerator", "cabin:block/accellerator")
 
-    event.create("accellerator_redstone")
-        .soundType("glass")
-        .color(0, 0xAA0F01)
-        .hardness(0.1)
-        .box(.125, 0, .125, .875, 10.0 / 16.0, .875, false)
-        .model("cabin:block/accellerator")
-        .renderType("cutout")
-        .waterlogged()
-        .item(item=>{item.color(0, 0xAA0F01)})
+    acceleratorBlock(0xAA0F01, "accellerator_redstone", "Redstone Accelerator", "cabin:block/accellerator")
 })
 
 StartupEvents.registry("fluid", event => {
