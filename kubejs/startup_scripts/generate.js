@@ -148,6 +148,7 @@ StartupEvents.registry("block", event => {
     event.create("fluix_casing").textureAll("cabin:block/fluix_casing").soundType("metal").tagBlock("mineable/pickaxe").tagBlock("create:wrench_pickup").requiresTool(true).hardness(3.0).displayName("Fluix Casing")
 
     event.create("computation_matrix").model("cabin:block/computation_matrix").soundType("lantern").hardness(0.1).displayName("Computation Matrix").fullBlock(false).notSolid().box(1,1,1,15,15,15).waterlogged().opaque(false).lightLevel(7).renderType("translucent")
+        .item(i=>{i.rarity("uncommon")})
 
     event.create("ponder_laser_lamp").model("cabin:block/ponder_laser_lamp").notSolid().renderType("translucent").displayName("Laser Lamp (For Ponder)")
     event.create("ponder_laser_lamp_on").model("cabin:block/ponder_laser_lamp_on").notSolid().lightLevel(15).renderType("translucent").displayName("Laser Lamp (For Ponder)")
@@ -239,7 +240,7 @@ StartupEvents.registry("block", event => {
             ingredient: ingredient,
             outputItem: outputItem
         })
-        event.create(`substrate_${id}`)
+        let substrate = event.create(`substrate_${id}`)
             .soundType("glass")
             .color(0, c1)
             .color(1, c2)
@@ -249,15 +250,19 @@ StartupEvents.registry("block", event => {
             .displayName(name)
             .renderType("cutout")
             .waterlogged()
-        // .item(rarity(model == "catalyst" ? 'uncommon' : 'common')
-        // 	.color(0, c1)
-        // 	.color(1, c2)
-        // )
+        substrate.item(item=>{item.color(0, c1).color(1, c2)})
         substrate_index++
+        return substrate
     }
 
-    let reagent = (c1, c2, id, prefix, ingredient, outputItem) => substrate_base(c1, c2, id, `${prefix} Reagent`, "substrate", ingredient, outputItem)
-    let catalyst = (c1, c2, id, prefix, ingredient) => substrate_base(c1, c2, id, `${prefix} Catalyst`, "catalyst", ingredient)
+    let reagent = (c1, c2, id, prefix, ingredient, outputItem) => {
+        return substrate_base(c1, c2, id, `${prefix} Reagent`, "substrate", ingredient, outputItem)
+    }
+    let catalyst = (c1, c2, id, prefix, ingredient) => {
+        let substrate = substrate_base(c1, c2, id, `${prefix} Catalyst`, "catalyst", ingredient)
+        substrate.item(item=>{item.rarity("uncommon")})
+        return substrate
+    }
 
     reagent(0x5F5F5F, 0x8E8E8E, "andesite", "Andesite", "minecraft:andesite")
     reagent(0x7F7F7F, 0xD4D4D4, "diorite", "Diorite", "minecraft:diorite")
@@ -318,10 +323,10 @@ StartupEvents.registry("block", event => {
         .model("cabin:block/chaos_catalyst")
         .renderType("cutout")
         .waterlogged()
-    // .item(e => e.rarity('rare')
-    // 	.color(0, 0xb200ed)
-    // 	.color(1, 0xff66cc)
-    // )
+        .item(item => item.rarity('rare')
+            .color(0, 0xb200ed)
+            .color(1, 0xff66cc)
+        )
 
     event.create("substrate_silicon")
         .soundType("glass")
@@ -332,10 +337,10 @@ StartupEvents.registry("block", event => {
         .model("cabin:block/substrate")
         .renderType("cutout")
         .waterlogged()
-    // .item(e => e.rarity('rare')
-    // 	.color(0, 0x474449)
-    // 	.color(1, 0x967DA0)
-    // )
+        .item(item => item.rarity('rare')
+            .color(0, 0x474449)
+            .color(1, 0x967DA0)
+        )
 
     event.create("substrate_silver")
         .soundType("glass")
@@ -346,10 +351,10 @@ StartupEvents.registry("block", event => {
         .model("cabin:block/substrate")
         .renderType("cutout")
         .waterlogged()
-    // .item(e =>  e.rarity('rare')
-    // 	.color(0, 0x9FADB4)
-    // 	.color(1, 0xBECCD2)
-    // )
+        .item(item=>{item.rarity('rare')
+            .color(0, 0x9FADB4)
+            .color(1, 0xBECCD2)
+        })
 
     event.create("accellerator_glowstone")
         .soundType("glass")
@@ -359,9 +364,7 @@ StartupEvents.registry("block", event => {
         .model("cabin:block/accellerator")
         .renderType("cutout")
         .waterlogged()
-        .item(e => e
-            .color(0, 0xFFBC5E)
-        )
+        .item(item=>{item.color(0, 0xFFBC5E)})
 
     event.create("accellerator_redstone")
         .soundType("glass")
@@ -371,9 +374,7 @@ StartupEvents.registry("block", event => {
         .model("cabin:block/accellerator")
         .renderType("cutout")
         .waterlogged()
-        .item(e => e
-            .color(0, 0xAA0F01)
-        )
+        .item(item=>{item.color(0, 0xAA0F01)})
 })
 
 StartupEvents.registry("fluid", event => {
