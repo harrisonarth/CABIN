@@ -216,5 +216,7 @@
     "item.kubejs.machine.details": "§7A machine, able to be transformed into a variety of useful gadgets and gizmos.",
     "item.kubejs.machine.transformation": "§7Machine Transformation can be automated with a Deployer or a Filtered Saw.",
     "item.kubejs.trial.details": "§7An odd form of copper caused by a reaction between Copper and Lumisense.",
-    "item.kubejs.trial.special_info": "§7It's far cheaper than regular copper but does not oxidize. Perfect for base building!"
+    "item.kubejs.trial.special_info": "§7It's far cheaper than regular copper but does not oxidize. Perfect for base building!",
+    "item.spirit_fire.info": "§7A mysterious fire that is capable of transmuation. Will never burn out.",
+    "item.spirit_fire.creation": "§7Created by igniting Demon's Dream Fruit with Flint and Steel."
 }
