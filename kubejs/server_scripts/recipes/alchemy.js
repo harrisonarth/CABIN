@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
     let alchemy_mix = (output, catalyst, r1, r2, amount) => {
-        event.recipes.createMixing([Item.of(KJ("substrate_" + output, amount ? amount : 1)), KJ("substrate_" + catalyst)], [KJ("substrate_" + catalyst), KJ("substrate_" + r1, 2), KJ("substrate_" + r2)]).heated()
+        event.recipes.create.mixing([Item.of(KJ("substrate_" + output, amount ? amount : 1)), KJ("substrate_" + catalyst)], [KJ("substrate_" + catalyst), KJ("substrate_" + r1, 2), KJ("substrate_" + r2)]).heated()
     }
 
     let alchemy_smelt = (output, catalyst, r1, r2, amount) => {

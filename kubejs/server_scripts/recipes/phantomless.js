@@ -1,15 +1,15 @@
 ServerEvents.recipes(event => {
     // phantom membrane replacements
     if (Platform.isLoaded("railways")) {
-        event.recipes.createFilling("railways:track_phantom", [CR("track"), Fluid.of(CR("potion"), 50, '{Potion:"minecraft:invisibility"}')])
-        event.recipes.createFilling("railways:track_phantom", [CR("track"), Fluid.of(CR("potion"), 50, '{Potion:"minecraft:long_invisibility"}')])
-        event.recipes.createFilling("railways:track_phantom", [CR("track"), Fluid.of("cofh_core:potion", 50, '{Potion:"minecraft:invisibility"}')])
-        event.recipes.createFilling("railways:track_phantom", [CR("track"), Fluid.of("cofh_core:potion", 50, '{Potion:"minecraft:long_invisibility"}')])
+        event.recipes.create.filling("railways:track_phantom", [CR("track"), Fluid.of(CR("potion"), 50, '{Potion:"minecraft:invisibility"}')])
+        event.recipes.create.filling("railways:track_phantom", [CR("track"), Fluid.of(CR("potion"), 50, '{Potion:"minecraft:long_invisibility"}')])
+        event.recipes.create.filling("railways:track_phantom", [CR("track"), Fluid.of("cofh_core:potion", 50, '{Potion:"minecraft:invisibility"}')])
+        event.recipes.create.filling("railways:track_phantom", [CR("track"), Fluid.of("cofh_core:potion", 50, '{Potion:"minecraft:long_invisibility"}')])
     }
 
     if (Platform.isLoaded("moreminecarts")) {
         event.replaceInput({}, 'minecraft:phantom_membrane', TE("blitz_powder"))
-        event.recipes.createCrushing([Item.of("moreminecarts:levitation_powder"), Item.of("moreminecarts:levitation_powder", 1).withChance(.5)], TE("blitz_powder"))
+        event.recipes.create.crushing([Item.of("moreminecarts:levitation_powder"), Item.of("moreminecarts:levitation_powder", 1).withChance(.5)], TE("blitz_powder"))
     }    
     // alternate double jump recipe
     event.custom({
