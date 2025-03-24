@@ -85,7 +85,7 @@ ServerEvents.blockLootTables(event => {
         let iron = e + "iron_ore"
         event.addJson(iron, metal_ores_drop_dust(iron, "create:crushed_raw_iron", "thermal:iron_dust"))
         let gold = e + "gold_ore"
-        event.addJson(gold, metal_ores_drop_dust(gold, "create:crushed_raw_gol", "thermal:gold_dust"))
+        event.addJson(gold, metal_ores_drop_dust(gold, "create:crushed_raw_gold", "thermal:gold_dust"))
     })
     event.addJson(MC("copper_ore"), metal_ores_drop_dust(MC("copper_ore"), "create:crushed_raw_copper", "thermal:copper_dust"))
     event.addJson(MC("deepslate_copper_ore"), metal_ores_drop_dust(MC("deepslate_copper_ore"), "create:crushed_raw_copper", "thermal:copper_dust"))
