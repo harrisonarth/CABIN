@@ -69,6 +69,9 @@ ServerEvents.recipes(event => {
 ServerEvents.tags("item", event => {
     // zinc anvils
     event.get("tconstruct:anvil_metal").add(CR("zinc_block"))
+
+    event.add("forge:ingots/seared_brick", "tconstruct:seared_brick")
+    event.add("forge:ingots/scorched_brick", "tconstruct:scorched_brick")
 })
 
 ServerEvents.tags("block", event => {

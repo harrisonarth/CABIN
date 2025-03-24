@@ -75,65 +75,7 @@ ServerEvents.recipes(event => {
         P: TE("invar_ingot"),
         M: MC("redstone")
     })
-
-    // Thermal doesn't do compatibility anymore, so we have to port over recipes outselves.
-    // Fortunately for us, we can make a script to automatically port casting recipes into chiller recipes.
-    event.forEachRecipe([{ type: "tconstruct:casting_table" }], recipe => {
-        // recipe.json gives us some info that the recipe object cannot give us
-        let recipeJSON = JSON.parse(recipe.json)
-
-        let inputCast;
-        let inputFluid;
-        let resultItem;
-
-        // If the recipe is not a casting recipe then we don't want to port it
-        if (!recipeJSON.cast) { return; }
-        // We also don't want to port any recipes where the cast is consumed (sand casting recipes)
-        if (recipeJSON.cast_consumed) { return }
-
-        // Figure out what Thermal cast we should use based on the original tconstruct cast
-        switch (recipeJSON.cast.tag) {
-        case "tconstruct:casts/multi_use/ingot":
-            inputCast = "thermal:chiller_ingot_cast";
-            break;
-        case "tconstruct:casts/multi_use/rod":
-            inputCast = "thermal:chiller_rod_cast";
-            break;
-        default: return;
-        }
-
-        // Port the fluid ingredient
-        if (recipeJSON.fluid.name) {
-            inputFluid = {fluid:recipeJSON.fluid.name, amount:recipeJSON.fluid.amount};
-        } else if (recipeJSON.fluid.tag) {
-            inputFluid = {fluid_tag:recipeJSON.fluid.tag, amount:recipeJSON.fluid.amount};
-        }
-
-        // Unlike other recipes types, tconstruct recipes accept item tags as outputs.
-        // Output items can be prioritised by mod in the Mantle server config.
-        if (typeof recipeJSON.result === "string") {
-            resultItem = {item:recipeJSON.result, count:1};
-        } else {
-            resultItem = {item:getPreferredItemFromTag(recipeJSON.result.tag), count:1};
-        }
-
-        // We don't want this recipe
-        if (resultItem.item == "tconstruct:cheese_ingot") {return;}
-
-        // Creating the ported recipe
-        event.custom({
-            type:"thermal:chiller",
-            ingredients:[inputFluid, inputCast],
-            result:[resultItem],
-            energy:5000
-        }).id(`kubejs:chiller/${recipe.getId().replace(":", "/")}`)
-    })
-    // Ball recipes aren't so easy to port so we'll just make them manually
-    thermalChiller(event, MC("slime_ball"), [Fluid.of("tconstruct:earth_slime", 250), TE("chiller_ball_cast")], 5000).id("kubejs:chiller/slime_ball");
-    thermalChiller(event, TC("sky_slime_ball"), [Fluid.of("tconstruct:sky_slime", 250), TE("chiller_ball_cast")], 5000).id("kubejs:chiller/sky_slime_ball");
-    thermalChiller(event, TC("ender_slime_ball"), [Fluid.of("tconstruct:ender_slime", 250), TE("chiller_ball_cast")], 5000).id("kubejs:chiller/ender_slime_ball");
-    thermalChiller(event, TC("blood_slime_ball"), [Fluid.of("tconstruct:blood", 250), TE("chiller_ball_cast")], 5000).id("kubejs:chiller/blood_slime_ball");
-
+    
     // port melting recipes for dusts, ingots and gems
     const TICMETALS = [
         "aluminum",
@@ -187,30 +129,57 @@ ServerEvents.recipes(event => {
                 ingredients:{tag: `forge:dusts/${metal}`},
                 result:{fluid: `tconstruct:molten_${metal}`, amount: 90},
                 energy:5000
-            }).id(`kubejs:crucible/tconstruct/smeltery/melting/metal/${metal}/dust`)
+            }).id(`kubejs:crucible/${metal}/dust`)
         }
     })
-    TICMETALS.concat(["copper", "gold", "iron", "lead", "nickel", "zinc"])
-    TICMETALS.forEach(metal=>{
-        if (Ingredient.of(`#forge:ingots/${metal}`).first != Item.empty) {
-            event.custom({
-                type:"thermal:crucible",
-                ingredients:{tag: `forge:ingots/${metal}`},
-                result:{fluid: `tconstruct:molten_${metal}`, amount: 90},
-                energy:5000
-            }).id(`kubejs:crucible/tconstruct/smeltery/melting/metal/${metal}/ingot`)
+    TICMETALS.concat(["copper", "gold", "iron", "lead", "nickel", "zinc"]).forEach(metal=>{
+        let ingotTag = `forge:ingots/${metal}`
+        let rodTag = `forge:rods/${metal}`
+
+        let fluid = `tconstruct:molten_${metal}`
+
+        if (Ingredient.of('#'+ingotTag).first != Item.empty) {
+            thermalCrucible(event, Fluid.of(fluid, 90), '#'+ingotTag, 5000).id(`kubejs:crucible/${metal}/ingot`)
+
+            thermalChiller(event, getPreferredItemFromTag(ingotTag), [Fluid.of(fluid, 90), "thermal:chiller_ingot_cast"], 5000).id(`kubejs:chiller/${metal}/ingot`)
+        }
+        if (Ingredient.of('#'+rodTag).first != Item.empty) {
+            thermalChiller(event, getPreferredItemFromTag(rodTag), [Fluid.of(fluid, 45), "thermal:chiller_rod_cast"], 5000).id(`kubejs:chiller/${metal}/rod`)
         }
     })
     TICGEMS.forEach(gem=>{
+        let gemTag = `forge:gems/${gem}`
+
+        let fluid = `tconstruct:molten_${gem}`
+
         if (Ingredient.of(`#forge:gems/${gem}`).first != Item.empty) {
-            event.custom({
-                type:"thermal:crucible",
-                ingredients:{tag: `forge:gems/${gem}`},
-                result:{fluid: `tconstruct:molten_${gem}`, amount: 100},
-                energy:5000
-            }).id(`kubejs:crucible/tconstruct/smeltery/melting/${gem}/gem`)
+            thermalCrucible(event, Fluid.of(fluid, 100), gemTag, 5000).id(`kubejs:crucible/${gem}/gem`)
         }
     })
+
+    const OTHER_INGOTS = [
+        {name: "brick", fluid: "tconstruct:molten_clay"},
+        {name: "seared_brick", fluid: "tconstruct:seared_stone"},
+        {name: "scorched_brick", fluid: "tconstruct:scorched_stone"},
+        {name: "netherite_scrap", fluid: "tconstruct:molten_debris"}
+    ]
+    OTHER_INGOTS.forEach(material=>{
+        let name = material.name
+        let ingotTag = "forge:ingots/" + material.name
+        let fluid = material.fluid
+
+        if (Ingredient.of('#'+ingotTag).first != Item.empty) {
+            thermalCrucible(event, Fluid.of(fluid, 90), '#'+ingotTag, 5000).id(`kubejs:crucible/${name}`)
+
+            thermalChiller(event, getPreferredItemFromTag(ingotTag), [Fluid.of(fluid, 90), "thermal:chiller_ingot_cast"], 5000).id(`kubejs:chiller/${name}`)
+        }
+    })
+
+    // Ball recipes
+    thermalChiller(event, MC("slime_ball"), [Fluid.of("tconstruct:earth_slime", 250), TE("chiller_ball_cast")], 5000).id("kubejs:chiller/slime_ball");
+    thermalChiller(event, TC("sky_slime_ball"), [Fluid.of("tconstruct:sky_slime", 250), TE("chiller_ball_cast")], 5000).id("kubejs:chiller/sky_slime_ball");
+    thermalChiller(event, TC("ender_slime_ball"), [Fluid.of("tconstruct:ender_slime", 250), TE("chiller_ball_cast")], 5000).id("kubejs:chiller/ender_slime_ball");
+    thermalChiller(event, TC("blood_slime_ball"), [Fluid.of("tconstruct:blood", 250), TE("chiller_ball_cast")], 5000).id("kubejs:chiller/blood_slime_ball");
 })
 
 ServerEvents.lowPriorityData(event => {
