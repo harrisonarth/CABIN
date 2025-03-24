@@ -364,15 +364,6 @@ ServerEvents.recipes(event => {
             "energy": 20000
         }).id("kubejs:ore_processing/induction_smelting/crushed/" + materialName)
         
-        // melting ore blocks to fluid (needed to make the melting pan work)
-        event.custom({
-            "type": "tconstruct:melting",
-            "ingredient": { "tag": oreTag.slice(1) },
-            "result": { "fluid": fluid, "amount": 180 },
-            "temperature": 500,
-            "time": 30,
-            "byproducts": [{ "fluid": fluidByproduct, "amount": 20 }]
-        }).id("kubejs:ore_processing/melting/ore/" + materialName);
         // melting ore dusts to fluid
         event.custom({
             "type": "tconstruct:melting",
