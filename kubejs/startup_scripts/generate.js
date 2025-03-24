@@ -23,6 +23,9 @@ StartupEvents.registry("item", event => {
         event.create("incomplete_" + e + "_processor","create:sequenced_assembly").texture("cabin:item/incomplete_" + e + "_processor").displayName("Incomplete " + name + " Processor")
     })
 
+    event.create("incomplete_flight_anchor","create:sequenced_assembly").modelJson({parent: "minecraft:block/beacon"}).displayName("Incomplete Flight Anchor")
+    event.create("incomplete_gravity_normalizer","create:sequenced_assembly").modelJson({parent: "ad_astra:block/gravity_normalizer"}).displayName("Incomplete Gravity Normalizer")
+
     let number = (name) => {
         let id = name.toLowerCase()
         event.create(id).texture("cabin:item/" + id).glow(true).displayName(name)

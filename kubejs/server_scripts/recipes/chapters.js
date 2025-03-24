@@ -1219,19 +1219,8 @@ ServerEvents.recipes(event => {
         "cooling_time": 20
     })
 
-    //	Remove all the recipes we don't want from Ad Astra
-    //	We're in an awkward situation where we want half of the recipes and don't want the other half
-    let begoneEarth = [
-        "nasa_workbenching/tier1", "nasa_workbenching/tier2", "nasa_workbenching/tier3", "nasa_workbenching/tier4", "rover",
-        "oxygen_mask", "space_suit", "space_leggings", "space_boots",
-        "hammer", "iron_stick", "oxygen_gear", "oxygen_tank", "wheel", "engine_frame", "engine_fan", "rocket_nose_cone",
-        "iron_engine", "gold_engine", "diamond_engine", "calorite_engine",
-        "iron_tank", "gold_tank", "diamond_tank", "calorite_tank",
-        "rocket_fin", "iron_plate", "desh_plate",
-        "rocket_launch_pad", "nasa_workbench",
-        "solar_panel", "coal_generator", "compressor", "fuel_refinery", "oxygen_loader", "oxygen_distributer", "water_pump"
-    ]
-    begoneEarth.forEach(begone => { event.remove({ output: AA(begone) }) })
+    //Ad Astra Recipe Removals are found in ad_astra.js
+
     // Matter Plastics
     event.recipes.createCompacting(KJ("matter_plastics"), [AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball")]).superheated()
     // Saves a lot of code to reuse an object with the materials here
@@ -1263,6 +1252,12 @@ ServerEvents.recipes(event => {
         "GSG",
         "AMA"
     ], materials)
+    // Oxygen Sensor
+        event.recipes.createMechanicalCrafting("ad_astra:oxygen_sensor", [
+            "AAA",
+            "GSG",
+            "AMA"
+        ], Object.assign(materials, {M:"minecraft:redstone_block"}))
     // Lander Deployer
     materials.S = CR("empty_schematic")
     event.recipes.createMechanicalCrafting("kubejs:lander_deployer", [
@@ -1295,8 +1290,35 @@ ServerEvents.recipes(event => {
     materials.S = MC("iron_boots")
     event.recipes.createMechanicalCrafting("ad_astra:space_boots", pattern, materials)
 
+    //Gas Tanks
+    materials = {
+        A: KJ("matter_plastics"),
+        G: F("#plates/gold")
+    }
+    event.recipes.createMechanicalCrafting("ad_astra:gas_tank", [
+        "G",
+        "A",
+        "A"
+    ], materials)
+    materials.A = "#forge:ingots/invar"
+    materials.T = "ad_astra:gas_tank"
+    event.recipes.createMechanicalCrafting("ad_astra:large_gas_tank", [
+        " G ",
+        "ATA",
+        "ATA"
+    ], materials)
+
+    //Zip Gun
+    materials.T = "ad_astra:large_gas_tank"
+    event.recipes.createMechanicalCrafting("ad_astra:zip_gun", [
+        "AAG",
+        "T  "
+    ], materials)
+
+
+
     // Rocket Launch Pad
-    createMachine(AP("heavy_stone_bricks"), event, Item.of("ad_astra:launch_pad"), KJ("matter_plastics"))
+    event.recipes.createDeploying(Item.of("ad_astra:launch_pad"), [AP("heavy_stone_bricks"), KJ("matter_plastics")])
 
     //	oil refining
     event.custom({
@@ -1351,4 +1373,29 @@ ServerEvents.recipes(event => {
         L: "kubejs:lander_deployer",
         C: "thermal:dynamo_compression"
     })
+
+    //Solar Panel
+    event.recipes.createMechanicalCrafting("ad_astra:solar_panel", [
+        "CCC",
+        "DMD",
+        "DDD"
+    ], {
+        C: "ad_astra:photovoltaic_etrium_cell",
+        M: "ae2:controller",
+        D: "#forge:plates/desh"
+    })
+
+    //Gravity Normalizer
+    transitional = "kubejs:incomplete_gravity_normalizer"
+    event.recipes.createSequencedAssembly([
+        "ad_astra:gravity_normalizer",
+    ], "kubejs:computation_matrix", [
+        event.recipes.createDeploying(transitional, [transitional, "kubejs:enderium_machine"]),
+        event.recipes.createDeploying(transitional, [transitional, "thermal:flux_capacitor"]),
+        event.recipes.createDeploying(transitional, [transitional, "#forge:plates/desh"]),
+        event.recipes.createDeploying(transitional, [transitional, "#forge:plates/desh"]),
+        event.recipes.createDeploying(transitional, [transitional, "#forge:plates/desh"])
+    ]).transitionalItem(transitional)
+        .loops(1)
+        .id("kubejs:gravity_normalizer")
 })
