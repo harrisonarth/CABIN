@@ -10,6 +10,22 @@ let metal_ores_drop_dust = (id, crushedId, dustId) => {
                     "children": [
                         {
                             "type": "minecraft:item",
+                            "name": dustId,
+                            "functions": [
+                                {
+                                    "function": "minecraft:set_count",
+                                    "count": 9
+                                }
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "tconstruct:has_modifier",
+                                    "modifier": "tconstruct:melting"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "minecraft:item",
                             "name": id,
                             "conditions": [
                                 {
@@ -24,22 +40,6 @@ let metal_ores_drop_dust = (id, crushedId, dustId) => {
                                             }
                                         ]
                                     }
-                                }
-                            ]
-                        },
-                        {
-                            "type": "minecraft:item",
-                            "name": dustId,
-                            "functions": [
-                                {
-                                    "function": "minecraft:set_count",
-                                    "count": 9
-                                }
-                            ],
-                            "conditions": [
-                                {
-                                    "condition": "tconstruct:has_modifier",
-                                    "modifier": "tconstruct:melting"
                                 }
                             ]
                         },
