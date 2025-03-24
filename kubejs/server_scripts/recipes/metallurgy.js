@@ -274,7 +274,7 @@ ServerEvents.recipes(event => {
     let dust_process = (materialName, byproduct, ByproductName) => {
         let crushedOre = CR("crushed_" + "raw_" + materialName)
         let oreTag = ("#forge:ores/" + materialName)
-        let oreBlockTag = ("#forge:storage_blocks/raw_" + materialName)
+        let crushedOreBlockTag = ("#forge:storage_blocks/raw_" + materialName)
         let dustTag = ("#forge:dusts/" + materialName)
         let fluid = TC("molten_" + materialName)
         let fluidByproduct = TC("molten_" + ByproductName)
@@ -316,11 +316,11 @@ ServerEvents.recipes(event => {
         event.remove({ id: `thermal:machines/smelter/smelter_${materialName}_ore` })
 
         event.remove([
-            { type: 'minecraft:smelting', input: oreBlockTag },
-            { type: 'minecraft:blasting', input: oreBlockTag },
-            { type: 'create:crushing', input: oreBlockTag },
-            { type: 'occultism:crushing', input: oreBlockTag },
-            { type: 'tconstruct:ore_melting', input: oreBlockTag }
+            { type: 'minecraft:smelting', input: crushedOreBlockTag },
+            { type: 'minecraft:blasting', input: crushedOreBlockTag },
+            { type: 'create:crushing', input: crushedOreBlockTag },
+            { type: 'occultism:crushing', input: crushedOreBlockTag },
+            { type: 'tconstruct:ore_melting', input: crushedOreBlockTag }
         ])
 
         // 'concentrated ore' to crushed ore
@@ -350,8 +350,8 @@ ServerEvents.recipes(event => {
 
         // ingots to fluid
         // thermalCrucible(event, Fluid.of(fluid, 90), ingot, 2000).id('kubejs:ore_processing/crucible/ingot/'+materialName) //now automatically ported
-
-        // melting crushed ores to fluid
+        
+        // melting crushed ores to nuggets
         event.custom({
             "type": "thermal:smelter",
             "ingredient": { "item": crushedOre },
@@ -363,7 +363,16 @@ ServerEvents.recipes(event => {
             "experience": 0.2,
             "energy": 20000
         }).id("kubejs:ore_processing/induction_smelting/crushed/" + materialName)
-
+        
+        // melting ore blocks to fluid (needed to make the melting pan work)
+        event.custom({
+            "type": "tconstruct:melting",
+            "ingredient": { "tag": oreTag.slice(1) },
+            "result": { "fluid": fluid, "amount": 180 },
+            "temperature": 500,
+            "time": 30,
+            "byproducts": [{ "fluid": fluidByproduct, "amount": 20 }]
+        }).id("kubejs:ore_processing/melting/ore/" + materialName);
         // melting ore dusts to fluid
         event.custom({
             "type": "tconstruct:melting",

@@ -89,4 +89,47 @@ ServerEvents.highPriorityData( event => {
         "slots": { "abilities": 1 },
         "tools": { "tag": "tconstruct:modifiable/harvest" }
     })
+
+    event.addJson("tconstruct:recipes/tools/modifiers/ability/melting", {
+        "type": "tconstruct:modifier",
+        "allow_crystal": true,
+        "check_trait_level": true,
+        "inputs": [
+            {
+                "item": "minecraft:blaze_rod"
+            },
+            {
+                "ingredient": [
+                    {
+                        "item": "tconstruct:seared_melter"
+                    },
+                    {
+                        "item": "tconstruct:smeltery_controller"
+                    },
+                    {
+                        "item": "tconstruct:foundry_controller"
+                    }
+                ]
+            },
+            {
+                "item": "minecraft:blaze_rod"
+            },
+            {
+                "item": "minecraft:lava_bucket"
+            },
+            {
+                "item": "minecraft:lava_bucket"
+            }
+        ],
+        "level": 1,
+        "result": "tconstruct:melting",
+        "slots": {
+            "abilities": 1
+        },
+        "tools": [
+            {
+                "item": "tconstruct:melting_pan"
+            }
+        ]
+    })
 })
