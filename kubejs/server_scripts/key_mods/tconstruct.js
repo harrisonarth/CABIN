@@ -71,8 +71,18 @@ ServerEvents.tags("item", event => {
     event.get("tconstruct:anvil_metal").add(CR("zinc_block"))
 })
 
-// autosmelt modifier uses crushed ores instead of raw ores
+ServerEvents.tags("block", event => {
+  event.get("tconstruct:mineable/melting_blacklist")
+    .add("#forge:storage_blocks/raw_iron")
+    .add("#forge:storage_blocks/raw_copper")
+    .add("#forge:storage_blocks/raw_gold")
+    .add("#forge:storage_blocks/raw_zinc")
+    .add("#forge:storage_blocks/raw_lead")
+    .add("#forge:storage_blocks/raw_nickel")
+})
+
 ServerEvents.highPriorityData( event => {
+  // Use crushed ore instead of raw ore for the autosmelt modifier
     event.addJson("tconstruct:recipes/tools/modifiers/ability/autosmelt", {
         "type": "tconstruct:modifier",
         "allow_crystal": true,
@@ -90,54 +100,55 @@ ServerEvents.highPriorityData( event => {
         "tools": { "tag": "tconstruct:modifiable/harvest" }
     })
 
+    //Make Melting exclusive to the melting pan
     event.addJson("tconstruct:recipes/tools/modifiers/ability/melting", {
-        "type": "tconstruct:modifier",
-        "allow_crystal": true,
-        "check_trait_level": true,
-        "inputs": [
-            {
-                "item": "minecraft:blaze_rod"
-            },
-            {
-                "ingredient": [
-                    {
-                        "item": "tconstruct:seared_melter"
-                    },
-                    {
-                        "item": "tconstruct:smeltery_controller"
-                    },
-                    {
-                        "item": "tconstruct:foundry_controller"
-                    }
-                ]
-            },
-            {
-                "item": "minecraft:blaze_rod"
-            },
-            {
-                "item": "minecraft:lava_bucket"
-            },
-            {
-                "item": "minecraft:lava_bucket"
-            }
-        ],
-        "level": 1,
-        "result": "tconstruct:melting",
-        "slots": {
-            "abilities": 1
+      "type": "tconstruct:modifier",
+      "allow_crystal": true,
+      "check_trait_level": true,
+      "inputs": [
+        {
+          "item": "minecraft:blaze_rod"
         },
-        "tools": [
+        {
+          "ingredient": [
             {
-                "item": "tconstruct:melting_pan"
+              "item": "tconstruct:seared_melter"
+            },
+            {
+              "item": "tconstruct:smeltery_controller"
+            },
+            {
+              "item": "tconstruct:foundry_controller"
             }
-        ]
+          ]
+        },
+        {
+          "item": "minecraft:blaze_rod"
+        },
+        {
+          "item": "minecraft:lava_bucket"
+        },
+        {
+          "item": "minecraft:lava_bucket"
+        }
+      ],
+      "level": 1,
+      "result": "tconstruct:melting",
+      "slots": {
+        "abilities": 1
+      },
+      "tools": [
+        {
+          "item": "tconstruct:melting_pan"
+        }
+      ]
     })
-
+    
     event.addJson("tconstruct:tinkering/tool_definitions/melting_pan", {
-        "modules": [
-          {
-            "type": "tconstruct:material_stats",
-            "primary_part": 0,
+      "modules": [
+        {
+          "type": "tconstruct:material_stats",
+          "primary_part": 0,
             "stat_types": [
               "tconstruct:plating_shield",
               "tconstruct:limb"
