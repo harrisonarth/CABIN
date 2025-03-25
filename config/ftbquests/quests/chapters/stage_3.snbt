@@ -64,7 +64,6 @@
 			subtitle: "{cabin.quest.27C191346BB14D9D.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "6C47C95A06683D71"
 					item: {
 						Count: 1
@@ -145,7 +144,6 @@
 			id: "3B421C8F7947E542"
 			shape: "circle"
 			tasks: [{
-				consume_items: false
 				id: "26CA0A31856D4445"
 				item: "ae2:red_paint_ball"
 				type: "item"
@@ -167,7 +165,6 @@
 			id: "381F8F373605BB97"
 			shape: "circle"
 			tasks: [{
-				consume_items: false
 				id: "629CDAD0644963F4"
 				item: "ae2:yellow_paint_ball"
 				type: "item"
@@ -185,7 +182,6 @@
 			id: "6A76E65324F0ACC0"
 			shape: "circle"
 			tasks: [{
-				consume_items: false
 				id: "4BBF150A1DD3A0AF"
 				item: "ae2:green_paint_ball"
 				type: "item"
@@ -203,7 +199,6 @@
 			id: "302FCD205CC2F708"
 			shape: "circle"
 			tasks: [{
-				consume_items: false
 				id: "16C40B4F7D56B9C9"
 				item: "ae2:blue_paint_ball"
 				type: "item"
@@ -223,7 +218,6 @@
 			subtitle: "{cabin.quest.3BE15AA5C237AB80.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "5DF1A84700EB5D15"
 					item: "ae2:magenta_paint_ball"
 					type: "item"
@@ -250,7 +244,6 @@
 			subtitle: "{cabin.quest.7B23C933D76458BA.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "2F334C3D67DE059C"
 					item: {
 						Count: 1
@@ -288,7 +281,6 @@
 			subtitle: "{cabin.quest.286510750C333C1F.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "7EF8C778FDE54DC1"
 					item: "create:refined_radiance"
 					type: "item"
@@ -311,7 +303,6 @@
 			subtitle: "{cabin.quest.626A7D9947D82B89.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "3AF0E2934C047AA3"
 					item: "kubejs:radiant_coil"
 					type: "item"
@@ -335,7 +326,6 @@
 			subtitle: "{cabin.quest.1A06FA866B74E75B.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "35C10E79F8F1E0DF"
 					item: {
 						Count: 1
@@ -368,7 +358,6 @@
 			subtitle: "{cabin.quest.6CBA3D97CAD5DB63.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "153D599D82983310"
 					item: "kubejs:inductive_mechanism"
 					type: "item"
@@ -414,7 +403,6 @@
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
-				consume_items: false
 				id: "6F268D7B84CB1DB7"
 				item: "thermal:machine_frame"
 				type: "item"
@@ -431,7 +419,6 @@
 			subtitle: "{cabin.quest.2C81D358594C4352.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "5BF8BF7A24029B57"
 					item: "ae2:singularity"
 					type: "item"
@@ -464,7 +451,6 @@
 			subtitle: "{cabin.quest.5A199B898D41A309.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "63C5611154B9B124"
 					item: "ae2:quantum_entangled_singularity"
 					type: "item"
@@ -490,7 +476,6 @@
 			subtitle: "{cabin.quest.02B2E249421FAE58.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "39C8F3F28C7A271C"
 					item: "minecraft:tnt"
 					type: "item"
@@ -521,7 +506,6 @@
 			subtitle: "{cabin.quest.050A20198A80CF1A.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "65AD93315DC72371"
 					item: "minecraft:gunpowder"
 					type: "item"
@@ -545,7 +529,6 @@
 			subtitle: "{cabin.quest.5F9BA7BA46D2E5B8.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "1127E4C296ED5A31"
 					item: "minecraft:sand"
 					type: "item"
@@ -576,7 +559,6 @@
 			subtitle: "{cabin.quest.375C9A43FE5620B6.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "74E8DBEBD9AA5D72"
 					item: "ae2:ender_dust"
 					type: "item"
@@ -602,7 +584,6 @@
 			subtitle: "{cabin.quest.2CCD84D55DE71EB2.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "1A034719E3B94207"
 					item: "kubejs:dye_entangled_singularity"
 					type: "item"
@@ -644,7 +625,6 @@
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
-				consume_items: false
 				id: "314DEBB9F9DE70F4"
 				item: "kubejs:enderium_machine"
 				type: "item"
@@ -659,7 +639,6 @@
 			id: "6DBEF7A11890ADF8"
 			shape: "circle"
 			tasks: [{
-				consume_items: false
 				id: "6F8624E071829779"
 				item: "kubejs:abstruse_mechanism"
 				type: "item"
@@ -679,7 +658,6 @@
 			id: "794B3C10C6110CB5"
 			shape: "circle"
 			tasks: [{
-				consume_items: false
 				id: "7E7DF9C3DCFF0724"
 				item: "minecraft:chorus_flower"
 				type: "item"
@@ -701,7 +679,6 @@
 			}]
 			shape: "circle"
 			tasks: [{
-				consume_items: false
 				id: "05F0DE924816E7F5"
 				item: "thermal:machine_insolator"
 				type: "item"
@@ -724,7 +701,6 @@
 			id: "7B080B5C87247EA1"
 			shape: "circle"
 			tasks: [{
-				consume_items: false
 				id: "0EC104535857B542"
 				item: "thermal:enderium_ingot"
 				type: "item"
@@ -748,7 +724,6 @@
 			id: "38B063C8DE71E86D"
 			shape: "circle"
 			tasks: [{
-				consume_items: false
 				id: "3B8AF2614A9EE681"
 				item: "thermal:silver_coin"
 				type: "item"
@@ -789,7 +764,6 @@
 			id: "05C7E580ED88B556"
 			shape: "circle"
 			tasks: [{
-				consume_items: false
 				id: "4E429C9E118BA2C7"
 				item: "minecraft:end_stone"
 				type: "item"
@@ -808,7 +782,6 @@
 			id: "59D2104DB6AE93FD"
 			shape: "circle"
 			tasks: [{
-				consume_items: false
 				id: "6334526E14C21487"
 				item: {
 					Count: 1
@@ -832,7 +805,6 @@
 			subtitle: "{cabin.quest.194B973EAF17809C.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "293DC3FF985B575B"
 					item: "minecraft:stick"
 					type: "item"
@@ -862,7 +834,6 @@
 			subtitle: "{cabin.quest.44540B11F341AE09.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "716CDC854FF1E8C2"
 					item: "create:crushing_wheel"
 					type: "item"
@@ -907,7 +878,6 @@
 			subtitle: "{cabin.quest.402F89CABF6BCDA4.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "0B625314B34801AA"
 					item: "minecraft:bone_meal"
 					type: "item"
@@ -930,19 +900,16 @@
 			subtitle: "{cabin.quest.3D1EEB596FDBE4E7.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "3EB8C2219D74126B"
 					item: "kubejs:ender_slime_fern_paste"
 					type: "item"
 				}
 				{
-					consume_items: false
 					id: "4CB87BE063DACC5F"
 					item: "kubejs:earth_slime_fern_paste"
 					type: "item"
 				}
 				{
-					consume_items: false
 					id: "1F0B0F9D72A6F611"
 					item: "kubejs:sky_slime_fern_paste"
 					type: "item"
@@ -973,19 +940,16 @@
 			subtitle: "{cabin.quest.38D19F4EC634F33B.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "135871C95B811F71"
 					item: "kubejs:sky_slimy_fern_leaf"
 					type: "item"
 				}
 				{
-					consume_items: false
 					id: "315328866377A0DC"
 					item: "kubejs:ender_slimy_fern_leaf"
 					type: "item"
 				}
 				{
-					consume_items: false
 					id: "65D5A32F475D78B6"
 					item: "kubejs:earth_slimy_fern_leaf"
 					type: "item"
@@ -1012,7 +976,6 @@
 			subtitle: "{cabin.quest.410FF28B63E0FC0C.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "0B3A86351C4C94D9"
 					item: "kubejs:radiant_sheet"
 					type: "item"
@@ -1033,7 +996,6 @@
 			id: "0D146AD9FE774F8B"
 			shape: "circle"
 			tasks: [{
-				consume_items: false
 				icon: "thermal:silver_ingot"
 				id: "7A7EE0DF809CEDC8"
 				item: {
@@ -1061,7 +1023,6 @@
 			id: "3BFC4DFCE765F3EA"
 			shape: "circle"
 			tasks: [{
-				consume_items: false
 				id: "56C6D2D683E35E74"
 				item: "ae2:ender_dust"
 				type: "item"
@@ -1083,19 +1044,16 @@
 			shape: "circle"
 			tasks: [
 				{
-					consume_items: false
 					id: "2967A771F32C223D"
 					item: "tconstruct:earth_slime_fern"
 					type: "item"
 				}
 				{
-					consume_items: false
 					id: "2A559C5996DF8E69"
 					item: "tconstruct:sky_slime_fern"
 					type: "item"
 				}
 				{
-					consume_items: false
 					id: "1EE76BAC230B9232"
 					item: "tconstruct:ender_slime_fern"
 					type: "item"
@@ -1158,7 +1116,6 @@
 			}]
 			shape: "circle"
 			tasks: [{
-				consume_items: false
 				id: "3C38C38462B73396"
 				item: "create:stockpile_switch"
 				type: "item"

@@ -1,4 +1,5 @@
 {
+	consume_items: false
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "stage_4b"
@@ -50,19 +51,16 @@
 			shape: "circle"
 			tasks: [
 				{
-					consume_items: false
 					id: "39000CC22827EE50"
 					item: "thermal:machine_bottler"
 					type: "item"
 				}
 				{
-					consume_items: false
 					id: "6485567EC6630BF2"
 					item: "thermal:machine_sawmill"
 					type: "item"
 				}
 				{
-					consume_items: false
 					id: "75F82E2858B93DBD"
 					item: "thermal:machine_centrifuge"
 					type: "item"
@@ -77,7 +75,6 @@
 			hide_dependency_lines: true
 			id: "36A2C5B3E20C28DF"
 			tasks: [{
-				consume_items: false
 				id: "1E93F39E5F1F678E"
 				item: "kubejs:substrate_andesite"
 				type: "item"
@@ -90,7 +87,6 @@
 			hide_dependency_lines: true
 			id: "60F7A50F984284F1"
 			tasks: [{
-				consume_items: false
 				id: "5D98554C2EF24A62"
 				item: "kubejs:substrate_diorite"
 				type: "item"
@@ -103,7 +99,6 @@
 			hide_dependency_lines: true
 			id: "35406FED565B7EFF"
 			tasks: [{
-				consume_items: false
 				id: "090BAD8069B5962C"
 				item: "kubejs:substrate_granite"
 				type: "item"
@@ -116,7 +111,6 @@
 			hide_dependency_lines: true
 			id: "6CBB7512CDFF4C2E"
 			tasks: [{
-				consume_items: false
 				id: "739A22504FFAC363"
 				item: "kubejs:substrate_cobblestone"
 				type: "item"
@@ -129,7 +123,6 @@
 			hide_dependency_lines: true
 			id: "0F688EAF792BAE96"
 			tasks: [{
-				consume_items: false
 				id: "2F714B82CD1A3FDD"
 				item: "kubejs:substrate_basalt"
 				type: "item"
@@ -142,7 +135,6 @@
 			hide_dependency_lines: true
 			id: "560F2995CE2862D7"
 			tasks: [{
-				consume_items: false
 				id: "6F2432F797A27549"
 				item: "kubejs:substrate_scoria"
 				type: "item"
@@ -155,7 +147,6 @@
 			hide_dependency_lines: true
 			id: "3978E4B39C9DB44D"
 			tasks: [{
-				consume_items: false
 				id: "0A7F5C2865C6F5F5"
 				item: "kubejs:substrate_red"
 				type: "item"
@@ -168,7 +159,6 @@
 			hide_dependency_lines: true
 			id: "122D3D6743D1DD04"
 			tasks: [{
-				consume_items: false
 				id: "6FD70BEFECE67F2C"
 				item: "kubejs:substrate_orange"
 				type: "item"
@@ -181,7 +171,6 @@
 			hide_dependency_lines: true
 			id: "1E856F69C03B1D75"
 			tasks: [{
-				consume_items: false
 				id: "2A79E5D1D6C6787F"
 				item: "kubejs:substrate_yellow"
 				type: "item"
@@ -194,7 +183,6 @@
 			hide_dependency_lines: true
 			id: "49957428564E8101"
 			tasks: [{
-				consume_items: false
 				id: "183677E3CD7A38E0"
 				item: "kubejs:substrate_green"
 				type: "item"
@@ -207,7 +195,6 @@
 			hide_dependency_lines: true
 			id: "678C5FC6A898E988"
 			tasks: [{
-				consume_items: false
 				id: "7E01B9B59066FD90"
 				item: "kubejs:substrate_blue"
 				type: "item"
@@ -220,7 +207,6 @@
 			hide_dependency_lines: true
 			id: "3377A2C391B6F03A"
 			tasks: [{
-				consume_items: false
 				id: "217E5A578A83222B"
 				item: "kubejs:substrate_magenta"
 				type: "item"
@@ -233,7 +219,6 @@
 			hide_dependency_lines: true
 			id: "616D07DC2CE17BA4"
 			tasks: [{
-				consume_items: false
 				id: "119E7FC4D7BB242F"
 				item: "kubejs:substrate_blaze"
 				type: "item"
@@ -246,7 +231,6 @@
 			hide_dependency_lines: true
 			id: "758B836F53187B8C"
 			tasks: [{
-				consume_items: false
 				id: "6B17F1E13DF99E50"
 				item: "kubejs:substrate_slime"
 				type: "item"
@@ -259,7 +243,6 @@
 			hide_dependency_lines: true
 			id: "4E3B9AA2062424F4"
 			tasks: [{
-				consume_items: false
 				id: "0F0273B7441B6840"
 				item: "kubejs:substrate_nether"
 				type: "item"
@@ -272,7 +255,6 @@
 			hide_dependency_lines: true
 			id: "20AA864C5201C638"
 			tasks: [{
-				consume_items: false
 				id: "465B3645832D5B9A"
 				item: "kubejs:substrate_obsidian"
 				type: "item"
@@ -285,7 +267,6 @@
 			hide_dependency_lines: true
 			id: "35A6E3BBD80FB00F"
 			tasks: [{
-				consume_items: false
 				id: "3D85594FB65E7A91"
 				item: "kubejs:substrate_gunpowder"
 				type: "item"
@@ -298,7 +279,6 @@
 			hide_dependency_lines: true
 			id: "03DB1FCC30B7321C"
 			tasks: [{
-				consume_items: false
 				id: "6BE52A47FB071345"
 				item: "kubejs:substrate_prismarine"
 				type: "item"
@@ -311,7 +291,6 @@
 			hide_dependency_lines: true
 			id: "421E285B7D642676"
 			tasks: [{
-				consume_items: false
 				id: "10EF9D8072B539A4"
 				item: "kubejs:substrate_fluix"
 				type: "item"
@@ -324,7 +303,6 @@
 			hide_dependency_lines: true
 			id: "6E154A8C81D8DD5F"
 			tasks: [{
-				consume_items: false
 				id: "0E7911464600ABEC"
 				item: "kubejs:substrate_apatite"
 				type: "item"
@@ -337,7 +315,6 @@
 			hide_dependency_lines: true
 			id: "58A0EA80BB3A3262"
 			tasks: [{
-				consume_items: false
 				id: "3106C362414AB238"
 				item: "kubejs:substrate_sulfur"
 				type: "item"
@@ -350,7 +327,6 @@
 			hide_dependency_lines: true
 			id: "2C6EE5BEB945F154"
 			tasks: [{
-				consume_items: false
 				id: "665D6D91F09233AE"
 				item: "kubejs:substrate_niter"
 				type: "item"
@@ -363,7 +339,6 @@
 			hide_dependency_lines: true
 			id: "7CA6AC3B07E07D81"
 			tasks: [{
-				consume_items: false
 				id: "6C839FAE45EC2AB4"
 				item: "kubejs:substrate_certus"
 				type: "item"
@@ -376,7 +351,6 @@
 			hide_dependency_lines: true
 			id: "40FDCF626F5EBB08"
 			tasks: [{
-				consume_items: false
 				id: "55AA2EC101DB9047"
 				item: "kubejs:substrate_quartz"
 				type: "item"
@@ -389,7 +363,6 @@
 			hide_dependency_lines: true
 			id: "5C0CE1EDF9BF49C9"
 			tasks: [{
-				consume_items: false
 				id: "185775BFC6FE2D89"
 				item: "kubejs:substrate_zinc"
 				type: "item"
@@ -402,7 +375,6 @@
 			hide_dependency_lines: true
 			id: "5A957C9B5D8DE1A1"
 			tasks: [{
-				consume_items: false
 				id: "3FA02655BC1E99A6"
 				item: "kubejs:substrate_copper"
 				type: "item"
@@ -415,7 +387,6 @@
 			hide_dependency_lines: true
 			id: "2995ADCCB6496A22"
 			tasks: [{
-				consume_items: false
 				id: "4932CD6D8FE77BB7"
 				item: "kubejs:substrate_iron"
 				type: "item"
@@ -428,7 +399,6 @@
 			hide_dependency_lines: true
 			id: "285F815678D5F32A"
 			tasks: [{
-				consume_items: false
 				id: "0EFBC080DFC4F106"
 				item: "kubejs:substrate_nickel"
 				type: "item"
@@ -441,7 +411,6 @@
 			hide_dependency_lines: true
 			id: "394A502BD8B5B1A0"
 			tasks: [{
-				consume_items: false
 				id: "08F2F111C97B57CD"
 				item: "kubejs:substrate_lead"
 				type: "item"
@@ -454,7 +423,6 @@
 			hide_dependency_lines: true
 			id: "22F0C935130ADCF4"
 			tasks: [{
-				consume_items: false
 				id: "4A4C9D6E372A5466"
 				item: "kubejs:substrate_gold"
 				type: "item"
@@ -467,7 +435,6 @@
 			hide_dependency_lines: true
 			id: "235264EC150EDB4B"
 			tasks: [{
-				consume_items: false
 				id: "2D94A57470F15112"
 				item: "kubejs:substrate_lapis"
 				type: "item"
@@ -480,7 +447,6 @@
 			hide_dependency_lines: true
 			id: "33B3AB3394DD012A"
 			tasks: [{
-				consume_items: false
 				id: "01253AF4C04D6EE2"
 				item: "kubejs:substrate_cinnabar"
 				type: "item"
@@ -493,7 +459,6 @@
 			hide_dependency_lines: true
 			id: "58A6D5414035EEA1"
 			tasks: [{
-				consume_items: false
 				id: "09ADE0525C1D7379"
 				item: "kubejs:substrate_sapphire"
 				type: "item"
@@ -506,7 +471,6 @@
 			hide_dependency_lines: true
 			id: "2EECFBC4E2BF1F37"
 			tasks: [{
-				consume_items: false
 				id: "36A7406CD330E7AB"
 				item: "kubejs:substrate_emerald"
 				type: "item"
@@ -519,7 +483,6 @@
 			hide_dependency_lines: true
 			id: "2FD7D312EE63EA53"
 			tasks: [{
-				consume_items: false
 				id: "68CD031A5C815200"
 				item: "kubejs:substrate_ruby"
 				type: "item"
@@ -532,7 +495,6 @@
 			hide_dependency_lines: true
 			id: "2644760FA76D5F30"
 			tasks: [{
-				consume_items: false
 				id: "61BF1495FCB27EEB"
 				item: "kubejs:substrate_diamond"
 				type: "item"
@@ -560,7 +522,6 @@
 			id: "3EB5CD9776DF0E63"
 			shape: "circle"
 			tasks: [{
-				consume_items: false
 				id: "34B1FAA6107B2411"
 				item: "kubejs:substrate_igneous"
 				type: "item"
@@ -586,7 +547,6 @@
 			id: "2B195E5B195246F5"
 			shape: "circle"
 			tasks: [{
-				consume_items: false
 				id: "1F5A37CC8E10B3DB"
 				item: "kubejs:substrate_herbal"
 				type: "item"
@@ -612,7 +572,6 @@
 			id: "62EB94758A862091"
 			shape: "circle"
 			tasks: [{
-				consume_items: false
 				id: "744E156650A1F4B3"
 				item: "kubejs:substrate_volatile"
 				type: "item"
@@ -638,7 +597,6 @@
 			id: "549D7F67A97CD2CE"
 			shape: "circle"
 			tasks: [{
-				consume_items: false
 				id: "0881E44E3823D060"
 				item: "kubejs:substrate_crystal"
 				type: "item"
@@ -664,7 +622,6 @@
 			id: "0CC92E94D10E681D"
 			shape: "circle"
 			tasks: [{
-				consume_items: false
 				id: "4E81FAFD3B80DFE9"
 				item: "kubejs:substrate_metal"
 				type: "item"
@@ -690,7 +647,6 @@
 			id: "5200AD3B32D219C6"
 			shape: "circle"
 			tasks: [{
-				consume_items: false
 				id: "10F212525DABED77"
 				item: "kubejs:substrate_gem"
 				type: "item"
@@ -716,7 +672,6 @@
 			id: "7A9AA27029185035"
 			shape: "circle"
 			tasks: [{
-				consume_items: false
 				id: "3299FF447F8110CF"
 				item: "kubejs:substrate_chaos"
 				type: "item"
@@ -737,7 +692,6 @@
 			id: "6FDC8DA2FDED5FDD"
 			shape: "circle"
 			tasks: [{
-				consume_items: false
 				id: "68FBEFA1BC6479ED"
 				item: "kubejs:substrate_silicon"
 				type: "item"
@@ -759,6 +713,7 @@
 			]
 			icon: "projectred_illumination:lime_inverted_cage_light"
 			id: "1D1D1FEAF49C5E11"
+			can_repeat: true
 			rewards: [{
 				command: "/create ponder kubejs:alchemical_laser"
 				icon: {
@@ -829,13 +784,11 @@
 			shape: "circle"
 			tasks: [
 				{
-					consume_items: false
 					id: "6A30FCE70C7C7289"
 					item: "kubejs:accellerator_redstone"
 					type: "item"
 				}
 				{
-					consume_items: false
 					id: "3D9F64E8128BB9A6"
 					item: "kubejs:accellerator_glowstone"
 					type: "item"
@@ -852,7 +805,6 @@
 			id: "566E72AE7D580917"
 			shape: "circle"
 			tasks: [{
-				consume_items: false
 				id: "7EA2895F0FB5A5D6"
 				item: "kubejs:substrate_silver"
 				type: "item"

@@ -1,4 +1,5 @@
 {
+	consume_items: false
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "stage_4"
@@ -44,7 +45,6 @@
 			subtitle: "{cabin.quest.6824055533465010.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "34B7E632F7FD83DB"
 					item: "kubejs:calculation_mechanism"
 					type: "item"
@@ -99,7 +99,6 @@
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
-				consume_items: false
 				id: "3E607053D3B0C552"
 				item: "ae2:controller"
 				type: "item"
@@ -117,7 +116,6 @@
 			subtitle: "{cabin.quest.22202C87352242D6.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "54D2F2F87424AB45"
 					item: "minecraft:sand"
 					type: "item"
@@ -144,7 +142,6 @@
 			subtitle: "{cabin.quest.42F1A649D86DB86D.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "05FFE255DDB4E66F"
 					item: "kubejs:sand_ball"
 					type: "item"
@@ -181,7 +178,6 @@
 			subtitle: "{cabin.quest.0F5AA5DF001DCDF5.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "006110328A2D022F"
 					item: "kubejs:rough_sand"
 					type: "item"
@@ -207,7 +203,6 @@
 			subtitle: "{cabin.quest.343050A40A3AB1F0.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "76715E399222E329"
 					item: "kubejs:purified_sand"
 					type: "item"
@@ -230,7 +225,6 @@
 			subtitle: "{cabin.quest.3249CD08992F2BCD.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "700F644CCBEBCA5A"
 					item: "minecraft:charcoal"
 					type: "item"
@@ -252,7 +246,6 @@
 			subtitle: "{cabin.quest.1A383F96B312D1B8.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "7AFFEF4014CE671C"
 					item: "thermal:coal_coke"
 					type: "item"
@@ -275,7 +268,6 @@
 			subtitle: "{cabin.quest.16F920C2AF2FA2E0.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "36A367A143AD6175"
 					item: "kubejs:coke_chunk"
 					type: "item"
@@ -302,7 +294,6 @@
 			subtitle: "{cabin.quest.2268AFAF6E9AB5E2.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "7824435744C12C18"
 					item: "kubejs:silicon_compound"
 					type: "item"
@@ -325,7 +316,6 @@
 			subtitle: "{cabin.quest.60A8B4C736CE3226.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "2C3C495C9B18005A"
 					item: "thermal:earth_charge"
 					type: "item"
@@ -348,7 +338,6 @@
 			subtitle: "{cabin.quest.5799B4124EE20DB1.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "54F29099D9D81837"
 					item: "thermal:basalz_powder"
 					type: "item"
@@ -375,7 +364,6 @@
 			subtitle: "{cabin.quest.6C4CB8F616A9C3DF.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "712E7C4EEB4BCF55"
 					item: "thermal:basalz_rod"
 					type: "item"
@@ -399,7 +387,6 @@
 			subtitle: "{cabin.quest.0B602ED47A0195A4.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "4649973A51C977D9"
 					item: "minecraft:basalt"
 					type: "item"
@@ -430,7 +417,6 @@
 			subtitle: "{cabin.quest.58B534C4AEB4139D.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "7538F2E8CFAF69F6"
 					item: {
 						Count: 1
@@ -458,7 +444,6 @@
 			subtitle: "{cabin.quest.4B34B52092BA32BE.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "56F4F1F21FE5FB17"
 					item: "minecraft:snowball"
 					type: "item"
@@ -489,7 +474,6 @@
 			subtitle: "{cabin.quest.6D1519B746E032FB.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "641183133CA49CCA"
 					item: {
 						Count: 1
@@ -520,7 +504,6 @@
 			subtitle: "{cabin.quest.0AE7FAEBD5F86D9C.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "11B1248ECFCD2F26"
 					item: "thermal:blizz_rod"
 					type: "item"
@@ -543,7 +526,6 @@
 			subtitle: "{cabin.quest.01B0A6236A5073D1.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "7EA6D73F7A49EBAF"
 					item: "thermal:blizz_powder"
 					type: "item"
@@ -566,7 +548,6 @@
 			subtitle: "{cabin.quest.4732465116D723EE.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "3DFF735C19CE82A5"
 					item: "thermal:ice_charge"
 					type: "item"
@@ -592,7 +573,6 @@
 			subtitle: "{cabin.quest.067C5FDA4709F195.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "263459FBEC9F9868"
 					item: "ae2:silicon"
 					type: "item"
@@ -619,7 +599,6 @@
 			subtitle: "{cabin.quest.71D90A1E5D53FC0A.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "12C1BB8D09D664B4"
 					item: "ae2:printed_silicon"
 					type: "item"
@@ -704,7 +683,6 @@
 			subtitle: "{cabin.quest.46820FBDDDEE491E.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					icon: "minecraft:oak_log"
 					id: "0AA0DEB1A87DA675"
 					item: {
@@ -737,7 +715,6 @@
 			id: "1BF8F3CC8BEBB620"
 			shape: "circle"
 			tasks: [{
-				consume_items: false
 				id: "1CC8A01100CE4AE3"
 				item: {
 					Count: 1
@@ -760,7 +737,6 @@
 			subtitle: "{cabin.quest.4B19B6EAD511378D.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "6FCB9E7E2CC10348"
 					item: "ae2:silicon"
 					type: "item"
@@ -796,19 +772,16 @@
 			subtitle: "{cabin.quest.24C48CFAAD71B230.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "10D5C1E5071B1B53"
 					item: "ae2:printed_calculation_processor"
 					type: "item"
 				}
 				{
-					consume_items: false
 					id: "32F50DF8BD6E3927"
 					item: "ae2:printed_logic_processor"
 					type: "item"
 				}
 				{
-					consume_items: false
 					id: "2E5AD5026FDB28CB"
 					item: "ae2:printed_engineering_processor"
 					type: "item"
@@ -825,19 +798,16 @@
 			subtitle: "{cabin.quest.2B8F1D804107EB8C.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "186FEC9FE047828F"
 					item: "ae2:calculation_processor"
 					type: "item"
 				}
 				{
-					consume_items: false
 					id: "2DCA8F3CB7884170"
 					item: "ae2:logic_processor"
 					type: "item"
 				}
 				{
-					consume_items: false
 					id: "75950A3A22C9DC8E"
 					item: "ae2:engineering_processor"
 					type: "item"

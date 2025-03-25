@@ -60,7 +60,9 @@
 				}
 			}
 			id: "1E26046FA8177616"
+			can_repeat: true
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "556BBA8B09E4BA0C"
 				item: "kubejs:profession_card_mining"
@@ -141,7 +143,9 @@
 				}
 			}
 			id: "12B37E99B1D3837E"
+			can_repeat: true
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "4F0E97B8E88BF530"
 				item: "kubejs:profession_card_farming"
@@ -211,7 +215,9 @@
 				}
 			}
 			id: "3A48FDC224D029BF"
+			can_repeat: true
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "570B46650865045E"
 				item: "kubejs:profession_card_carpentry"
@@ -241,7 +247,9 @@
 				}
 			}
 			id: "66DA9BE9277FABF1"
+			can_repeat: true
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "382E25CBB362EB84"
 				item: "kubejs:profession_card_cooking"
@@ -317,7 +325,9 @@
 				}
 			}
 			id: "683AA93BE7DEA512"
+			can_repeat: true
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "1617766BFFC620D2"
 				item: "kubejs:profession_card_masonry"
@@ -387,7 +397,9 @@
 				}
 			}
 			id: "66DDDE912A191E57"
+			can_repeat: true
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "242009705F048500"
 				item: "kubejs:profession_card_hunting"
@@ -444,6 +456,7 @@
 			icon: "minecraft:oak_sapling"
 			id: "41BB50843EF5EF10"
 			rewards: [{
+				team_reward: "false"
 				count: 25
 				icon: "kubejs:silver_coin"
 				id: "60DDCBCC377BA8B6"
@@ -499,7 +512,9 @@
 				}
 			}
 			id: "6C0EC278451434AC"
+			can_repeat: true
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "70312C750F6E2115"
 				item: "kubejs:profession_card_fishing"
@@ -522,6 +537,7 @@
 			icon: "minecraft:book"
 			id: "736FC31210F334F2"
 			rewards: [{
+				team_reward: "false"
 				count: 15
 				icon: "kubejs:silver_coin"
 				id: "6C5F42C1888F0C63"
@@ -554,7 +570,9 @@
 				}
 			}
 			id: "32C46B11BDAD7632"
+			can_repeat: true
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "2E450774C09EF266"
 				item: "kubejs:profession_card_smithing"
@@ -577,6 +595,7 @@
 			icon: "biomesoplenty:flowering_oak_sapling"
 			id: "08DB1CFAE4555525"
 			rewards: [{
+				team_reward: "false"
 				count: 45
 				icon: "kubejs:silver_coin"
 				id: "5CEE44BA4F587BB2"
@@ -614,6 +633,7 @@
 			icon: "thermal:sulfur"
 			id: "128F1A9528CA4130"
 			rewards: [{
+				team_reward: "false"
 				count: 25
 				icon: "kubejs:silver_coin"
 				id: "7FA1F28AC13E3742"
@@ -657,6 +677,7 @@
 			icon: "thermal:ruby"
 			id: "669D57A1E1B09CD8"
 			rewards: [{
+				team_reward: "false"
 				count: 45
 				icon: "kubejs:silver_coin"
 				id: "158BDC6AB3DED2C8"
@@ -701,6 +722,7 @@
 			icon: "minecraft:music_disc_13"
 			id: "436DA1A1AB8C0734"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				count: 32
 				icon: "kubejs:silver_coin"
@@ -729,6 +751,7 @@
 			icon: "minecraft:granite"
 			id: "2A9AAED667A95C6E"
 			rewards: [{
+				team_reward: "false"
 				count: 25
 				icon: "kubejs:silver_coin"
 				id: "3D573B952A099408"
@@ -771,6 +794,7 @@
 			icon: "minecraft:basalt"
 			id: "7D92D05B4A67FD78"
 			rewards: [{
+				team_reward: "false"
 				count: 45
 				icon: "kubejs:silver_coin"
 				id: "191FAA4E0A99AF43"
@@ -806,6 +830,7 @@
 			description: ["{cabin.quest.1C5EA1173F4E592B.description1}"]
 			id: "1C5EA1173F4E592B"
 			rewards: [{
+				team_reward: "false"
 				count: 15
 				icon: "kubejs:silver_coin"
 				id: "3125103507C80C78"
@@ -827,6 +852,7 @@
 			icon: "minecraft:carrot"
 			id: "4D07666ECE75D9B5"
 			rewards: [{
+				team_reward: "false"
 				count: 25
 				icon: "kubejs:silver_coin"
 				id: "001C0326E6B6F1FF"
@@ -881,6 +907,7 @@
 			icon: "farmersdelight:rice_panicle"
 			id: "3F2FB159F1B8875F"
 			rewards: [{
+				team_reward: "false"
 				count: 45
 				icon: "kubejs:silver_coin"
 				id: "2EE90E45D02D23F1"
@@ -934,6 +961,7 @@
 			icon: "minecraft:bone"
 			id: "7932D19BE114264A"
 			rewards: [{
+				team_reward: "false"
 				count: 55
 				icon: "kubejs:silver_coin"
 				id: "652AE60D13691604"
@@ -972,6 +1000,7 @@
 		{
 			id: "7C270AB26CD9AAB8"
 			rewards: [{
+				team_reward: "false"
 				count: 30
 				icon: "kubejs:silver_coin"
 				id: "15ACAE1E4D900E4C"
@@ -993,6 +1022,7 @@
 		{
 			id: "29B58A9EDA478E7D"
 			rewards: [{
+				team_reward: "false"
 				count: 50
 				icon: "kubejs:silver_coin"
 				id: "57CF6CE48FF1115D"
@@ -1014,6 +1044,7 @@
 		{
 			id: "1AA2C3EECE1832EE"
 			rewards: [{
+				team_reward: "false"
 				count: 50
 				icon: "kubejs:silver_coin"
 				id: "5D7DB09D0FA7B0A5"
@@ -1035,6 +1066,7 @@
 		{
 			id: "3F00084D9474C381"
 			rewards: [{
+				team_reward: "false"
 				count: 2
 				icon: "kubejs:gold_coin"
 				id: "0D8EB996DBC24C64"
@@ -1054,6 +1086,7 @@
 		{
 			id: "562696C1D01B2685"
 			rewards: [{
+				team_reward: "false"
 				count: 15
 				icon: "kubejs:silver_coin"
 				id: "76F2C38DE80E75F0"
@@ -1077,6 +1110,7 @@
 			icon: "create:crushed_raw_gold"
 			id: "39D56A2B01DBD865"
 			rewards: [{
+				team_reward: "false"
 				count: 30
 				icon: "kubejs:silver_coin"
 				id: "1727FE45C409A64E"
@@ -1139,21 +1173,13 @@
 			id: "76E3B76D47A1F889"
 			rewards: [
 				{
+					team_reward: "false"
 					auto: "enabled"
 					count: 10
 					icon: "kubejs:silver_coin"
 					id: "72ADE787CA674127"
 					item: "thermal:silver_coin"
 					type: "item"
-				}
-				{
-					auto: "no_toast"
-					icon: "thermal:machine_cycle_augment"
-					id: "77DE41861FF4DDCB"
-					tags: ["reset"]
-					team_reward: true
-					title: "{cabin.reward.77DE41861FF4DDCB}"
-					type: "custom"
 				}
 			]
 			subtitle: "{cabin.quest.09DC2E2BE2BE32F4.subtitle}"
@@ -1229,6 +1255,7 @@
 		{
 			id: "2F2BA8C2AC2E0B93"
 			rewards: [{
+				team_reward: "false"
 				count: 60
 				icon: "kubejs:silver_coin"
 				id: "52C6094274D540AB"

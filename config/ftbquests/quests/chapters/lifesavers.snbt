@@ -1,4 +1,5 @@
 {
+	consume_items: false
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "lifesavers"
@@ -26,19 +27,16 @@
 			}]
 			tasks: [
 				{
-					consume_items: false
 					id: "19CF5DA7A8547E17"
 					item: "projectred_core:platformed_plate"
 					type: "item"
 				}
 				{
-					consume_items: false
 					id: "457F0290A225EEA9"
 					item: "projectred_transmission:red_alloy_wire"
 					type: "item"
 				}
 				{
-					consume_items: false
 					id: "17B93B8634BC1C2D"
 					item: {
 						Count: 1
@@ -64,7 +62,6 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
 				icon: "create:blue_toolbox"
 				id: "5E687A6CBD96D0EF"
 				item: {
@@ -104,7 +101,6 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
 				id: "180D1CB1BB7EB0AA"
 				item: {
 					Count: 1
@@ -128,7 +124,6 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
 				id: "31FE3FAF6909CB19"
 				item: {
 					Count: 1
@@ -152,7 +147,6 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
 				id: "72F2D3B586A81A2B"
 				item: "farmersdelight:stove"
 				type: "item"
@@ -170,7 +164,6 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
 				id: "4BE0CCD6F383D961"
 				item: {
 					Count: 1
@@ -439,7 +432,6 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
 				id: "039DD9EBD46B2C23"
 				item: {
 					Count: 1
@@ -497,7 +489,6 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
 				id: "0710C744349D2090"
 				item: {
 					Count: 1
@@ -522,7 +513,6 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
 				id: "7AD38BD1318A493B"
 				item: {
 					Count: 1
@@ -544,7 +534,6 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
 				id: "33523F8FED81A922"
 				item: "sophisticatedstorage:basic_to_iron_tier_upgrade"
 				type: "item"
@@ -562,7 +551,6 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
 				id: "103E6982FCFE8B6C"
 				item: "create:schematicannon"
 				type: "item"
@@ -584,7 +572,6 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
 				id: "006D992D77A782EF"
 				item: "create:crafting_blueprint"
 				type: "item"
@@ -606,7 +593,6 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
 				id: "461F9FF1732B308F"
 				item: "prettypipes:pipe"
 				type: "item"
@@ -629,7 +615,6 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
 				id: "4912723B6A264380"
 				item: "thermal:energy_duct"
 				type: "item"
@@ -648,7 +633,6 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
 				id: "39E13E85803FA5DA"
 				item: "torchmaster:megatorch"
 				type: "item"
@@ -689,14 +673,12 @@
 			}]
 			tasks: [
 				{
-					consume_items: false
 					count: 2L
 					id: "63664BFD05DDCABE"
 					item: { Count: 2, id: "create:chain_conveyor" }
 					type: "item"
 				}
 				{
-					consume_items: false
 					count: 8L
 					id: "0149C713E94864F3"
 					item: "minecraft:chain"
@@ -720,7 +702,6 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
 				id: "65A12D108D1E18AA"
 				item: "sophisticatedbackpacks:backpack"
 				type: "item"
@@ -741,7 +722,6 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
 				id: "09FD6301B7CF206E"
 				item: "thermal:fluid_duct"
 				type: "item"
@@ -777,7 +757,6 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
 				id: "42002EEA26A72016"
 				item: {
 					Count: 1
@@ -821,7 +800,6 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
 				id: "728C7440719BF00D"
 				item: {
 					Count: 1

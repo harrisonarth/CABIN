@@ -1,4 +1,5 @@
 {
+	consume_items: false
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "overview"
@@ -204,7 +205,6 @@
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
-				consume_items: false
 				icon: "minecraft:oak_log"
 				id: "7F88BABEC9889C76"
 				item: {
@@ -462,43 +462,36 @@
 			shape: "circle"
 			tasks: [
 				{
-					consume_items: false
 					id: "57A71A62204AE230"
 					item: "create:mechanical_press"
 					type: "item"
 				}
 				{
-					consume_items: false
 					id: "0EEFF99A7BD064E4"
 					item: "create:mechanical_saw"
 					type: "item"
 				}
 				{
-					consume_items: false
 					id: "4A5B209B42D89DFF"
 					item: "create:encased_fan"
 					type: "item"
 				}
 				{
-					consume_items: false
 					id: "32214700E91A67D3"
 					item: "create:wrench"
 					type: "item"
 				}
 				{
-					consume_items: false
 					id: "6530AB7AA277197D"
 					item: "create:mechanical_mixer"
 					type: "item"
 				}
 				{
-					consume_items: false
 					id: "1900BA945C62D0CC"
 					item: "tconstruct:seared_melter"
 					type: "item"
 				}
 				{
-					consume_items: false
 					id: "534BB31978C1E95B"
 					item: "create:millstone"
 					type: "item"

@@ -1,4 +1,5 @@
 {
+	consume_items: false
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "stage_1"
@@ -22,7 +23,6 @@
 			subtitle: "{cabin.quest.2CB570195DA7E106.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					disable_toast: true
 					icon: "minecraft:oak_log"
 					id: "58AB6E0FF2EA6AD4"
@@ -59,7 +59,6 @@
 			subtitle: "{cabin.quest.608BF7BE3CB666F3.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "247A58659E47A4D8"
 					item: "minecraft:kelp"
 					type: "item"
@@ -83,7 +82,6 @@
 			subtitle: "{cabin.quest.4CC420A6B673176A.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					icon: "minecraft:sand"
 					id: "72FE446F5BB1A93E"
 					item: {
@@ -133,7 +131,6 @@
 			subtitle: "{cabin.quest.106C6DFDCB97327C.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "5E14AA73F8E1AFE4"
 					item: "minecraft:andesite"
 					type: "item"
@@ -172,7 +169,6 @@
 			subtitle: "{cabin.quest.729FB5DD07C234E8.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "714FE76FE8D62EBF"
 					item: "minecraft:clay_ball"
 					type: "item"
@@ -198,7 +194,6 @@
 			subtitle: "{cabin.quest.72BE175C83834838.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "1CE8BFE460CB41E0"
 					item: "architects_palette:algal_blend"
 					type: "item"
@@ -221,7 +216,6 @@
 			subtitle: "{cabin.quest.532EFE32C3A515B5.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					icon: "minecraft:stripped_oak_log"
 					id: "3C7A4BA98EEC90E8"
 					item: {
@@ -252,7 +246,6 @@
 			subtitle: "{cabin.quest.19921941321965A4.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					icon: "minecraft:oak_planks"
 					id: "1A63E51B0CF5C6DD"
 					item: {
@@ -287,7 +280,6 @@
 			subtitle: "{cabin.quest.59E4A6163753BC12.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					icon: "minecraft:oak_slab"
 					id: "23030B6D0072EBE8"
 					item: {
@@ -321,7 +313,6 @@
 			subtitle: "{cabin.quest.73FCA432DEFC1DED.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "4F50D847118D6E62"
 					item: "create:andesite_alloy"
 					type: "item"
@@ -344,7 +335,6 @@
 			subtitle: "{cabin.quest.32786E9D145FFE25.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "706BA4E65686CA1B"
 					item: "architects_palette:algal_brick"
 					type: "item"
@@ -375,7 +365,6 @@
 			subtitle: "{cabin.quest.675C395B2074C24C.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "68B67FDC410885B3"
 					item: "kubejs:kinetic_mechanism"
 					type: "item"
@@ -410,7 +399,6 @@
 			id: "5A055D0421861318"
 			shape: "circle"
 			tasks: [{
-				consume_items: false
 				id: "52A4AF128B571664"
 				item: {
 					Count: 1
@@ -484,7 +472,6 @@
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
-				consume_items: false
 				id: "2D4BB6A2E22A86E3"
 				item: "kubejs:andesite_machine"
 				type: "item"
@@ -506,7 +493,6 @@
 			subtitle: "{cabin.quest.3728DF562D6DCE3A.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					count: 4L
 					id: "52B181D406A5AC67"
 					item: "thermal:device_tree_extractor"
@@ -530,7 +516,6 @@
 			subtitle: "{cabin.quest.3EF5F89DBD6959E3.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "0F98BACE3B940BC9"
 					item: "thermal:rubber"
 					type: "item"
@@ -558,7 +543,6 @@
 			subtitle: "{cabin.quest.29D37095C73B3DEC.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "7D328EB34500FE28"
 					item: "thermal:cured_rubber"
 					type: "item"
@@ -579,7 +563,6 @@
 			id: "6545C3F427B12106"
 			shape: "circle"
 			tasks: [{
-				consume_items: false
 				id: "2C94C22FBED69EE4"
 				item: "kubejs:sealed_mechanism"
 				type: "item"
@@ -615,7 +598,6 @@
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
-				consume_items: false
 				id: "31511DA3C34905F1"
 				item: "kubejs:copper_machine"
 				type: "item"
@@ -658,7 +640,6 @@
 			subtitle: "{cabin.quest.5C4F6E63B02A25F0.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "414AB7FC6D0F52BF"
 					item: "minecraft:deepslate"
 					type: "item"
@@ -681,7 +662,6 @@
 			subtitle: "{cabin.quest.4D8972AE5B614FB3.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "2E9806386AA204A1"
 					item: "minecraft:magma_block"
 					type: "item"
@@ -704,7 +684,6 @@
 			subtitle: "{cabin.quest.4064D448404CD639.subtitle}"
 			tasks: [
 				{
-					consume_items: false
 					id: "09D097DEABDD1E51"
 					item: "minecraft:obsidian"
 					type: "item"
@@ -736,7 +715,6 @@
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
-				consume_items: false
 				id: "5F986F8FC1D339AA"
 				item: "kubejs:gold_machine"
 				type: "item"
@@ -754,7 +732,6 @@
 			id: "76706BE282ABAC31"
 			shape: "circle"
 			tasks: [{
-				consume_items: false
 				id: "232D11392F252A8E"
 				item: "kubejs:reinforced_mechanism"
 				type: "item"

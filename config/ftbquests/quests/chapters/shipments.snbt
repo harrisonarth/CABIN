@@ -18,6 +18,7 @@
 			]
 			icon: "thermal:machine_press"
 			id: "6AC1CED0D341150E"
+			can_repeat: false
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
@@ -34,6 +35,7 @@
 			icon: { Count: 2, id: "thermal:gold_coin" }
 			id: "3B548F2C060C2229"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "0A6DEF2E19943F9F"
 				item: "kubejs:trade_card_exchange_currencies"
@@ -56,6 +58,7 @@
 			icon: "minecraft:dirt"
 			id: "1A27F6CC5196D116"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "73B5632934CB5398"
 				item: "kubejs:trade_card_dirt"
@@ -80,6 +83,7 @@
 			icon: "minecraft:sand"
 			id: "4C0F811C1D2495CC"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "4D3AAC1C8DC9CEEF"
 				item: "kubejs:trade_card_sand"
@@ -104,6 +108,7 @@
 			icon: "minecraft:gravel"
 			id: "6AE7090EB52A51B3"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "092706A1932A2BC2"
 				item: "kubejs:trade_card_gravel"
@@ -128,6 +133,7 @@
 			icon: "minecraft:clay"
 			id: "0315668E30F2F6E5"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "5DC9D20E6BC4A51C"
 				item: "kubejs:trade_card_clay"
@@ -152,6 +158,7 @@
 			icon: "minecraft:ice"
 			id: "36B5C3ECFD38670E"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "5626AD1C3B237DBF"
 				item: "kubejs:trade_card_ice"
@@ -176,6 +183,7 @@
 			icon: "minecraft:blackstone"
 			id: "1509D36A982217C6"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "5A7B73A55C927126"
 				item: "kubejs:trade_card_blackstone"
@@ -200,6 +208,7 @@
 			icon: "tconstruct:grout"
 			id: "1BA3EF0818CA7F64"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "0D2D48CDD087D4FA"
 				item: "kubejs:trade_card_grout"
@@ -224,6 +233,7 @@
 			icon: "minecraft:cobblestone"
 			id: "0DEFAE2746209F1A"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "268F87140B2BE1A5"
 				item: "kubejs:trade_card_cobblestone"
@@ -248,6 +258,7 @@
 			icon: "minecraft:granite"
 			id: "2C10D18D55335B7E"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "2E3F385127229261"
 				item: "kubejs:trade_card_granite"
@@ -272,6 +283,7 @@
 			icon: "minecraft:diorite"
 			id: "5F0B4CBE299954C4"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "17357E149CEB22EB"
 				item: "kubejs:trade_card_diorite"
@@ -296,6 +308,7 @@
 			icon: "minecraft:andesite"
 			id: "262F369CE9CA7C87"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "57557C8A54D21B68"
 				item: "kubejs:trade_card_andesite"
@@ -320,6 +333,7 @@
 			icon: "create:limestone"
 			id: "47FB0491BAB19B90"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "798D923EE57A6442"
 				item: "kubejs:trade_card_limestone"
@@ -344,6 +358,7 @@
 			icon: "create:scoria"
 			id: "41709386017FD959"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "16054B2D679D6012"
 				item: "kubejs:trade_card_scoria"
@@ -368,6 +383,7 @@
 			icon: "minecraft:obsidian"
 			id: "5D4F2FFCBD0B0F8E"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "6EC8FA21CEFFBB20"
 				item: "kubejs:trade_card_obsidian"
@@ -392,6 +408,7 @@
 			icon: "biomesoplenty:dead_log"
 			id: "222EEB7DB1D98484"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "203B1118E5E16C63"
 				item: "kubejs:trade_card_dead_log"
@@ -416,6 +433,7 @@
 			icon: "minecraft:oak_log"
 			id: "5504C6597C74637B"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "41B4166C32732193"
 				item: "kubejs:trade_card_oak_log"
@@ -440,6 +458,7 @@
 			icon: "minecraft:birch_log"
 			id: "35F97137A46C1F3C"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "153D65A8A0BB38FA"
 				item: "kubejs:trade_card_birch_log"
@@ -464,6 +483,7 @@
 			icon: "minecraft:spruce_log"
 			id: "5923347D1827DA83"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "795C72A7059A47C2"
 				item: "kubejs:trade_card_spruce_log"
@@ -488,6 +508,7 @@
 			icon: "minecraft:jungle_log"
 			id: "7F7ACF3B774E9D0E"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "7A2F2E7AFBF5E2C0"
 				item: "kubejs:trade_card_jungle_log"
@@ -512,6 +533,7 @@
 			icon: "minecraft:acacia_log"
 			id: "6C6A43E08FBC8D53"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "32FB1ED239878B55"
 				item: "kubejs:trade_card_acacia_log"
@@ -536,6 +558,7 @@
 			icon: "minecraft:dark_oak_log"
 			id: "585788A4494AC124"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "1854BD659ABE0EC5"
 				item: "kubejs:trade_card_dark_oak_log"
@@ -560,6 +583,7 @@
 			icon: "minecraft:crimson_stem"
 			id: "24328C973480E4E8"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "4DDDA8FE8957E1B3"
 				item: "kubejs:trade_card_crimson_stem"
@@ -584,6 +608,7 @@
 			icon: "minecraft:warped_stem"
 			id: "725FFE8BD6E45F96"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "2EFE654C949DA5E2"
 				item: "kubejs:trade_card_warped_stem"
@@ -608,6 +633,7 @@
 			icon: "minecraft:iron_ingot"
 			id: "07081911727142C8"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "04EFE1B1037D4425"
 				item: "kubejs:trade_card_iron_ingot"
@@ -632,6 +658,7 @@
 			icon: "create:zinc_ingot"
 			id: "69B107895D3CA0B2"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "5D700D1565692EE1"
 				item: "kubejs:trade_card_zinc_ingot"
@@ -656,6 +683,7 @@
 			icon: "minecraft:copper_ingot"
 			id: "74F96A8D400FD059"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "5FDA4963F53EC5F5"
 				item: "kubejs:trade_card_copper_ingot"
@@ -680,6 +708,7 @@
 			icon: "thermal:nickel_ingot"
 			id: "6D8E4C9DCFFB2C90"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "645226D860AF3F5E"
 				item: "kubejs:trade_card_nickel_ingot"
@@ -704,6 +733,7 @@
 			icon: "thermal:lead_ingot"
 			id: "3FC1029AF9BB245E"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "5FB6D6D6595BFA31"
 				item: "kubejs:trade_card_lead_ingot"
@@ -728,6 +758,7 @@
 			icon: "minecraft:gold_ingot"
 			id: "417DD17A5C96CEE2"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "5DF7A47F2DF28050"
 				item: "kubejs:trade_card_gold_ingot"
@@ -752,6 +783,7 @@
 			icon: "create:andesite_alloy"
 			id: "7B5B7BB304E14C6D"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "086F1AC96402FBDE"
 				item: "kubejs:trade_card_andesite_alloy"
@@ -776,6 +808,7 @@
 			icon: "minecraft:amethyst_shard"
 			id: "01F3EDC327B63908"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "7FDA0A2FE7C3CC29"
 				item: "kubejs:trade_card_amethyst"
@@ -800,6 +833,7 @@
 			icon: "create:brass_ingot"
 			id: "040A0552921E1115"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "5BBBE855F52ED029"
 				item: "kubejs:trade_card_brass_ingot"
@@ -824,6 +858,7 @@
 			icon: "thermal:invar_ingot"
 			id: "2D022872F99F9907"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "302C6F91CA94F1E1"
 				item: "kubejs:trade_card_invar_ingot"
@@ -848,6 +883,7 @@
 			icon: "minecraft:coal"
 			id: "0DA48CA15E17157D"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "2EBABA88E1067F51"
 				item: "kubejs:trade_card_coal"
@@ -872,6 +908,7 @@
 			icon: "minecraft:flint"
 			id: "70FDB8C2F2C4A825"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "3E183FFAFED2D1D9"
 				item: "kubejs:trade_card_flint"
@@ -896,6 +933,7 @@
 			icon: "thermal:cinnabar"
 			id: "78ECB6EB48347D08"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "48E779E7241F8B64"
 				item: "kubejs:trade_card_cinnabar"
@@ -920,6 +958,7 @@
 			icon: "minecraft:redstone"
 			id: "21CC162C06BBFAE6"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "288A91044CFC9BEA"
 				item: "kubejs:trade_card_redstone_dust"
@@ -944,6 +983,7 @@
 			icon: "minecraft:diamond"
 			id: "00EBF8DED4E51A4F"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "703407B7CF1C8911"
 				item: "kubejs:trade_card_diamond"
@@ -968,6 +1008,7 @@
 			icon: "minecraft:lapis_lazuli"
 			id: "258C779897D1AEF0"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "0351079CD0288700"
 				item: "kubejs:trade_card_lapis_lazuli"
@@ -992,6 +1033,7 @@
 			icon: "minecraft:emerald"
 			id: "38CD5CE18FE09D23"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "14762B422E1D7D3B"
 				item: "kubejs:trade_card_emerald"
@@ -1016,6 +1058,7 @@
 			icon: "thermal:sulfur"
 			id: "1C104893F5481A58"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "1F521871F7BF5D3B"
 				item: "kubejs:trade_card_sulfur"
@@ -1040,6 +1083,7 @@
 			icon: "thermal:apatite"
 			id: "7509D8FA29C6AB31"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "2FC89C2C89DA4253"
 				item: "kubejs:trade_card_apatite"
@@ -1064,6 +1108,7 @@
 			icon: "thermal:niter"
 			id: "3A4A3B749FBDBEF1"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "2064E44195ACEC5B"
 				item: "kubejs:trade_card_niter"
@@ -1088,6 +1133,7 @@
 			icon: "minecraft:quartz"
 			id: "1D6150F2480B976E"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "13C6D81EC3938304"
 				item: "kubejs:trade_card_nether_quartz"
@@ -1112,6 +1158,7 @@
 			icon: "ae2:certus_quartz_crystal"
 			id: "48F72CFAB336FE73"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "4DE00DE8BF5936C9"
 				item: "kubejs:trade_card_certus_quartz"
@@ -1136,6 +1183,7 @@
 			icon: "ae2:fluix_crystal"
 			id: "4A678C0BE97177DB"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "08DDDFEFD8A7C4D7"
 				item: "kubejs:trade_card_fluix_quartz"
@@ -1160,6 +1208,7 @@
 			icon: "thermal:cured_rubber"
 			id: "488A4B4A3295CF10"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "22DD9D3AF87567E2"
 				item: "kubejs:trade_card_cured_rubber"
@@ -1184,6 +1233,7 @@
 			icon: "minecraft:scaffolding"
 			id: "49634E835B948A4F"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "4E2898367E1E0619"
 				item: "kubejs:trade_card_scaffolding"
@@ -1208,6 +1258,7 @@
 			icon: "minecraft:white_wool"
 			id: "20CB646041616191"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "36A65ACB4695944E"
 				item: "kubejs:trade_card_wool"
@@ -1232,6 +1283,7 @@
 			icon: "minecraft:sponge"
 			id: "58E93229D6552D4B"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "53B0394912B56DD3"
 				item: "kubejs:trade_card_sponge"
@@ -1256,6 +1308,7 @@
 			icon: "minecraft:cobweb"
 			id: "3C45250D863E65CB"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "4CD2BDCF1A0AF73B"
 				item: "kubejs:trade_card_cobweb"
@@ -1280,6 +1333,7 @@
 			icon: "farmersdelight:rice_bag"
 			id: "7BDF86B9E3E607C5"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "3A5740C10BBF0430"
 				item: "kubejs:trade_card_rice"
@@ -1304,6 +1358,7 @@
 			icon: "farmersdelight:straw"
 			id: "59EBD3DADD002D3A"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "78B01F12E7EDFC53"
 				item: "kubejs:trade_card_straw"
@@ -1328,6 +1383,7 @@
 			icon: "biomesoplenty:glowshroom"
 			id: "7F4D9F958EBDEAF8"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "6056A6105CB0C763"
 				item: "kubejs:trade_card_glowshroom"
@@ -1352,6 +1408,7 @@
 			icon: "biomesoplenty:bramble"
 			id: "737E670DC8AD5E19"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "7B54EAB8073173F1"
 				item: "kubejs:trade_card_bramble"
@@ -1376,6 +1433,7 @@
 			icon: "biomesoplenty:barley"
 			id: "1EF5AB1D7882167F"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "3EE0DCF1E01DE583"
 				item: "kubejs:trade_card_barley"
@@ -1400,6 +1458,7 @@
 			icon: "biomesoplenty:watergrass"
 			id: "576E0B50F2015C9E"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "05836F075B2DD93C"
 				item: "kubejs:trade_card_watergrass"
@@ -1424,6 +1483,7 @@
 			icon: "biomesoplenty:reed"
 			id: "3CA6DD7C5516A330"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "5DF1491360FCF3FA"
 				item: "kubejs:trade_card_reed"
@@ -1448,6 +1508,7 @@
 			icon: "biomesoplenty:huge_clover_petal"
 			id: "6C6C1C2E7CA882BD"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "07C4BD06D929D08A"
 				item: "kubejs:trade_card_clover_petal"
@@ -1472,6 +1533,7 @@
 			icon: "biomesoplenty:spanish_moss"
 			id: "3E27961386364EDF"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "1D32702F20FE8AAB"
 				item: "kubejs:trade_card_spanish_moss"
@@ -1496,6 +1558,7 @@
 			icon: "biomesoplenty:willow_vine"
 			id: "286C553AD3E15266"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "0A9B1BF968F82301"
 				item: "kubejs:trade_card_willow_vine"
@@ -1520,6 +1583,7 @@
 			icon: "biomesoplenty:cattail"
 			id: "70B164A5F22452CA"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "1BD8FA059ED750C8"
 				item: "kubejs:trade_card_cattail"
@@ -1544,6 +1608,7 @@
 			icon: "minecraft:sugar_cane"
 			id: "5BB058D52AA40751"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "3D70673520E3563B"
 				item: "kubejs:trade_card_sugar_cane"
@@ -1568,6 +1633,7 @@
 			icon: "minecraft:kelp"
 			id: "4C068341DD17068B"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "51D175FD782BBBB1"
 				item: "kubejs:trade_card_kelp"
@@ -1592,6 +1658,7 @@
 			icon: "minecraft:bamboo"
 			id: "3A86EA1C2AD21C29"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "1C92DCE87F116947"
 				item: "kubejs:trade_card_bamboo"
@@ -1616,6 +1683,7 @@
 			icon: "minecraft:sweet_berries"
 			id: "33B5C951B4AE8322"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "68F58624A48FD804"
 				item: "kubejs:trade_card_sweet_berries"
@@ -1640,6 +1708,7 @@
 			icon: "minecraft:vine"
 			id: "57CD030DE2CD7715"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "10F61F3602889BF0"
 				item: "kubejs:trade_card_vines"
@@ -1664,6 +1733,7 @@
 			icon: "create:tree_fertilizer"
 			id: "0726837174BCED3D"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "24A86054AF92BE82"
 				item: "kubejs:trade_card_tree_fertilizer"
@@ -1688,6 +1758,7 @@
 			icon: "supplementaries:daub"
 			id: "091671443430B31B"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "16A5440919178342"
 				item: "kubejs:trade_card_daub"
@@ -1712,6 +1783,7 @@
 			icon: "tconstruct:clear_glass"
 			id: "7DFB9DD1A1BB63E4"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "2944EA4C610DACB4"
 				item: "kubejs:trade_card_clear_glass"
@@ -1736,6 +1808,7 @@
 			icon: "create:copper_shingles"
 			id: "1A2E4E06037E009A"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "26925EEB466FCEBD"
 				item: "kubejs:trade_card_copper_shingles"
@@ -1760,6 +1833,7 @@
 			icon: "architects_palette:algal_bricks"
 			id: "011F64B48766234B"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "72F40F26027377A2"
 				item: "kubejs:trade_card_algal_bricks"
@@ -1784,6 +1858,7 @@
 			icon: "architects_palette:olivestone_bricks"
 			id: "2C9012E65F43EC72"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "4F7BF38D3490B8C2"
 				item: "kubejs:trade_card_olivestone_bricks"
@@ -1808,6 +1883,7 @@
 			icon: "architects_palette:sunmetal_block"
 			id: "4202EDD798183934"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "32A8DF7DE9B0A29A"
 				item: "kubejs:trade_card_sunmetal"
@@ -1832,6 +1908,7 @@
 			icon: "architects_palette:plating_block"
 			id: "3D7AD3AF3857F7D9"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "72E68D6D7A7E8F25"
 				item: "kubejs:trade_card_plating_block"
@@ -1856,6 +1933,7 @@
 			icon: "architects_palette:twisted_planks"
 			id: "1D4B76A3C724C40D"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "22523CAC4C6C6970"
 				item: "kubejs:trade_card_twisted_planks"
@@ -1880,6 +1958,7 @@
 			icon: "architects_palette:osseous_bricks"
 			id: "01428232944D8BE9"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "1E7F2B3B05EA97E2"
 				item: "kubejs:trade_card_osseous_bricks"
@@ -1904,6 +1983,7 @@
 			icon: "tconstruct:seared_stone"
 			id: "3A7A2C8D56500426"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "50F49365A310C7AF"
 				item: "kubejs:trade_card_seared_stone"
@@ -1928,6 +2008,7 @@
 			icon: "tconstruct:scorched_stone"
 			id: "70EBB5E32545ACEC"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "2212B9D7C3CE5596"
 				item: "kubejs:trade_card_scorched_stone"
@@ -1952,6 +2033,7 @@
 			icon: "minecraft:lantern"
 			id: "10D5B3EF6A77B918"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "2D46F83411D1BE3E"
 				item: "kubejs:trade_card_lantern"
@@ -1976,6 +2058,7 @@
 			icon: "minecraft:soul_lantern"
 			id: "6BC9B96B2C6684DC"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "7902C2C3CA649D96"
 				item: "kubejs:trade_card_soul_lantern"
@@ -1999,7 +2082,9 @@
 			disable_toast: true
 			icon: "createdeco:brass_sheet_metal"
 			id: "44CDD45033A93614"
+			invisible: true
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "45FEF3A32F7766AD"
 				item: "kubejs:trade_card_brass_sheet_metal"
@@ -2023,7 +2108,9 @@
 			disable_toast: true
 			icon: "createdeco:industrial_iron_sheet_metal"
 			id: "7B7A161B4BAB89AD"
+			invisible: true
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "2E705AE0E825C6B5"
 				item: "kubejs:trade_card_industrial_iron_sheet_metal"
@@ -2048,6 +2135,7 @@
 			icon: "minecraft:slime_ball"
 			id: "522D9970B8C43046"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "576ECF50EAF96452"
 				item: "kubejs:trade_card_slime_ball"
@@ -2072,6 +2160,7 @@
 			icon: "minecraft:string"
 			id: "11B239EF3DAE4463"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "7B223CF62CA3E5E3"
 				item: "kubejs:trade_card_string"
@@ -2096,6 +2185,7 @@
 			icon: "minecraft:feather"
 			id: "339BC75AD23B70D7"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "1522E7E6CC270122"
 				item: "kubejs:trade_card_feather"
@@ -2120,6 +2210,7 @@
 			icon: "minecraft:gunpowder"
 			id: "52CCFCE2733F76BC"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "2A5CE406A8184B62"
 				item: "kubejs:trade_card_gunpowder"
@@ -2144,6 +2235,7 @@
 			icon: "minecraft:leather"
 			id: "42F951B44FB2BFE3"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "74F3E9B2AFC611AE"
 				item: "kubejs:trade_card_leather"
@@ -2168,6 +2260,7 @@
 			icon: "minecraft:ink_sac"
 			id: "108550230A95C7D4"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "505F6AE0E7831D5A"
 				item: "kubejs:trade_card_ink_sac"
@@ -2192,6 +2285,7 @@
 			icon: "minecraft:experience_bottle"
 			id: "1BF763E3FD8C2245"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "4C973FACE23E9458"
 				item: "kubejs:trade_card_experience"
@@ -2216,6 +2310,7 @@
 			icon: "minecraft:shulker_shell"
 			id: "1F05704C3B1FA528"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "303058DFD6FFB21A"
 				item: "kubejs:trade_card_shulker_shell"
@@ -2240,6 +2335,7 @@
 			icon: "minecraft:spider_eye"
 			id: "0C6B2EEE280F7667"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "27371A9101CF9D19"
 				item: "kubejs:trade_card_spider_eye"
@@ -2264,6 +2360,7 @@
 			icon: "minecraft:ender_pearl"
 			id: "46F150CC9BE2D856"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "1F0E6C70D37E2509"
 				item: "kubejs:trade_card_ender_pearl"
@@ -2288,6 +2385,7 @@
 			icon: "minecraft:rotten_flesh"
 			id: "76287BDB2E9B7BC8"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "7C5CB53B93CA20F6"
 				item: "kubejs:trade_card_rotten_flesh"
@@ -2312,6 +2410,7 @@
 			icon: "minecraft:blaze_rod"
 			id: "685DD2A4DFF56193"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "17E28B4A42E7977B"
 				item: "kubejs:trade_card_blaze_rod"
@@ -2336,6 +2435,7 @@
 			icon: "minecraft:bone"
 			id: "433E103CD81712C1"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "3AE918FEFE0A3CB9"
 				item: "kubejs:trade_card_bone"
@@ -2360,6 +2460,7 @@
 			icon: "minecraft:prismarine_shard"
 			id: "29696B4965010CED"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "2D8C5A5E22AB7A9A"
 				item: "kubejs:trade_card_prismarine_shard"
@@ -2384,6 +2485,7 @@
 			icon: "minecraft:prismarine_crystals"
 			id: "7C7B81ABFC586379"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "77F93921DB94E45A"
 				item: "kubejs:trade_card_prismarine_crystals"
@@ -2408,6 +2510,7 @@
 			icon: "reliquary:witch_hat"
 			id: "4864E6BA6AE2B49B"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "3BFE36CE8DEED04B"
 				item: "kubejs:trade_card_witch_hat"
@@ -2432,6 +2535,7 @@
 			icon: "reliquary:zombie_heart"
 			id: "2714FE0125D3E953"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "2683AEBC65309590"
 				item: "kubejs:trade_card_zombie_heart"
@@ -2456,6 +2560,7 @@
 			icon: "reliquary:squid_beak"
 			id: "395978A711E14931"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "08D7DF6BC677E813"
 				item: "kubejs:trade_card_squid_beak"
@@ -2480,6 +2585,7 @@
 			icon: "reliquary:rib_bone"
 			id: "23F9DB562ED7C2F6"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "5B6DB6D9D5226D0E"
 				item: "kubejs:trade_card_rib_bone"
@@ -2504,6 +2610,7 @@
 			icon: "reliquary:catalyzing_gland"
 			id: "4764EAB921EE1F19"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "3045E27533693F14"
 				item: "kubejs:trade_card_catalyzing_gland"
@@ -2528,6 +2635,7 @@
 			icon: "reliquary:chelicerae"
 			id: "2E10D7FE1BC4FDBB"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "4F8FF287C3AC4EB4"
 				item: "kubejs:trade_card_chelicerae"
@@ -2552,6 +2660,7 @@
 			icon: "reliquary:slime_pearl"
 			id: "67B45D6767F8BFD9"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "3DD074848EA13D6A"
 				item: "kubejs:trade_card_slime_pearl"
@@ -2576,6 +2685,7 @@
 			icon: "reliquary:bat_wing"
 			id: "5491C5600D7F039A"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "1F9F748792E58E29"
 				item: "kubejs:trade_card_bat_wing"
@@ -2600,6 +2710,7 @@
 			icon: "reliquary:withered_rib"
 			id: "4BD2016AFC2A2035"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "1DF2FEEF65D1FE87"
 				item: "kubejs:trade_card_withered_rib"
@@ -2624,6 +2735,7 @@
 			icon: "reliquary:molten_core"
 			id: "59474208A27099BF"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "716125125B3BC02C"
 				item: "kubejs:trade_card_molten_core"
@@ -2648,6 +2760,7 @@
 			icon: "reliquary:eye_of_the_storm"
 			id: "6FF65841E3EA0FCD"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "70F1845989BF7E3D"
 				item: "kubejs:trade_card_eye_of_the_storm"
@@ -2672,6 +2785,7 @@
 			icon: "reliquary:frozen_core"
 			id: "0CF82AABD5E05A0D"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "4AA8F100108F0558"
 				item: "kubejs:trade_card_frozen_core"
@@ -2696,6 +2810,7 @@
 			icon: "reliquary:nebulous_heart"
 			id: "73EEAE66CC2014E9"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "327EA87B6F1EB3B3"
 				item: "kubejs:trade_card_nebulous_heart"
@@ -2720,6 +2835,7 @@
 			icon: "reliquary:guardian_spike"
 			id: "662583DB97721FE8"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "138ED529F3D10981"
 				item: "kubejs:trade_card_guardian_spike"
@@ -2744,6 +2860,7 @@
 			icon: "trials:breeze_rod"
 			id: "210A3F8C44AAD89A"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "00ECC786C2F2BD74"
 				item: "kubejs:trade_card_breeze_rod"
@@ -2768,6 +2885,7 @@
 			icon: "create:blaze_cake"
 			id: "3CEC6538990D89C3"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "2523CFB9FE014C2B"
 				item: "kubejs:trade_card_blaze_cake"
@@ -2797,7 +2915,8 @@
 			id: "4DFE4FD3B504AF4B"
 			rewards: [
 				{
-					auto: "enabled"
+					team_reward: "false"
+				auto: "enabled"
 					id: "26C6A3ACA1B59772"
 					item: "thermal:machine_press"
 					type: "item"
@@ -2825,7 +2944,9 @@
 		{
 			icon: "createdeco:iron_sheet_metal"
 			id: "136DA2C41AD2EE31"
+			invisible: true
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "1B9ABC1FB22D5A5F"
 				item: "kubejs:trade_card_iron_sheet_metal"
@@ -2849,6 +2970,7 @@
 			icon: "minecraft:glow_berries"
 			id: "3CD739455666E2A8"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "392B8B372A0EFB42"
 				item: "kubejs:trade_card_glow_berries"
@@ -2872,7 +2994,8 @@
 			id: "1D4AA0F29FA698F2"
 			rewards: [
 				{
-					auto: "enabled"
+					team_reward: "false"
+				auto: "enabled"
 					id: "24F734399AE4D396"
 					item: "kubejs:trade_card_glow_lichen"
 					type: "item"
@@ -2902,6 +3025,7 @@
 			icon: "minecraft:moss_block"
 			id: "5D6C7D1C371A4D6E"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "027915A405B20646"
 				item: "kubejs:trade_card_moss_block"
@@ -2924,6 +3048,7 @@
 			icon: "biomesoplenty:glowing_moss_block"
 			id: "2E692532C4C69001"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "3734299704FB3F86"
 				item: "kubejs:trade_card_glowing_moss_block"
@@ -2946,6 +3071,7 @@
 			icon: "minecraft:glow_ink_sac"
 			id: "12D18A30803D57D6"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "17462E7C5F835004"
 				item: "kubejs:trade_card_glow_ink_sac"
@@ -2970,6 +3096,7 @@
 			icon: "minecraft:cobbled_deepslate"
 			id: "7722ADDCAD9987BD"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "4BC62D1FB35515D6"
 				item: "kubejs:trade_card_cobbled_deepslate"
@@ -2995,7 +3122,8 @@
 			id: "6E3216E644289961"
 			rewards: [
 				{
-					auto: "enabled"
+					team_reward: "false"
+				auto: "enabled"
 					id: "28C9BA04E5E7E281"
 					item: "kubejs:trade_card_honeycomb_block"
 					type: "item"
@@ -3025,6 +3153,7 @@
 			icon: "thermal:bitumen"
 			id: "53A0ED15395EE1C9"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "7B2ED7C22E8D675B"
 				item: "kubejs:trade_card_bitumen"
@@ -3049,6 +3178,7 @@
 			icon: "minecraft:cherry_log"
 			id: "52C7EF47A0423CAB"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "0F61EDD703FCC266"
 				item: "kubejs:trade_card_cherry_log"
@@ -3071,6 +3201,7 @@
 			icon: "minecraft:sculk"
 			id: "25D02F1FB231C466"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "3C7C6226724A6520"
 				item: "kubejs:trade_card_sculk"
@@ -3093,6 +3224,7 @@
 			icon: "minecraft:pink_petals"
 			id: "3C79A7679BA1AA3C"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "3A35385CDE57FC2D"
 				item: "kubejs:trade_card_pink_petals"
@@ -3115,6 +3247,7 @@
 			icon: "minecraft:big_dripleaf"
 			id: "5F32791B5284E321"
 			rewards: [{
+				team_reward: "false"
 				auto: "enabled"
 				id: "068A1A1CEB5E7F76"
 				item: "kubejs:trade_card_big_dripleaf"
