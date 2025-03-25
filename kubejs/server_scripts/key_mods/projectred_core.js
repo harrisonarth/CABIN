@@ -28,7 +28,11 @@ ServerEvents.recipes(event => {
 
     // Platformed plate
     // The projectred transmission script replaces red ingot with red alloy wire
-    event.shapeless(PR_C("platformed_plate"), [PR_C("plate"), PR_C("red_ingot"), CR("andesite_alloy")]).id("kubejs:platformed_plate_shapeless")
+    event.shapeless(PR_C("platformed_plate"), [
+        PR_C("plate"),
+        Platform.isLoaded("projectred_transmission") ? PR_T("red_alloy_wire") : PR_C("red_ingot"),
+        CR("andesite_alloy")
+    ]).id("kubejs:platformed_plate")
     // Circuit cutting. Projectred Transmission circuit recipes are added in the circuit script in the mods folder
     let circuit = (id, override) => {
         if (override)
