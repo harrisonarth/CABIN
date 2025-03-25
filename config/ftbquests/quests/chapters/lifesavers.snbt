@@ -689,12 +689,14 @@
 			}]
 			tasks: [
 				{
+					consume_items: false
 					count: 2L
 					id: "63664BFD05DDCABE"
 					item: { Count: 2, id: "create:chain_conveyor" }
 					type: "item"
 				}
 				{
+					consume_items: false
 					count: 8L
 					id: "0149C713E94864F3"
 					item: "minecraft:chain"
