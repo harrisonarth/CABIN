@@ -4,26 +4,10 @@ ServerEvents.recipes(event => {
     event.remove({ mod: "projectred_core" })
 
     // red alloy ingot
-    event.custom({
-        type: "create:compacting",
-        ingredients: [
-            { "item": MC("copper_ingot") },
-            { "amount": 250, "fluid": TE("redstone"), "nbt": {} }
-        ],
-        results: [
-            { "item": PR_C("red_ingot") }
-        ]
-    })
-    event.custom({
-        type: "create:compacting",
-        ingredients: [
-            { "item": MC("copper_ingot") },
-            { "amount": 250, "fluid": TE("redstone"), "nbt": {} }
-        ],
-        results: [
-            { "item": PR_C("red_ingot") }
-        ]
-    })
+    event.recipes.create.compacting([Item.of("projectred_core:red_ingot")], [Fluid.of("thermal:redstone", 250).toJson(), Item.of("minecraft:copper_ingot")] )
+
+    event.recipes.create.compacting([Item.of("projectred_core:red_ingot")], [Item.of("minecraft:redstone", 4), Item.of("minecraft:copper_ingot")] )
+
     thermalSmelter(event, PR_C("red_ingot"), [MC("copper_ingot"), MC("redstone")])
 
     // recreate the circuit plate smelting recipes
