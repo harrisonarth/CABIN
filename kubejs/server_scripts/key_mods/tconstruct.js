@@ -58,6 +58,8 @@ ServerEvents.recipes(event => {
         event.remove({ id:TC(`smeltery/casting/metal/${material}/coin_gold_cast`) })
         event.remove({ id:TC(`smeltery/casting/metal/${material}/coin_sand_cast`) })
     })
+    // Chains can be crafted using Zinc
+    event.remove({ id: TC("smeltery/melting/metal/iron/chain") })
     // Remove enchanted apple melting recipe
     event.remove({ id: TC("smeltery/melting/metal/gold/enchanted_apple") })
     // Remove Tconstruct cheese since it only costs milk to craft and cheese already exists on the moon.
