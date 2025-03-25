@@ -5,6 +5,7 @@ const Registry = Java.loadClass("net.minecraft.core.Registry"); // registries, n
 // const BlockPos = Java.loadClass('net.minecraft.core.BlockPos'); //Block position. For some reason we don't need to import this?
 const TagKey = Java.loadClass("net.minecraft.tags.TagKey");
 
+const Random = Java.loadClass("java.util.Random")
 const InputItem = Java.loadClass("dev.latvian.mods.kubejs.item.InputItem")
 const OutputItem = Java.loadClass("dev.latvian.mods.kubejs.item.OutputItem")
 const InputFluid = Java.loadClass("dev.latvian.mods.kubejs.fluid.InputFluid")
