@@ -143,7 +143,7 @@ ServerEvents.recipes(event => {
     // alloy smelter recipes
     thermalSmelter(event, Item.of("create:brass_ingot", 2), ["#forge:ingots/copper", "#forge:ingots/zinc"])
     thermalSmelter(event, Item.of("tconstruct:rose_gold_ingot", 2), ["#forge:ingots/copper", "#forge:ingots/gold"])
-    thermalSmelter(event, Item.of("thermal:constantan_ingot", 2), ["#forge:ingots/copper", "#forge:ingots/gold"])
+    thermalSmelter(event, Item.of("thermal:constantan_ingot", 2), ["#forge:ingots/copper", "#forge:ingots/nickel"])
     thermalSmelter(event, Item.of("thermal:electrum_ingot", 2), ["#forge:ingots/silver", "#forge:ingots/gold"])
     thermalSmelter(event, Item.of("minecraft:netherite_ingot", 1), [Item.of("#forge:ingots/netherite_scrap", 4), Item.of("#forge:ingots/gold", 4)])
     // bronze
