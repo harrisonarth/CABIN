@@ -2,7 +2,7 @@
 <h1 align="center">CABIN</h1>
 <p align="center"><b><i>A Remaster and Port of Create Above and Beyond, with new features and enhancements.</i></b></p>
 <h1 align="center">
-    <a href="https://github.com/ThePansmith/CABIN/blob/main/LICENSE.md"><img src="https://img.shields.io/github/license/Nomi-CEu/Nomi-CEu?style=for-the-badge&logo=github" alt="License"></a>
+    <a href="https://github.com/ThePansmith/CABIN/blob/1.20.1/LICENSE.md"><img src="https://img.shields.io/github/license/Nomi-CEu/Nomi-CEu?style=for-the-badge&logo=github" alt="License"></a>
     <a href="https://discord.gg/pansmith"><img src="https://img.shields.io/discord/927050775073534012?style=for-the-badge&logo=discord&color=5865F2&labelColor=grey&label=+" alt="Discord"></a>
     <br>
     <a href="https://www.curseforge.com/minecraft/modpacks/CABIN"><img src="https://cf.way2muchnoise.eu/CABIN.svg?badge_style=for_the_badge" alt="CurseForge"></a>
@@ -25,11 +25,7 @@
 Thank you!
 
 ## Addon Mods (AKA Optional Compats)
-To spice up your runs, you can add any of the following mods to your ``minecraft/mods`` folder for their recipes and config files to be automatically altered for compatibility with CABIN. If there is a mod that you think could fit on this list, feel free to make a PR.
-- Create: Enchantment Industry
-- Create: Central Kitchen
-- Forbidden Arcanus
-- Integrated Stronghold
+[Compatible Mods List](https://github.com/ThePansmith/CABIN/blob/1.20.1/COMPATABILITY.md)
 
 
 
