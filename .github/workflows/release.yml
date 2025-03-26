@@ -18,7 +18,7 @@ on:
           - "Release"
           - "Beta"
           - "Alpha"
-        default: "Beta"
+        default: "Release"
       draft:
         description: "Draft GitHub release (CF release will always be normal)"
         type: boolean
