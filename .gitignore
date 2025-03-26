@@ -15,6 +15,7 @@
 !/.github
 !.editorconfig
 !/pack-mode-switcher*
+./mods/compat.md
 !/CONTRIBUTING.md
 !/FAQ.md
 !/KNOWN-ISSUES.md

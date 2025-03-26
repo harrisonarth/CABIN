@@ -32,13 +32,13 @@
     <th><p>Status</p></th>
     <th><p>Notes</p></th>
   </tr>
-  <!--<tr>
+  <tr>
     <td><p><a href="https://curseforge.com/projects/688768">Create Enchantment Industry</a></p></td>
     <td><p>SC</p></td>
     <td>
         <p>Create: Enchantment Industry is a mod that adds ways to automate enchanting into Create. It adds blocks that can automatically enchant and disenchant items using liquid experience.</p>
     </td>
-  </tr>-->
+  </tr>
   <tr>
     <td><p><a href="https://curseforge.com/projects/815548">Integrated Strongholds</a></p></td>
     <td><p>*SC</p></td>
