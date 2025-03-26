@@ -26,9 +26,8 @@ Thank you!
 
 ## Addon Mods (AKA Optional Compats)
 To spice up your runs, you can add any of the following mods to your ``minecraft/mods`` folder for their recipes and config files to be automatically altered for compatibility with CABIN. If there is a mod that you think could fit on this list, feel free to make a PR.
-- Create: Balanced Flight
+- Create: Enchantment Industry
 - Create: Central Kitchen
-- Create: Steam and Rails
 - Forbidden Arcanus
 - Integrated Stronghold
 
