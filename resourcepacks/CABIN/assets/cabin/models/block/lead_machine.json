@@ -104,10 +104,10 @@
 			"to": [16, 4, 16],
 			"rotation": {"angle": 0, "axis": "y", "origin": [16, -4, 14]},
 			"faces": {
-				"north": {"uv": [0, 10.125, 4, 11.125], "texture": "#4", "cullface": "south"},
-				"east": {"uv": [0, 10.125, 4, 11.125], "texture": "#4", "cullface": "west"},
-				"south": {"uv": [0, 11.875, 4, 12.875], "texture": "#4", "cullface": "north"},
-				"west": {"uv": [0, 11.25, 4, 12.25], "texture": "#4", "cullface": "east"},
+				"north": {"uv": [0, 10.125, 4, 11.125], "texture": "#4", "cullface": "north"},
+				"east": {"uv": [0, 10.125, 4, 11.125], "texture": "#4", "cullface": "east"},
+				"south": {"uv": [0, 11.875, 4, 12.875], "texture": "#4", "cullface": "south"},
+				"west": {"uv": [0, 11.25, 4, 12.25], "texture": "#4", "cullface": "west"},
 				"up": {"uv": [0, 5.625, 4, 9.625], "texture": "#4"},
 				"down": {"uv": [0, 9.75, 4, 5.75], "texture": "#4", "cullface": "down"}
 			}
