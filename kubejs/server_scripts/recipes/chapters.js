@@ -847,17 +847,6 @@ ServerEvents.recipes(event => {
     thermalBottler(event, "kubejs:sand_ball", [Fluid.of("minecraft:water", 50), "#forge:sand/colorless"], 1000)
     // Sand Chunks
     event.recipes.create.emptying(["kubejs:rough_sand", Fluid.of("kubejs:fine_sand", 500)], "kubejs:sand_ball")
-    // Basalz Powder
-    event.remove({ output: "thermal:basalz_powder" })
-    event.custom({
-        "type": "thermal:pulverizer",
-        "ingredient": { "item": "thermal:basalz_rod" },
-        "energy": 800,
-        "result": [
-            { "item": "thermal:basalz_powder", "chance": 2.5 },
-            { "item": "thermal:slag", "chance": 0.125 }
-        ]
-    })
     // Entropy manipulator (for blizz cubes)
     event.remove({ id: "ae2:tools/misctools_entropy_manipulator" })
     event.shaped("ae2:entropy_manipulator", [
@@ -868,18 +857,14 @@ ServerEvents.recipes(event => {
         M: "thermal:lead_plate",
         S: "ae2:fluix_crystal"
     })
-    // Blizz Powder
-    event.remove({ output: "thermal:blizz_powder" })
-    event.custom({
-        "type": "thermal:pulverizer",
-        "ingredient": { "item": "thermal:blizz_rod" },
-        "energy": 800,
-        "result": [
-            { "item": "thermal:blizz_powder", "chance": 2.5 },
-            { "item": "thermal:niter", "chance": 0.125 }
-        ]
-    })
     let blizz = "thermal:blizz_powder"; let basalz = "thermal:basalz_powder"
+    //remove handcrafting recipes for blizz and basalz powder
+    event.remove({ id:blizz })
+    event.remove({ id:basalz })
+    event.remove({ id:"thermal:machines/pulverizer/pulverizer_blizz_rod" })
+    event.remove({ id:"thermal:machines/pulverizer/pulverizer_basalz_rod" })
+    thermalPulverizer(event, [Item.of(blizz).withChance(2.5), Item.of("minecraft:snowball").withChance(0.25)], "thermal:blizz_rod", 800).id("kubejs:machines/pulverizer/blizz_powder")
+    thermalPulverizer(event, [Item.of(basalz).withChance(2.5), Item.of("thermal:slag").withChance(0.25)], "thermal:basalz_rod", 800).id("kubejs:machines/pulverizer/basalz_powder")
     // Crushing powder recipes
     event.recipes.create.crushing([Item.of(blizz, 1), Item.of(blizz, 1).withChance(.5)], "thermal:blizz_rod")
     event.recipes.create.crushing([Item.of(basalz, 1), Item.of(basalz, 1).withChance(.5)], "thermal:basalz_rod")
