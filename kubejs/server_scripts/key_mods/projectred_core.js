@@ -8,42 +8,42 @@ ServerEvents.recipes(event => {
 
     event.recipes.create.compacting([Item.of("projectred_core:red_ingot")], [Item.of("minecraft:redstone", 4), Item.of("minecraft:copper_ingot")] )
 
-    thermalSmelter(event, PR_C("red_ingot"), [MC("copper_ingot"), MC("redstone")])
+    thermalSmelter(event, "projectred_core:red_ingot", ["minecraft:copper_ingot", "minecraft:redstone"])
 
     // recreate the circuit plate smelting recipes
-    event.smelting(PR_C("plate", 2), "minecraft:smooth_stone")
+    event.smelting(Item.of("projectred_core:plate", 2), "minecraft:smooth_stone")
     // recreate illumar recipes
     colours.forEach(c=>{
-        event.shapeless(PR_C(c + "_illumar"), [MC("glowstone_dust"), MC("glowstone_dust"), F("#dyes/" + c), F("#dyes/" + c)])
+        event.shapeless(`projectred_core:${c}_illumar`, ["minecraft:glowstone_dust", "minecraft:glowstone_dust", "#forge:dyes/" + c, "#forge:dyes/" + c])
     })
     // recreate screwdriver recipe
-    event.shaped(PR_C("screwdriver"), [
+    event.shaped("projectred_core:screwdriver", [
         "I  ",
         " IB",
         " BI"
     ], {
-        I: F("#ingots/iron"),
-        B: F("#dyes/blue")
+        I: "#forge:ingots/iron",
+        B: "#forge:dyes/blue"
     })
 
     // Platformed plate
     // The projectred transmission script replaces red ingot with red alloy wire
-    event.shapeless(PR_C("platformed_plate"), [
-        PR_C("plate"),
-        Platform.isLoaded("projectred_transmission") ? PR_T("red_alloy_wire") : PR_C("red_ingot"),
-        CR("andesite_alloy")
+    event.shapeless("projectred_core:platformed_plate", [
+        "projectred_core:plate",
+        Platform.isLoaded("projectred_transmission") ? "projectred_transmission:red_alloy_wire" : "projectred_core:red_ingot",
+        "create:andesite_alloy"
     ]).id("kubejs:platformed_plate")
     // Circuit cutting. Projectred Transmission circuit recipes are added in the circuit script in the mods folder
     let circuit = (id, override) => {
         if (override)
             event.remove({ output: id })
-        event.stonecutting(Item.of(id, 1), PR_C("platformed_plate"))
+        event.stonecutting(Item.of(id, 1), "projectred_core:platformed_plate")
     }
-    circuit(MC("repeater"), false)
-    circuit(MC("comparator"), false)
-    circuit(CR("pulse_repeater"), true)
-    circuit(CR("pulse_extender"), true)
-    circuit(CR("pulse_timer"), true)
-    circuit(CR("powered_latch"), true)
-    circuit(CR("powered_toggle_latch"), true)
+    circuit("minecraft:repeater", false)
+    circuit("minecraft:comparator", false)
+    circuit("create:pulse_repeater", true)
+    circuit("create:pulse_extender", true)
+    circuit("create:pulse_timer", true)
+    circuit("create:powered_latch", true)
+    circuit("create:powered_toggle_latch", true)
 })

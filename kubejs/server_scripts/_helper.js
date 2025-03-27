@@ -15,32 +15,10 @@ const JsonObject = Java.loadClass("com.google.gson.JsonObject")
 
 const Level = Java.loadClass("net.minecraft.world.level.Level") // For some reason, Kubejs requires that you load this class to create explosions that damage blocks
 
-// Mod shortcuts
-const MOD = (domain, id, x) => (x ? `${x}x ` : "") + (id.startsWith("#") ? "#" : "") + domain + ":" + id.replace("#", "")
-
-const AA = (id, x) => MOD("ad_astra", id, x)
-const AE2 = (id, x) => MOD("ae2", id, x)
-const AL = (id, x) => MOD("alloyed", id, x)
-const AP = (id, x) => MOD("architects_palette", id, x)
-const CD = (id, x) => MOD("createdeco", id, x)
-const CR = (id, x) => MOD("create", id, x)
-const F = (id, x) => MOD("forge", id, x)
-const FA = (id, x) => MOD("forbidden_arcanus", id, x)
-const FD = (id, x) => MOD("farmersdelight", id, x)
-const EXP = (id, x) => MOD("expcaves", id, x)
-const KJ = (id, x) => MOD("kubejs", id, x)
-const MC = (id, x) => MOD("minecraft", id, x)
-const OC = (id, x) => MOD("occultism", id, x)
-const PR_C = (id, x) => MOD("projectred_core", id, x)
-const RQ = (id, x) => MOD("reliquary", id, x)
-const SP = (id, x) => MOD("supplementaries", id, x)
-const TC = (id, x) => MOD("tconstruct", id, x)
-const TE = (id, x) => MOD("thermal", id, x)
-
 const colours = ["white", "orange", "magenta", "light_blue", "lime", "pink", "purple", "light_gray", "gray", "cyan", "brown", "green", "blue", "red", "black", "yellow"]
 const native_metals = ["iron", "zinc", "lead", "copper", "nickel", "gold"]
 
-const wood_types = [MC("oak"), MC("spruce"), MC("birch"), MC("jungle"), MC("acacia"), MC("dark_oak"), MC("mangrove"), MC("cherry"), AP("twisted"), TC("greenheart"), TC("skyroot"), TC("bloodshroom"), MC("crimson"), MC("warped")]
+const wood_types = ["minecraft:oak", "minecraft:spruce", "minecraft:birch", "minecraft:jungle", "minecraft:acacia", "minecraft:dark_oak", "minecraft:mangrove", "minecraft:cherry", "architects_palette:twisted", "tconstruct:greenheart", "tconstruct:skyroot", "tconstruct:bloodshroom", "minecraft:crimson", "minecraft:warped"]
 
 // None of the modded axes are registered for some reason
 const unregistered_axes = ["ae2:certus_quartz_axe", "ae2:nether_quartz_axe", "ae2:fluix_axe", "tconstruct:hand_axe", "tconstruct:mattock", "tconstruct:broad_axe", "thermal:flux_saw"]

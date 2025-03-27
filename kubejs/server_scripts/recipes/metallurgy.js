@@ -10,42 +10,42 @@ ServerEvents.recipes(event => {
     event.remove({ output: "#forge:gears/tin" })
 
     // metal replacements
-    event.replaceInput({ type: "minecraft:crafting_shaped" }, "#forge:ingots/tin", F("#ingots/zinc"))
-    event.replaceInput({}, "#forge:gears/tin", F("#gears/lead"))
+    event.replaceInput({ type: "minecraft:crafting_shaped" }, "#forge:ingots/tin", "#forge:ingots/zinc")
+    event.replaceInput({}, "#forge:gears/tin", "#forge:gears/lead")
 
-    event.replaceInput({}, "#forge:plates/bronze", F("#plates/nickel"))
-    event.replaceInput({}, "#forge:gears/bronze", F("#gears/nickel"))
+    event.replaceInput({}, "#forge:plates/bronze", "#forge:plates/nickel")
+    event.replaceInput({}, "#forge:gears/bronze", "#forge:gears/nickel")
 
-    event.replaceInput({}, "#forge:plates/silver", F("#ingots/invar"))
-    event.replaceInput({}, "#forge:gears/silver", F("#gears/invar"))
+    event.replaceInput({}, "#forge:plates/silver", "#forge:ingots/invar")
+    event.replaceInput({}, "#forge:gears/silver", "#forge:gears/invar")
 
-    event.replaceInput({}, "#forge:plates/constantan", F("#plates/signalum"))
-    event.replaceInput({}, "#forge:gears/constantan", F("#gears/signalum"))
+    event.replaceInput({}, "#forge:plates/constantan", "#forge:plates/signalum")
+    event.replaceInput({}, "#forge:gears/constantan", "#forge:gears/signalum")
 
-    event.replaceInput({}, "#forge:ingots/electrum", F("#ingots/constantan"))
-    event.replaceInput({}, "#forge:plates/electrum", F("#plates/constantan"))
-    event.replaceInput({}, "#forge:gears/electrum", F("#gears/constantan"))
+    event.replaceInput({}, "#forge:ingots/electrum", "#forge:ingots/constantan")
+    event.replaceInput({}, "#forge:plates/electrum", "#forge:plates/constantan")
+    event.replaceInput({}, "#forge:gears/electrum", "#forge:gears/constantan")
 
-    event.replaceInput({}, "#forge:plates/invar", F("#ingots/invar"))
+    event.replaceInput({}, "#forge:plates/invar", "#forge:ingots/invar")
 
     // fix recipes broken by replacement
-    event.remove( {id: TE("machines/pulverizer/pulverizer_invar_plate_to_dust") })
-    event.replaceInput({ id: TE("machines/pulverizer/pulverizer_silver_plate_to_dust") }, TE("invar_ingot"), "#forge:plates/silver")
-    event.replaceInput({ id: TE("machines/pulverizer/pulverizer_bronze_plate_to_dust") }, TE("nickel_plate"), "#forge:plates/bronze")
-    event.replaceInput({ id: TE("machines/pulverizer/pulverizer_constantan_plate_to_dust") }, TE("signalum_plate"), "#forge:plates/constantan")
-    event.replaceInput({ id: TE("machines/pulverizer/pulverizer_electrum_plate_to_dust") }, TE("constantan_plate"), "#forge:plates/electrum")
+    event.remove( {id: "thermal:machines/pulverizer/pulverizer_invar_plate_to_dust" })
+    event.replaceInput({ id: "thermal:machines/pulverizer/pulverizer_silver_plate_to_dust" }, "thermal:invar_ingot", "#forge:plates/silver")
+    event.replaceInput({ id: "thermal:machines/pulverizer/pulverizer_bronze_plate_to_dust" }, "thermal:nickel_plate", "#forge:plates/bronze")
+    event.replaceInput({ id: "thermal:machines/pulverizer/pulverizer_constantan_plate_to_dust" }, "thermal:signalum_plate", "#forge:plates/constantan")
+    event.replaceInput({ id: "thermal:machines/pulverizer/pulverizer_electrum_plate_to_dust" }, "thermal:constantan_plate", "#forge:plates/electrum")
 
-    event.remove( {id: TE("machines/smelter/smelter_invar_plate_to_ingot") })
-    event.replaceInput({ id: TE("machines/smelter/smelter_silver_plate_to_ingot") }, TE("invar_ingot"), "#forge:plates/silver")
-    event.replaceInput({ id: TE("machines/smelter/smelter_bronze_plate_to_ingot") }, TE("nickel_plate"), "#forge:plates/bronze")
-    event.replaceInput({ id: TE("machines/smelter/smelter_constantan_plate_to_ingot") }, TE("signalum_plate"), "#forge:plates/constantan")
-    event.replaceInput({ id: TE("machines/smelter/smelter_electrum_plate_to_ingot") }, TE("constantan_plate"), "#forge:plates/electrum")
+    event.remove( {id: "thermal:machines/smelter/smelter_invar_plate_to_ingot" })
+    event.replaceInput({ id: "thermal:machines/smelter/smelter_silver_plate_to_ingot" }, "thermal:invar_ingot", "#forge:plates/silver")
+    event.replaceInput({ id: "thermal:machines/smelter/smelter_bronze_plate_to_ingot" }, "thermal:nickel_plate", "#forge:plates/bronze")
+    event.replaceInput({ id: "thermal:machines/smelter/smelter_constantan_plate_to_ingot" }, "thermal:signalum_plate", "#forge:plates/constantan")
+    event.replaceInput({ id: "thermal:machines/smelter/smelter_electrum_plate_to_ingot" }, "thermal:constantan_plate", "#forge:plates/electrum")
 
-    event.replaceInput({ id: TE("storage/electrum_nugget_from_ingot") }, TE("constantan_ingot"), "#forge:ingots/electrum")
-    event.replaceInput({ id: TE("storage/electrum_block") }, TE("constantan_ingot"), "#forge:ingots/electrum")
-    event.replaceInput({ id: TE("parts/electrum_gear") }, TE("constantan_ingot"), "#forge:ingots/electrum")
-    event.replaceInput({ id: OC("crushing/electrum_dust_from_ingot") }, TE("constantan_ingot"), "#forge:ingots/electrum")
-    event.replaceInput({ id: TE("machines/pulverizer/pulverizer_electrum_ingot_to_dust") }, TE("constantan_ingot"), "#forge:ingots/electrum")
+    event.replaceInput({ id: "thermal:storage/electrum_nugget_from_ingot" }, "thermal:constantan_ingot", "#forge:ingots/electrum")
+    event.replaceInput({ id: "thermal:storage/electrum_block" }, "thermal:constantan_ingot", "#forge:ingots/electrum")
+    event.replaceInput({ id: "thermal:parts/electrum_gear" }, "thermal:constantan_ingot", "#forge:ingots/electrum")
+    event.replaceInput({ id: "occultism:crushing/electrum_dust_from_ingot" }, "thermal:constantan_ingot", "#forge:ingots/electrum")
+    event.replaceInput({ id: "thermal:machines/pulverizer/pulverizer_electrum_ingot_to_dust" }, "thermal:constantan_ingot", "#forge:ingots/electrum")
 
     // Redstone exists in jei to provide a tooltip, we want to remove all of its recipes
     event.remove({ input: "#forge:ores/redstone" })
@@ -55,66 +55,66 @@ ServerEvents.recipes(event => {
 ServerEvents.recipes(event => {
 
     // Thermal recipes for zinc
-    thermalPulverizer(event, [KJ("zinc_dust")], F("#ingots/zinc"), 2000)
-    thermalPulverizer(event, [KJ("zinc_dust")], F("#plates/zinc"), 2000)
-    thermalSmelter(event, [CR("zinc_ingot")], F("#plates/zinc"), 1600)
+    thermalPulverizer(event, ["kubejs:zinc_dust"], "#forge:ingots/zinc", 2000)
+    thermalPulverizer(event, ["kubejs:zinc_dust"], "#forge:plates/zinc", 2000)
+    thermalSmelter(event, ["create:zinc_ingot"], "#forge:plates/zinc", 1600)
 
     // Thermal's fire charge ingot crafting recipes. We don't want them
-    event.remove({ id: TE("fire_charge/invar_ingot_3") })
-    event.remove({ id: TE("fire_charge/enderium_ingot_2") })
-    event.remove({ id: TE("fire_charge/constantan_ingot_2") })
-    event.remove({ id: TE("fire_charge/bronze_ingot_4") })
-    event.remove({ id: TE("fire_charge/electrum_ingot_2") })
-    event.remove({ id: TE("fire_charge/lumium_ingot_4") })
-    event.remove({ id: TE("fire_charge/signalum_ingot_4") })
+    event.remove({ id: "thermal:fire_charge/invar_ingot_3" })
+    event.remove({ id: "thermal:fire_charge/enderium_ingot_2" })
+    event.remove({ id: "thermal:fire_charge/constantan_ingot_2" })
+    event.remove({ id: "thermal:fire_charge/bronze_ingot_4" })
+    event.remove({ id: "thermal:fire_charge/electrum_ingot_2" })
+    event.remove({ id: "thermal:fire_charge/lumium_ingot_4" })
+    event.remove({ id: "thermal:fire_charge/signalum_ingot_4" })
 
     // Duplicate Recipes
-    event.remove({ id: TE("storage/silver_block")})
-    event.remove({ id: TE("storage/silver_ingot_from_block")})
-    event.remove({ id: TE("storage/silver_ingot_from_nuggets")})
-    event.remove({ id: TE("storage/silver_nugget_from_ingot")})
-    event.remove({ id: TE("smelting/silver_ingot_from_dust_smelting")})
-    event.remove({ id: TE("smelting/silver_ingot_from_dust_blasting")})
+    event.remove({ id: "thermal:storage/silver_block"})
+    event.remove({ id: "thermal:storage/silver_ingot_from_block"})
+    event.remove({ id: "thermal:storage/silver_ingot_from_nuggets"})
+    event.remove({ id: "thermal:storage/silver_nugget_from_ingot"})
+    event.remove({ id: "thermal:smelting/silver_ingot_from_dust_smelting"})
+    event.remove({ id: "thermal:smelting/silver_ingot_from_dust_blasting"})
 
-    event.remove({ id: TE("storage/copper_nugget_from_ingot")})
-    event.remove({ id: TC("common/materials/copper_nugget_from_ingot")})
-    event.remove({ id: TE("storage/copper_ingot_from_nuggets")})
-    event.remove({ id: TC("common/materials/copper_ingot_from_nuggets")})
+    event.remove({ id: "thermal:storage/copper_nugget_from_ingot"})
+    event.remove({ id: "tconstruct:common/materials/copper_nugget_from_ingot"})
+    event.remove({ id: "thermal:storage/copper_ingot_from_nuggets"})
+    event.remove({ id: "tconstruct:common/materials/copper_ingot_from_nuggets"})
 
-    event.remove({ id: TE("storage/netherite_nugget_from_ingot")})
-    event.remove({ id: TC("common/materials/netherite_nugget_from_ingot")})
-    event.remove({ id: TE("storage/netherite_ingot_from_nuggets")})
-    event.remove({ id: TC("common/materials/netherite_ingot_from_nuggets")})
+    event.remove({ id: "thermal:storage/netherite_nugget_from_ingot"})
+    event.remove({ id: "tconstruct:common/materials/netherite_nugget_from_ingot"})
+    event.remove({ id: "thermal:storage/netherite_ingot_from_nuggets"})
+    event.remove({ id: "tconstruct:common/materials/netherite_ingot_from_nuggets"})
 
     // Remove unwanted Alloying recipes
-    event.remove({ id: CR("mixing/brass_ingot") })
+    event.remove({ id: "create:mixing/brass_ingot" })
     event.remove({id: /centrifuge_bronze_dust/})
     // smeltery
-    event.remove({ id: TC("smeltery/alloys/molten_bronze") })
-    event.remove({ id: TC("smeltery/alloys/molten_brass") })
-    event.remove({ id: TC("smeltery/alloys/molten_invar") })
-    event.remove({ id: TC("smeltery/alloys/molten_electrum") })
-    event.remove({ id: TC("smeltery/alloys/molten_constantan") })
-    event.remove({ id: TC("smeltery/alloys/molten_rose_gold") })
-    event.remove({ id: TC("smeltery/alloys/molten_enderium") })
-    event.remove({ id: TC("smeltery/alloys/molten_lumium") })
-    event.remove({ id: TC("smeltery/alloys/molten_signalum") })
+    event.remove({ id: "tconstruct:smeltery/alloys/molten_bronze" })
+    event.remove({ id: "tconstruct:smeltery/alloys/molten_brass" })
+    event.remove({ id: "tconstruct:smeltery/alloys/molten_invar" })
+    event.remove({ id: "tconstruct:smeltery/alloys/molten_electrum" })
+    event.remove({ id: "tconstruct:smeltery/alloys/molten_constantan" })
+    event.remove({ id: "tconstruct:smeltery/alloys/molten_rose_gold" })
+    event.remove({ id: "tconstruct:smeltery/alloys/molten_enderium" })
+    event.remove({ id: "tconstruct:smeltery/alloys/molten_lumium" })
+    event.remove({ id: "tconstruct:smeltery/alloys/molten_signalum" })
     // alloy smelter
-    event.remove({ id: TE("machines/smelter/smelter_alloy_signalum") })
-    event.remove({ id: TE("machines/smelter/smelter_alloy_lumium") })
-    event.remove({ id: TE("machines/smelter/smelter_alloy_enderium") })
-    event.remove({ id: TE("machines/smelter/smelter_alloy_invar") })
-    event.remove({ id: TE("machines/smelter/smelter_alloy_bronze") })
-    event.remove({ id: TE("compat/create/smelter_create_alloy_brass") })
-    event.remove({ id: TE("compat/tconstruct/smelter_alloy_tconstruct_rose_gold_ingot") })
+    event.remove({ id: "thermal:machines/smelter/smelter_alloy_signalum" })
+    event.remove({ id: "thermal:machines/smelter/smelter_alloy_lumium" })
+    event.remove({ id: "thermal:machines/smelter/smelter_alloy_enderium" })
+    event.remove({ id: "thermal:machines/smelter/smelter_alloy_invar" })
+    event.remove({ id: "thermal:machines/smelter/smelter_alloy_bronze" })
+    event.remove({ id: "thermal:compat/create/smelter_create_alloy_brass" })
+    event.remove({ id: "thermal:compat/tconstruct/smelter_alloy_tconstruct_rose_gold_ingot" })
     // thermal handcrafting
-    event.remove({ type: MC("crafting_shapeless"), output: TE("constantan_dust") })
-    event.remove({ type: MC("crafting_shapeless"), output: TE("electrum_dust") })
-    event.remove({ type: MC("crafting_shapeless"), output: TE("lumium_dust") })
-    event.remove({ type: MC("crafting_shapeless"), output: TE("signalum_dust") })
-    event.remove({ type: MC("crafting_shapeless"), output: TE("enderium_dust") })
-    event.remove({ type: MC("crafting_shapeless"), output: TE("bronze_dust") })
-    event.remove({ type: MC("crafting_shapeless"), output: TE("invar_dust") })
+    event.remove({ type: "minecraft:crafting_shapeless", output: "thermal:constantan_dust" })
+    event.remove({ type: "minecraft:crafting_shapeless", output: "thermal:electrum_dust" })
+    event.remove({ type: "minecraft:crafting_shapeless", output: "thermal:lumium_dust" })
+    event.remove({ type: "minecraft:crafting_shapeless", output: "thermal:signalum_dust" })
+    event.remove({ type: "minecraft:crafting_shapeless", output: "thermal:enderium_dust" })
+    event.remove({ type: "minecraft:crafting_shapeless", output: "thermal:bronze_dust" })
+    event.remove({ type: "minecraft:crafting_shapeless", output: "thermal:invar_dust" })
 
     // Create new alloying recipes
     // mixing alloys
@@ -127,19 +127,19 @@ ServerEvents.recipes(event => {
                 { "amount": 2, "fluid": fluid2 }
             ],
             "results": [
-                { "amount": 2, "fluid": TC(fluidAlloy) }
+                { "amount": 2, "fluid": "tconstruct:" + fluidAlloy }
             ],
             processingTime: 1
         }).id(`kubejs:mixing/${fluidAlloy}_2`)
     }
-    moltenAlloy("molten_brass", TC("molten_copper"), TC("molten_zinc"))
-    moltenAlloy("molten_constantan", TC("molten_copper"), TC("molten_nickel"))
-    moltenAlloy("molten_rose_gold", TC("molten_copper"), TC("molten_gold"))
-    moltenAlloy("molten_electrum", TC("molten_silver"), TC("molten_gold"))
+    moltenAlloy("molten_brass", "tconstruct:molten_copper", "tconstruct:molten_zinc")
+    moltenAlloy("molten_constantan", "tconstruct:molten_copper", "tconstruct:molten_nickel")
+    moltenAlloy("molten_rose_gold", "tconstruct:molten_copper", "tconstruct:molten_gold")
+    moltenAlloy("molten_electrum", "tconstruct:molten_silver", "tconstruct:molten_gold")
     // remove existing smelter recipes because they accept dusts
-    event.remove({ id: TE("machines/smelter/smelter_alloy_constantan")})
-    event.remove({ id: TE("machines/smelter/smelter_alloy_electrum")})
-    event.remove({ id: TE("machines/smelter/smelter_alloy_netherite")})
+    event.remove({ id: "thermal:machines/smelter/smelter_alloy_constantan"})
+    event.remove({ id: "thermal:machines/smelter/smelter_alloy_electrum"})
+    event.remove({ id: "thermal:machines/smelter/smelter_alloy_netherite"})
     // alloy smelter recipes
     thermalSmelter(event, Item.of("create:brass_ingot", 2), ["#forge:ingots/copper", "#forge:ingots/zinc"])
     thermalSmelter(event, Item.of("tconstruct:rose_gold_ingot", 2), ["#forge:ingots/copper", "#forge:ingots/gold"])
@@ -147,18 +147,18 @@ ServerEvents.recipes(event => {
     thermalSmelter(event, Item.of("thermal:electrum_ingot", 2), ["#forge:ingots/silver", "#forge:ingots/gold"])
     thermalSmelter(event, Item.of("minecraft:netherite_ingot", 1), [Item.of("#forge:ingots/netherite_scrap", 4), Item.of("#forge:ingots/gold", 4)])
     // bronze
-    thermalSmelter(event, "3x thermal:bronze_ingot", [MC("copper_ingot", 3), "#forge:sand"])
+    thermalSmelter(event, "3x thermal:bronze_ingot", [Item.of("minecraft:copper_ingot", 3), "#forge:sand"])
 
     // Nickel Compound
-    event.shapeless(KJ("nickel_compound"), [TE("nickel_ingot"), TE("iron_dust"), TE("iron_dust"), TE("iron_dust"), TE("iron_dust")])
-    thermalSmelter(event, [KJ("invar_compound"), KJ("invar_compound")], [TE("nickel_ingot"), MC("iron_ingot")])
+    event.shapeless("kubejs:nickel_compound", ["thermal:nickel_ingot", "thermal:iron_dust", "thermal:iron_dust", "thermal:iron_dust", "thermal:iron_dust"])
+    thermalSmelter(event, ["kubejs:invar_compound", "kubejs:invar_compound"], ["thermal:nickel_ingot", "minecraft:iron_ingot"])
     // Invar Compound
-    event.blasting(KJ("invar_compound"), KJ("nickel_compound"))
+    event.blasting("kubejs:invar_compound", "kubejs:nickel_compound")
     { // Invar ingots
-        let s = KJ("invar_compound")
+        let s = "kubejs:invar_compound"
         event.recipes.create.sequenced_assembly([
-            TE("invar_ingot"),
-        ], KJ("invar_compound"), [
+            "thermal:invar_ingot",
+        ], "kubejs:invar_compound", [
             event.recipes.create.pressing(s, s)
         ]).transitionalItem(s)
             .loops(16)
@@ -235,25 +235,25 @@ ServerEvents.recipes(event => {
     })
 
     // Plates
-    event.recipes.create.pressing([TE("lead_plate")], TE("lead_ingot"))
-    event.recipes.create.pressing([TE("constantan_plate")], TE("constantan_ingot"))
-    event.recipes.create.pressing([TE("nickel_plate")], TE("nickel_ingot"))
-    event.recipes.create.pressing([TE("signalum_plate")], TE("signalum_ingot"))
-    event.recipes.create.pressing([TE("lumium_plate")], TE("lumium_ingot"))
-    event.recipes.create.pressing([TE("enderium_plate")], TE("enderium_ingot"))
+    event.recipes.create.pressing(["thermal:lead_plate"], "thermal:lead_ingot")
+    event.recipes.create.pressing(["thermal:constantan_plate"], "thermal:constantan_ingot")
+    event.recipes.create.pressing(["thermal:nickel_plate"], "thermal:nickel_ingot")
+    event.recipes.create.pressing(["thermal:signalum_plate"], "thermal:signalum_ingot")
+    event.recipes.create.pressing(["thermal:lumium_plate"], "thermal:lumium_ingot")
+    event.recipes.create.pressing(["thermal:enderium_plate"], "thermal:enderium_ingot")
 
     // dusts
-    event.recipes.create.milling(TE("iron_dust"), F("#ingots/iron"))
-    event.recipes.create.milling(TE("gold_dust"), F("#ingots/gold"))
-    event.recipes.create.milling(TE("nickel_dust"), F("#ingots/nickel"))
-    event.recipes.create.milling(TE("lead_dust"), F("#ingots/lead"))
-    event.recipes.create.milling(TE("copper_dust"), F("#ingots/copper"))
-    event.recipes.create.milling(KJ("zinc_dust"), F("#ingots/zinc"))
+    event.recipes.create.milling("thermal:iron_dust", "#forge:ingots/iron")
+    event.recipes.create.milling("thermal:gold_dust", "#forge:ingots/gold")
+    event.recipes.create.milling("thermal:nickel_dust", "#forge:ingots/nickel")
+    event.recipes.create.milling("thermal:lead_dust", "#forge:ingots/lead")
+    event.recipes.create.milling("thermal:copper_dust", "#forge:ingots/copper")
+    event.recipes.create.milling("kubejs:zinc_dust", "#forge:ingots/zinc")
 
     // other metal unification
-    event.replaceOutput({}, "#forge:ingots/silver", TE("silver_ingot"))
+    event.replaceOutput({}, "#forge:ingots/silver", "thermal:silver_ingot")
     event.replaceOutput({}, "#forge:ingots/bronze", "thermal:bronze_ingot")
-    event.replaceOutput({ id:OC("crafting/silver_block")}, "#forge:storage_blocks/silver", TE("silver_block"))
+    event.replaceOutput({ id:"occultism:crafting/silver_block"}, "#forge:storage_blocks/silver", "thermal:silver_block")
 
     // Ore processing
     event.remove({ id: /thermal:machines\/smelter\/.*dust/ })
@@ -261,23 +261,23 @@ ServerEvents.recipes(event => {
     event.remove({ input: "#create:crushed_raw_materials" })
 
     native_metals.forEach(e => {
-        event.remove({ type: MC("smelting"), input: F("#dusts/" + e) })
-        event.remove({ type: MC("blasting"), input: F("#dusts/" + e) })
-        event.remove({ type: TC("melting"), input: F("#dusts/" + e) })
+        event.remove({ type: "minecraft:smelting", input: "#forge:dusts/" + e })
+        event.remove({ type: "minecraft:blasting", input: "#forge:dusts/" + e })
+        event.remove({ type: "tconstruct:melting", input: "#forge:dusts/" + e })
     })
-    event.remove({ id: TE("smelting/silver_ingot_from_dust_smelting")})
-    event.remove({ id: TE("smelting/silver_ingot_from_dust_blasting")})
+    event.remove({ id: "thermal:smelting/silver_ingot_from_dust_smelting"})
+    event.remove({ id: "thermal:smelting/silver_ingot_from_dust_blasting"})
 
-    const stone = Item.of(MC("cobblestone"), 1).withChance(.5)
-    let experience = Item.of(CR("experience_nugget"), 1).withChance(0.75)
+    const stone = Item.of("minecraft:cobblestone", 1).withChance(.5)
+    let experience = Item.of("create:experience_nugget", 1).withChance(0.75)
 
     let dust_process = (materialName, byproduct, ByproductName) => {
-        let crushedOre = CR("crushed_" + "raw_" + materialName)
+        let crushedOre = "create:crushed_" + "raw_" + materialName
         let oreTag = ("#forge:ores/" + materialName)
         let crushedOreBlockTag = ("#forge:storage_blocks/raw_" + materialName)
         let dustTag = ("#forge:dusts/" + materialName)
-        let fluid = TC("molten_" + materialName)
-        let fluidByproduct = TC("molten_" + ByproductName)
+        let fluid = "tconstruct:molten_" + materialName
+        let fluidByproduct = "tconstruct:molten_" + ByproductName
         let rawOreTag = ("#forge:raw_materials/" + materialName)
 
         // slightly slower than passing the name directly but it reduces how many parameters this function needs.
@@ -346,7 +346,7 @@ ServerEvents.recipes(event => {
 
         // ore dust to fluid
         thermalCrucible(event, Fluid.of(fluid, 30), dustTag, 3000).id("kubejs:ore_processing/crucible/dust/" + materialName)
-        event.recipes.create.mixing([Fluid.of(fluid, 180)], [Item.of(dustTag, 3), AE2("matter_ball")]).superheated().id("kubejs:ore_processing/mixing/dust/" + materialName)
+        event.recipes.create.mixing([Fluid.of(fluid, 180)], [Item.of(dustTag, 3), "ae2:matter_ball"]).superheated().id("kubejs:ore_processing/mixing/dust/" + materialName)
 
         // ingots to fluid
         // thermalCrucible(event, Fluid.of(fluid, 90), ingot, 2000).id('kubejs:ore_processing/crucible/ingot/'+materialName) //now automatically ported
@@ -375,12 +375,12 @@ ServerEvents.recipes(event => {
         }).id("kubejs:ore_processing/melting/dust/" + materialName);
     }
 
-    dust_process("nickel", CR("copper_nugget"), "copper")
-    dust_process("lead", MC("iron_nugget"), "iron")
-    dust_process("iron", TE("nickel_nugget"), "nickel")
-    dust_process("gold", TE("cinnabar"), "zinc")
-    dust_process("copper", MC("gold_nugget"), "gold")
-    dust_process("zinc", TE("sulfur"), "lead")
+    dust_process("nickel", "create:copper_nugget", "copper")
+    dust_process("lead", "minecraft:iron_nugget", "iron")
+    dust_process("iron", "thermal:nickel_nugget", "nickel")
+    dust_process("gold", "thermal:cinnabar", "zinc")
+    dust_process("copper", "minecraft:gold_nugget", "gold")
+    dust_process("zinc", "thermal:sulfur", "lead")
 
 
     event.remove([
@@ -396,8 +396,8 @@ ServerEvents.recipes(event => {
     event.remove({ id: `thermal:machines/smelter/smelter_raw_silver`})
 
 
-    event.replaceInput({ id: TE("machine/smelter/smelter_iron_ore") }, MC("iron_ore"), CR("crushed_raw_iron"))
-    event.replaceInput({ id: TE("machine/smelter/smelter_gold_ore") }, MC("gold_ore"), CR("crushed_raw_gold"))
+    event.replaceInput({ id: "thermal:machine/smelter/smelter_iron_ore" }, "minecraft:iron_ore", "create:crushed_raw_iron")
+    event.replaceInput({ id: "thermal:machine/smelter/smelter_gold_ore" }, "minecraft:gold_ore", "create:crushed_raw_gold")
 
     // Other Tweaks
     event.custom({

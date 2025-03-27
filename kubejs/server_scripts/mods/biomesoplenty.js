@@ -1,29 +1,28 @@
-const BOP = (id, x) => MOD("biomesoplenty", id, x)
 if(Platform.isLoaded("biomesoplenty")) {
-    wood_types.push(BOP("fir"))
-    wood_types.push(BOP("redwood"))
-    wood_types.push(BOP("mahogany"))
-    wood_types.push(BOP("jacaranda"))
-    wood_types.push(BOP("palm"))
-    wood_types.push(BOP("willow"))
-    wood_types.push(BOP("dead"))
-    wood_types.push(BOP("magic"))
-    wood_types.push(BOP("umbran"))
-    wood_types.push(BOP("hellbark"))
+    wood_types.push("biomesoplenty:fir")
+    wood_types.push("biomesoplenty:redwood")
+    wood_types.push("biomesoplenty:mahogany")
+    wood_types.push("biomesoplenty:jacaranda")
+    wood_types.push("biomesoplenty:palm")
+    wood_types.push("biomesoplenty:willow")
+    wood_types.push("biomesoplenty:dead")
+    wood_types.push("biomesoplenty:magic")
+    wood_types.push("biomesoplenty:umbran")
+    wood_types.push("biomesoplenty:hellbark")
 
     ServerEvents.tags("item", event => {
-        event.get("forge:vines").add(BOP("willow_vine")).add(BOP("spanish_moss"))
+        event.get("forge:vines").add("biomesoplenty:willow_vine").add("biomesoplenty:spanish_moss")
 
         event.get("kubejs:strainer/sands").add("biomesoplenty:white_sand").add("biomesoplenty:orange_sand")
     })
     ServerEvents.recipes(event => {
         // Tree Extracting recipes for leaves that don't match their log names
-        addTreeOutput(event, MC("oak_log"), BOP("origin_leaves"))
-        addTreeOutput(event, MC("oak_log"), BOP("flowering_oak_leaves"))
-        addTreeOutput(event, MC("birch_log"), BOP("rainbow_birch_leaves"))
-        addTreeOutput(event, MC("birch_log"), BOP("yellow_autumn_leaves"))
-        addTreeOutput(event, MC("dark_oak_log"), BOP("orange_autumn_leaves"))
-        addTreeOutput(event, MC("oak_log"), BOP("maple_leaves"))
+        addTreeOutput(event, "minecraft:oak_log", "biomesoplenty:origin_leaves")
+        addTreeOutput(event, "minecraft:oak_log", "biomesoplenty:flowering_oak_leaves")
+        addTreeOutput(event, "minecraft:birch_log", "biomesoplenty:rainbow_birch_leaves")
+        addTreeOutput(event, "minecraft:birch_log", "biomesoplenty:yellow_autumn_leaves")
+        addTreeOutput(event, "minecraft:dark_oak_log", "biomesoplenty:orange_autumn_leaves")
+        addTreeOutput(event, "minecraft:oak_log", "biomesoplenty:maple_leaves")
 
         // kubejs throws a duplicate recipe error, we'd need to change how resin recipes are created to avoid that error
         /* event.custom({
@@ -51,9 +50,9 @@ if(Platform.isLoaded("biomesoplenty")) {
 		}).id('kubejs:devices/tree_extractor/tree_extractor_magic')*/
 
         // Wash sand into clay
-        event.recipes.create.splashing([Item.of(MC("clay_ball"), 1).withChance(0.25)], "biomesoplenty:black_sand")
-        event.recipes.create.splashing([Item.of(MC("clay_ball"), 1).withChance(0.25)], "biomesoplenty:white_sand")
-        event.recipes.create.splashing([Item.of(MC("clay_ball"), 1).withChance(0.25)], "biomesoplenty:orange_sand")
+        event.recipes.create.splashing([Item.of("minecraft:clay_ball", 1).withChance(0.25)], "biomesoplenty:black_sand")
+        event.recipes.create.splashing([Item.of("minecraft:clay_ball", 1).withChance(0.25)], "biomesoplenty:white_sand")
+        event.recipes.create.splashing([Item.of("minecraft:clay_ball", 1).withChance(0.25)], "biomesoplenty:orange_sand")
         // Flesh igeneous extruder recipe.
         event.custom({
             "type": "thermal:rock_gen",
@@ -65,66 +64,66 @@ if(Platform.isLoaded("biomesoplenty")) {
     // Fix biome tags
     // onEvent("tags.worldgen.biome", event=>{
     // 	const BOP_OVERWORLD = [
-    // 		BOP("bamboo_grove"),
-    // 		BOP("bayou"),
-    // 		BOP("bog"),
-    // 		BOP("boreal_forest"),
-    // 		BOP("cherry_blossom_grove"),
-    // 		BOP("clover_patch"),
-    // 		BOP("cold_desert"),
-    // 		BOP("coniferous_forest"),
-    // 		BOP("crag"),
-    // 		BOP("dead_forest"),
-    // 		BOP("dryland"),
-    // 		BOP("dune_beach"),
-    // 		BOP("field"),
-    // 		BOP("fir_clearing"),
-    // 		BOP("floodplain"),
-    // 		BOP("forested_field"),
-    // 		BOP("fungal_jungle"),
-    // 		BOP("glowing_grotto"),
-    // 		BOP("grassland"),
-    // 		BOP("highland"),
-    // 		BOP("highland_moor"),
-    // 		BOP("jade_cliffs"),
-    // 		BOP("lavender_field"),
-    // 		BOP("lavender_forest"),
-    // 		BOP("lush_desert"),
-    // 		BOP("lush_savanna"),
-    // 		BOP("maple_woods"),
-    // 		BOP("marsh"),
-    // 		BOP("mediterranean_forest"),
-    // 		BOP("muskeg"),
-    // 		BOP("mystic_grove"),
-    // 		BOP("old_growth_dead_forest"),
-    // 		BOP("old_growth_woodland"),
-    // 		BOP("ominous_woods"),
-    // 		BOP("orchard"),
-    // 		BOP("origin_valley"),
-    // 		BOP("pasture"),
-    // 		BOP("prairie"),
-    // 		BOP("pumpkin_patch"),
-    // 		BOP("rainbow_hills"),
-    // 		BOP("rainforest"),
-    // 		BOP("redwood_forest"),
-    // 		BOP("rocky_rainforest"),
-    // 		BOP("rocky_shrubland"),
-    // 		BOP("scrubland"),
-    // 		BOP("seasonal_forest"),
-    // 		BOP("shrubland"),
-    // 		BOP("snowy_coniferous_forest"),
-    // 		BOP("snowy_fir_clearing"),
-    // 		BOP("snowy_maple_woods"),
-    // 		BOP("spider_nest"),
-    // 		BOP("tropics"),
-    // 		BOP("tundra"),
-    // 		BOP("volcanic_plains"),
-    // 		BOP("volcano"),
-    // 		BOP("wasteland"),
-    // 		BOP("wetland"),
-    // 		BOP("wooded_scrubland"),
-    // 		BOP("wooded_wasteland"),
-    // 		BOP("woodland")
+    // 		"biomesoplenty:bamboo_grove",
+    // 		"biomesoplenty:bayou",
+    // 		"biomesoplenty:bog",
+    // 		"biomesoplenty:boreal_forest",
+    // 		"biomesoplenty:cherry_blossom_grove",
+    // 		"biomesoplenty:clover_patch",
+    // 		"biomesoplenty:cold_desert",
+    // 		"biomesoplenty:coniferous_forest",
+    // 		"biomesoplenty:crag",
+    // 		"biomesoplenty:dead_forest",
+    // 		"biomesoplenty:dryland",
+    // 		"biomesoplenty:dune_beach",
+    // 		"biomesoplenty:field",
+    // 		"biomesoplenty:fir_clearing",
+    // 		"biomesoplenty:floodplain",
+    // 		"biomesoplenty:forested_field",
+    // 		"biomesoplenty:fungal_jungle",
+    // 		"biomesoplenty:glowing_grotto",
+    // 		"biomesoplenty:grassland",
+    // 		"biomesoplenty:highland",
+    // 		"biomesoplenty:highland_moor",
+    // 		"biomesoplenty:jade_cliffs",
+    // 		"biomesoplenty:lavender_field",
+    // 		"biomesoplenty:lavender_forest",
+    // 		"biomesoplenty:lush_desert",
+    // 		"biomesoplenty:lush_savanna",
+    // 		"biomesoplenty:maple_woods",
+    // 		"biomesoplenty:marsh",
+    // 		"biomesoplenty:mediterranean_forest",
+    // 		"biomesoplenty:muskeg",
+    // 		"biomesoplenty:mystic_grove",
+    // 		"biomesoplenty:old_growth_dead_forest",
+    // 		"biomesoplenty:old_growth_woodland",
+    // 		"biomesoplenty:ominous_woods",
+    // 		"biomesoplenty:orchard",
+    // 		"biomesoplenty:origin_valley",
+    // 		"biomesoplenty:pasture",
+    // 		"biomesoplenty:prairie",
+    // 		"biomesoplenty:pumpkin_patch",
+    // 		"biomesoplenty:rainbow_hills",
+    // 		"biomesoplenty:rainforest",
+    // 		"biomesoplenty:redwood_forest",
+    // 		"biomesoplenty:rocky_rainforest",
+    // 		"biomesoplenty:rocky_shrubland",
+    // 		"biomesoplenty:scrubland",
+    // 		"biomesoplenty:seasonal_forest",
+    // 		"biomesoplenty:shrubland",
+    // 		"biomesoplenty:snowy_coniferous_forest",
+    // 		"biomesoplenty:snowy_fir_clearing",
+    // 		"biomesoplenty:snowy_maple_woods",
+    // 		"biomesoplenty:spider_nest",
+    // 		"biomesoplenty:tropics",
+    // 		"biomesoplenty:tundra",
+    // 		"biomesoplenty:volcanic_plains",
+    // 		"biomesoplenty:volcano",
+    // 		"biomesoplenty:wasteland",
+    // 		"biomesoplenty:wetland",
+    // 		"biomesoplenty:wooded_scrubland",
+    // 		"biomesoplenty:wooded_wasteland",
+    // 		"biomesoplenty:woodland"
     // 	]
     // 	event.get("forge:is_overworld").add(BOP_OVERWORLD)
     // 	event.get("ae2:has_meteorites").add(BOP_OVERWORLD)

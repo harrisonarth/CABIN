@@ -3,11 +3,11 @@ ServerEvents.recipes(event => {
 
     // Obsidian pane crafting
     // Not sure where the original recipe went
-    event.shaped(TC("obsidian_pane", 8), [
+    event.shaped(Item.of("tconstruct:obsidian_pane", 8), [
         "SSS",
         "SSS"
     ], {
-        S: MC("obsidian")
+        S: "minecraft:obsidian"
     })
     // melt blaze rods into blazing blood
     event.custom({
@@ -20,22 +20,22 @@ ServerEvents.recipes(event => {
     // Melt redstone into destabilized redstone
     event.custom({
         "type": "tconstruct:melting",
-        "ingredient": { "item": MC("redstone") },
-        "result": { "fluid": TE("redstone"), "amount": 100 },
+        "ingredient": { "item": "minecraft:redstone" },
+        "result": { "fluid": "thermal:redstone", "amount": 100 },
         "temperature": 300,
         "time": 10
     });
     event.custom({
         "type": "tconstruct:melting",
-        "ingredient": { "item": MC("redstone_block") },
-        "result": { "fluid": TE("redstone"), "amount": 900 },
+        "ingredient": { "item": "minecraft:redstone_block" },
+        "result": { "fluid": "thermal:redstone", "amount": 900 },
         "temperature": 500,
         "time": 90
     });
     // Remove coin cast
-    event.remove({ id: TC("smeltery/casts/sand_casts/coins") })
-    event.remove({ id: TC("smeltery/casts/red_sand_casts/coins") })
-    event.remove({ id: TC("smeltery/casts/gold_casts/coins") })
+    event.remove({ id: "tconstruct:smeltery/casts/sand_casts/coins" })
+    event.remove({ id: "tconstruct:smeltery/casts/red_sand_casts/coins" })
+    event.remove({ id: "tconstruct:smeltery/casts/gold_casts/coins" })
 
     let coinMaterials = [
         "iron",
@@ -55,22 +55,22 @@ ServerEvents.recipes(event => {
         "enderium"
     ];
     coinMaterials.forEach(material=>{
-        event.remove({ id:TC(`smeltery/casting/metal/${material}/coin_gold_cast`) })
-        event.remove({ id:TC(`smeltery/casting/metal/${material}/coin_sand_cast`) })
+        event.remove({ id:`tconstruct:smeltery/casting/metal/${material}/coin_gold_cast` })
+        event.remove({ id:`tconstruct:smeltery/casting/metal/${material}/coin_sand_cast` })
     })
     // Chains can be crafted using Zinc
-    event.remove({ id: TC("smeltery/melting/metal/iron/chain") })
+    event.remove({ id: "tconstruct:smeltery/melting/metal/iron/chain" })
     // Remove enchanted apple melting recipe
-    event.remove({ id: TC("smeltery/melting/metal/gold/enchanted_apple") })
+    event.remove({ id: "tconstruct:smeltery/melting/metal/gold/enchanted_apple" })
     // Remove Tconstruct cheese since it only costs milk to craft and cheese already exists on the moon.
-    event.remove({ id: TC("smeltery/casting/cheese_block")})
-    event.remove({ id: TC("smeltery/casting/cheese_ingot_gold_cast")})
-    event.remove({ id: TC("smeltery/casting/cheese_ingot_sand_cast")})
+    event.remove({ id: "tconstruct:smeltery/casting/cheese_block"})
+    event.remove({ id: "tconstruct:smeltery/casting/cheese_ingot_gold_cast"})
+    event.remove({ id: "tconstruct:smeltery/casting/cheese_ingot_sand_cast"})
 })
 
 ServerEvents.tags("item", event => {
     // zinc anvils
-    event.get("tconstruct:anvil_metal").add(CR("zinc_block"))
+    event.get("tconstruct:anvil_metal").add("create:zinc_block")
 
     event.add("forge:ingots/seared_brick", "tconstruct:seared_brick")
     event.add("forge:ingots/scorched_brick", "tconstruct:scorched_brick")

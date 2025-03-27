@@ -1,41 +1,40 @@
-const PP = (id, x) => MOD("prettypipes", id, x)
 if (Platform.isLoaded("prettypipes")) {
     ServerEvents.recipes(event => {
         // There are so few recipes that we want to keep that we're better off removing them all
         event.remove({ mod: "prettypipes" })
         // machine recipes
-        brassMachine(event, Item.of(PP("item_terminal"), 1), TE("diamond_gear"))
-        brassMachine(event, Item.of(PP("pressurizer"), 1), CR("propeller"))
+        brassMachine(event, Item.of("prettypipes:item_terminal", 1), "thermal:diamond_gear")
+        brassMachine(event, Item.of("prettypipes:pressurizer", 1), "create:propeller")
 
-        event.shaped(PP("pipe", 8), [
+        event.shaped(Item.of("prettypipes:pipe", 8), [
             "PMP"
         ], {
-            P: CR("brass_sheet"),
-            M: CR("brass_ingot")
+            P: "create:brass_sheet",
+            M: "create:brass_ingot"
         })
-        event.shaped(PP("wrench"), [
+        event.shaped("prettypipes:wrench", [
             "PI ",
             "II ",
             "  R"
         ], {
-            P: PP("pipe"),
-            I: F("#ingots/iron"),
-            R: F("#dyes/red")
+            P: "prettypipes:pipe",
+            I: "#forge:ingots/iron",
+            R: "#forge:dyes/red"
         })
-        event.shaped(PP("crafting_terminal"), [
+        event.shaped("prettypipes:crafting_terminal", [
             " T ",
             "RIR",
             " R "
         ], {
-            T: MC("crafting_table"),
-            I: PP("item_terminal"),
-            R: F("#dusts/redstone")
+            T: "minecraft:crafting_table",
+            I: "prettypipes:item_terminal",
+            R: "#forge:dusts/redstone"
         })
-        event.shapeless(PP("pipe_frame"), [MC("item_frame"), PP("pipe"), F("#dusts/redstone")])
+        event.shapeless("prettypipes:pipe_frame", ["minecraft:item_frame", "prettypipes:pipe", "#forge:dusts/redstone"])
 
         let module = (type, result) => {
-            // event.remove({ output: PP(result) })
-            event.stonecutting(PP(result), "kubejs:pipe_module_" + type)
+            // event.remove({ output: "prettypipes:"+result })
+            event.stonecutting("prettypipes:"+result, "kubejs:pipe_module_" + type)
         }
 
         module("utility", "filter_increase_modifier")

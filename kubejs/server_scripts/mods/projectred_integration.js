@@ -1,6 +1,6 @@
 if (Platform.isLoaded("projectred_integration")) {
     ServerEvents.recipes(event => {
-        let p_circuit = (id) => event.stonecutting(Item.of("projectred_integration:" + id + "_gate", 1), PR_C("platformed_plate"))
+        let p_circuit = (id) => event.stonecutting(Item.of("projectred_integration:" + id + "_gate", 1), "projectred_core:platformed_plate")
 
         event.remove({ mod:"projectred_integration" })
 

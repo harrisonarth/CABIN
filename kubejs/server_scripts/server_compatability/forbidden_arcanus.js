@@ -17,7 +17,7 @@ if(Platform.isLoaded("forbidden_arcanus")) {
             "S"
         ], {
             S: "forbidden_arcanus:edelwood_planks",
-            A: MC("stick")
+            A: "minecraft:stick"
         })
         // Eternal stella
         event.remove({ id: "forbidden_arcanus:eternal_stella" })

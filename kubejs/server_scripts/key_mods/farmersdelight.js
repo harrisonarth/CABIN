@@ -1,14 +1,14 @@
 // priority: 1
 ServerEvents.recipes(event => {
     // Fix farmer's delight recipe conflict with rechiseled
-    event.remove({ id: FD("flint_knife") })
-    event.remove({ id: FD("iron_knife") })
-    event.remove({ id: FD("golden_knife") })
-    event.remove({ id: FD("diamond_knife") })
-    event.shaped(FD("flint_knife"), ["S ", " M"], { M: MC("flint"), S: F("#rods/wooden") })
-    event.shaped(FD("iron_knife"), ["S ", " M"], { M: MC("iron_ingot"), S: F("#rods/wooden") })
-    event.shaped(FD("golden_knife"), ["S ", " M"], { M: MC("gold_ingot"), S: F("#rods/wooden") })
-    event.shaped(FD("diamond_knife"), ["S ", " M"], { M: MC("diamond"), S: F("#rods/wooden") })
+    event.remove({ id: "farmersdelight:flint_knife" })
+    event.remove({ id: "farmersdelight:iron_knife" })
+    event.remove({ id: "farmersdelight:golden_knife" })
+    event.remove({ id: "farmersdelight:diamond_knife" })
+    event.shaped("farmersdelight:flint_knife", ["S ", " M"], { M: "minecraft:flint", S: "#forge:rods/wooden" })
+    event.shaped("farmersdelight:iron_knife", ["S ", " M"], { M: "minecraft:iron_ingot", S: "#forge:rods/wooden" })
+    event.shaped("farmersdelight:golden_knife", ["S ", " M"], { M: "minecraft:gold_ingot", S: "#forge:rods/wooden" })
+    event.shaped("farmersdelight:diamond_knife", ["S ", " M"], { M: "minecraft:diamond", S: "#forge:rods/wooden" })
 
     // Modify farmer's delight log stripping
     event.remove({ input: "#minecraft:logs", type: "farmersdelight:cutting" })

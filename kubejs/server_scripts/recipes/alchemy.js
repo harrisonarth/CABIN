@@ -1,10 +1,10 @@
 ServerEvents.recipes(event => {
     let alchemy_mix = (output, catalyst, r1, r2, amount) => {
-        event.recipes.create.mixing([Item.of(KJ("substrate_" + output, amount ? amount : 1)), KJ("substrate_" + catalyst)], [KJ("substrate_" + catalyst), KJ("substrate_" + r1, 2), KJ("substrate_" + r2)]).heated()
+        event.recipes.create.mixing([Item.of("kubejs:substrate_" + output, amount ? amount : 1), Item.of("kubejs:substrate_" + catalyst)], [Item.of("kubejs:substrate_" + catalyst), Item.of("kubejs:substrate_" + r1, 2), Item.of("kubejs:substrate_" + r2)]).heated()
     }
 
     let alchemy_smelt = (output, catalyst, r1, r2, amount) => {
-        thermalSmelter(event, [Item.of(KJ("substrate_" + output, amount ? amount : 1)), KJ("substrate_" + catalyst)], [KJ("substrate_" + r1, 2), KJ("substrate_" + catalyst), KJ("substrate_" + r2)], 4000)
+        thermalSmelter(event, [Item.of(Item.of("kubejs:substrate_" + output, amount ? amount : 1)), Item.of("kubejs:substrate_" + catalyst)], [Item.of("kubejs:substrate_" + r1, 2), Item.of("kubejs:substrate_" + catalyst), Item.of("kubejs:substrate_" + r2)], 4000)
     }
 
     alchemy_mix("red", "herbal", "diorite", "andesite")
@@ -52,18 +52,18 @@ ServerEvents.recipes(event => {
             })
         if (outputs[1] > 0)
             jsonOut.push({
-                "item": MC("redstone"),
+                "item": "minecraft:redstone",
                 "count": outputs[1]
             })
         if (outputs[2] > 0)
             jsonOut.push({
-                "item": MC("glowstone_dust"),
+                "item": "minecraft:glowstone_dust",
                 "count": outputs[2]
             })
         event.custom({
             "type": "thermal:centrifuge",
             "ingredient": {
-                "item": KJ(`failed_alchemy_${id}`)
+                "item": `kubejs:failed_alchemy_${id}`
             },
             "result": jsonOut
         })
@@ -90,8 +90,8 @@ ServerEvents.recipes(event => {
     mundane(i++, [0, 2, 2])
 
     // Subtrate bottling and extracting
-    event.remove({ type: TE("sawmill") })
-    event.remove({ type: TE("centrifuge") })
+    event.remove({ type: "thermal:sawmill" })
+    event.remove({ type: "thermal:centrifuge" })
 
     global.substrates.forEach(a => {
         a.forEach(e => {
@@ -115,14 +115,14 @@ ServerEvents.recipes(event => {
     event.custom({
         "type": "thermal:sawmill",
         "ingredient": { "item": "kubejs:substrate_silicon" },
-        "result": [{ "item": AE2("silicon"), "count": 1 }],
+        "result": [{ "item": "ae2:silicon", "count": 1 }],
         "energy": 2000
     })
 
     event.custom({
         "type": "thermal:sawmill",
         "ingredient": { "item": "kubejs:substrate_silver" },
-        "result": [{ "item": TE("silver_dust"), "count": 1 }],
+        "result": [{ "item": "thermal:silver_dust", "count": 1 }],
         "energy": 2000
     })
 
@@ -130,7 +130,7 @@ ServerEvents.recipes(event => {
     event.custom({
         "type": "thermal:bottler",
         "ingredients": [
-            { "item": TE("signalum_nugget") },
+            { "item": "thermal:signalum_nugget" },
             { "fluid": "tconstruct:molten_glass", "amount": 100 }
         ],
         "result": [{ "item": "kubejs:accellerator_redstone" }]
@@ -139,7 +139,7 @@ ServerEvents.recipes(event => {
     event.custom({
         "type": "thermal:bottler",
         "ingredients": [
-            { "item": TE("lumium_nugget") },
+            { "item": "thermal:lumium_nugget" },
             { "fluid": "tconstruct:molten_glass", "amount": 100 }
         ],
         "result": [{ "item": "kubejs:accellerator_glowstone" }]
@@ -149,7 +149,7 @@ ServerEvents.recipes(event => {
     event.custom({
         "type": "thermal:bottler",
         "ingredients": [
-            { "item": TE("silver_dust") },
+            { "item": "thermal:silver_dust" },
             { "fluid": "tconstruct:molten_glass", "amount": 100 }
         ],
         "result": [{ "item": "kubejs:substrate_silver" }]

@@ -1,7 +1,7 @@
 if (Platform.isLoaded("computercraft")) {
     ServerEvents.recipes(event => {
-        event.replaceInput({ id: "computercraft:cable" }, MC("redstone"), PR_C("red_ingot"))
-        event.replaceInput({ id: "computercraft:wired_modem" }, MC("redstone"), PR_C("red_ingot"))
+        event.replaceInput({ id: "computercraft:cable" }, "minecraft:redstone", "projectred_core:red_ingot")
+        event.replaceInput({ id: "computercraft:wired_modem" }, "minecraft:redstone", "projectred_core:red_ingot")
 
         event.remove({ id: "computercraft:turtle_advanced" })
         event.remove({ id: "computercraft:turtle_advanced_upgrade" })
@@ -12,9 +12,9 @@ if (Platform.isLoaded("computercraft")) {
         leadMachine(event, "computercraft:disk_drive", "computercraft:disk")
         leadMachine(event, "computercraft:printer", "minecraft:paper")
 
-        createMachine("computercraft:computer_normal", event, "computercraft:turtle_normal", TE("invar_gear"))
-        createMachine("computercraft:computer_advanced", event, "computercraft:turtle_advanced", TE("invar_gear"))
-        createMachine("computercraft:computer_normal", event, "computercraft:monitor_normal", MC("glass_pane"))
-        createMachine("computercraft:computer_advanced", event, "computercraft:monitor_advanced", MC("glass_pane"))
+        createMachine("computercraft:computer_normal", event, "computercraft:turtle_normal", "thermal:invar_gear")
+        createMachine("computercraft:computer_advanced", event, "computercraft:turtle_advanced", "thermal:invar_gear")
+        createMachine("computercraft:computer_normal", event, "computercraft:monitor_normal", "minecraft:glass_pane")
+        createMachine("computercraft:computer_advanced", event, "computercraft:monitor_advanced", "minecraft:glass_pane")
     })
 }

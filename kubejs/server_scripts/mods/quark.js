@@ -1,28 +1,27 @@
-const QU = (id, x) => MOD("quark", id, x)
 if(Platform.isLoaded("quark")) {
 
     // Add quark wood types to the arrays of wood types
-    wood_types.push(QU("azalea"))
-    wood_types.push(QU("blossom"))
+    wood_types.push("quark:azalea")
+    wood_types.push("quark:blossom")
 
     ServerEvents.recipes(event => {
         // Unwanted duplicate compressed block recipes
-        event.remove({ id: QU("building/crafting/compressed/charcoal_block")})
-        event.remove({ id: QU("building/crafting/compressed/sugar_cane_block")})
-        event.remove({ id: QU("building/crafting/compressed/gunpowder_sack")})
-        event.remove({ id: QU("building/crafting/compressed/apple_crate")})
-        event.remove({ id: QU("building/crafting/compressed/potato_crate")})
-        event.remove({ id: QU("building/crafting/compressed/carrot_crate")})
-        event.remove({ id: QU("building/crafting/compressed/beetroot_crate")})
-        event.remove({ id: QU("building/crafting/compressed/bamboo_block")})
+        event.remove({ id: "quark:building/crafting/compressed/charcoal_block"})
+        event.remove({ id: "quark:building/crafting/compressed/sugar_cane_block"})
+        event.remove({ id: "quark:building/crafting/compressed/gunpowder_sack"})
+        event.remove({ id: "quark:building/crafting/compressed/apple_crate"})
+        event.remove({ id: "quark:building/crafting/compressed/potato_crate"})
+        event.remove({ id: "quark:building/crafting/compressed/carrot_crate"})
+        event.remove({ id: "quark:building/crafting/compressed/beetroot_crate"})
+        event.remove({ id: "quark:building/crafting/compressed/bamboo_block"})
 
         // Tree resin
-        addTreeOutput(event, QU("blossom_log"), QU("blue_blossom_leaves"))
-        addTreeOutput(event, QU("blossom_log"), QU("lavender_blossom_leaves"))
-        addTreeOutput(event, QU("blossom_log"), QU("orange_blossom_leaves"))
-        addTreeOutput(event, QU("blossom_log"), QU("yellow_blossom_leaves"))
-        addTreeOutput(event, QU("blossom_log"), QU("red_blossom_leaves"))
-        addTreeOutput(event, QU("blossom_log"), QU("snowblossom_leaves"))
+        addTreeOutput(event, "quark:blossom_log", "quark:blue_blossom_leaves")
+        addTreeOutput(event, "quark:blossom_log", "quark:lavender_blossom_leaves")
+        addTreeOutput(event, "quark:blossom_log", "quark:orange_blossom_leaves")
+        addTreeOutput(event, "quark:blossom_log", "quark:yellow_blossom_leaves")
+        addTreeOutput(event, "quark:blossom_log", "quark:red_blossom_leaves")
+        addTreeOutput(event, "quark:blossom_log", "quark:snowblossom_leaves")
 
         // Stone generation
         event.custom({

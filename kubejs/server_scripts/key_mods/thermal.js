@@ -1,47 +1,47 @@
 // priority: 1
 ServerEvents.recipes(event => {
     // filter augment recipe change
-    event.remove({ id: TE("augments/item_filter_augment") })
-    event.shapeless(TE("item_filter_augment"), [CR("filter"), TE("lapis_gear")])
+    event.remove({ id: "thermal:augments/item_filter_augment" })
+    event.shapeless("thermal:item_filter_augment", ["create:filter", "thermal:lapis_gear"])
     // Augments that do nothing in 1.18.2
-    event.remove({ id: TE("augments/rs_control_augment") })
-    event.remove({ id: TE("augments/side_config_augment") })
+    event.remove({ id: "thermal:augments/rs_control_augment" })
+    event.remove({ id: "thermal:augments/side_config_augment" })
     // Silver replacements
-    event.replaceInput({ id: TE("augments/rf_coil_storage_augment") }, F("#ingots/silver"), F("#ingots/iron"))
-    event.replaceInput({ id: TE("augments/rf_coil_xfer_augment") }, F("#ingots/silver"), F("#ingots/iron"))
-    event.replaceInput({ id: TE("augments/rf_coil_augment") }, F("#ingots/silver"), F("#ingots/iron"))
-    event.replaceInput({ id: TE("tools/detonator") }, F("#ingots/silver"), F("#ingots/lead"))
+    event.replaceInput({ id: "thermal:augments/rf_coil_storage_augment" }, "#forge:ingots/silver", "#forge:ingots/iron")
+    event.replaceInput({ id: "thermal:augments/rf_coil_xfer_augment" }, "#forge:ingots/silver", "#forge:ingots/iron")
+    event.replaceInput({ id: "thermal:augments/rf_coil_augment" }, "#forge:ingots/silver", "#forge:ingots/iron")
+    event.replaceInput({ id: "thermal:tools/detonator" }, "#forge:ingots/silver", "#forge:ingots/lead")
     // why are these even recipes?
-    event.remove({ id: TE("lightning_charge/zombified_piglin_from_pig")})
-    event.remove({ id: TE("lightning_charge/witch_from_villager")})
+    event.remove({ id: "thermal:lightning_charge/zombified_piglin_from_pig"})
+    event.remove({ id: "thermal:lightning_charge/witch_from_villager"})
     // duplicate storage block recipes
-    event.remove({ id: TE("storage/carrot_block") })
-    event.remove({ id: TE("storage/potato_block") })
-    event.remove({ id: TE("storage/beetroot_block") })
+    event.remove({ id: "thermal:storage/carrot_block" })
+    event.remove({ id: "thermal:storage/potato_block" })
+    event.remove({ id: "thermal:storage/beetroot_block" })
     // Obsidian pulverizing
-    thermalPulverizer(event, [CR("powdered_obsidian")], F("#obsidian"), 7000)
+    thermalPulverizer(event, ["create:powdered_obsidian"], "#forge:obsidian", 7000)
     // Ender pearl pulverizing
-    event.replaceOutput({ id: TE("machines/pulverizer/pulverizer_ender_pearl") }, TE("ender_pearl_dust"), AE2("ender_dust"))
-    event.replaceOutput({ id: TE("earth_charge/ender_pearl_dust_from_ender_pearl") }, TE("ender_pearl_dust"), AE2("ender_dust"))
+    event.replaceOutput({ id: "thermal:machines/pulverizer/pulverizer_ender_pearl" }, "thermal:ender_pearl_dust", "ae2:ender_dust")
+    event.replaceOutput({ id: "thermal:earth_charge/ender_pearl_dust_from_ender_pearl" }, "thermal:ender_pearl_dust", "ae2:ender_dust")
     // Bitumen crushing recipes
-    event.recipes.create.crushing([Item.of(TE("bitumen")), Item.of(TE("bitumen"), 2).withChance(0.75), Item.of(TE("tar"), 1).withChance(0.75), Item.of(MC("sand")).withChance(0.25)], TE("oil_sand"))
-    event.recipes.create.crushing([Item.of(TE("bitumen")), Item.of(TE("bitumen"), 2).withChance(0.75), Item.of(TE("tar"), 1).withChance(0.75), Item.of(MC("red_sand")).withChance(0.25)], TE("oil_red_sand"))
+    event.recipes.create.crushing([Item.of("thermal:bitumen"), Item.of("thermal:bitumen", 2).withChance(0.75), Item.of("thermal:tar", 1).withChance(0.75), Item.of("minecraft:sand").withChance(0.25)], "thermal:oil_sand")
+    event.recipes.create.crushing([Item.of("thermal:bitumen"), Item.of("thermal:bitumen", 2).withChance(0.75), Item.of("thermal:tar", 1).withChance(0.75), Item.of("minecraft:red_sand").withChance(0.25)], "thermal:oil_red_sand")
     // ruby and sapphire block recipes
     let blockTemplate = [ "III", "III",	"III"	]
-    event.shaped(TE("ruby_block", 1), blockTemplate, { I: F("#gems/ruby")	})
-    event.shapeless(TE("ruby", 9), [F("#storage_blocks/ruby")])
-    event.shaped(TE("sapphire_block", 1), blockTemplate, { I: F("#gems/sapphire")	})
-    event.shapeless(TE("sapphire", 9), [F("#storage_blocks/sapphire")])
+    event.shaped(Item.of("thermal:ruby_block", 1), blockTemplate, { I: "#forge:gems/ruby"	})
+    event.shapeless(Item.of("thermal:ruby", 9), ["#forge:storage_blocks/ruby"])
+    event.shaped(Item.of("thermal:sapphire_block", 1), blockTemplate, { I: "#forge:gems/sapphire"	})
+    event.shapeless(Item.of("thermal:sapphire", 9), ["#forge:storage_blocks/sapphire"])
     // Make molten glass with the cruicible
-    thermalCrucible(event, Fluid.of("tconstruct:molten_glass", 1000), F("#sand"), 6000)
-    thermalCrucible(event, Fluid.of("tconstruct:molten_glass", 1000), F("#glass/colorless"), 3000)
+    thermalCrucible(event, Fluid.of("tconstruct:molten_glass", 1000), "#forge:sand", 6000)
+    thermalCrucible(event, Fluid.of("tconstruct:molten_glass", 1000), "#forge:glass/colorless", 3000)
     // Gourmand fuel recipes for farmer's delight crates
-    event.custom({"type": "thermal:gourmand_fuel", "ingredient": {"item": FD("carrot_crate")}, "energy": 48000})
-    event.custom({"type": "thermal:gourmand_fuel", "ingredient": {"item": FD("potato_crate")}, "energy": 16000})
-    event.custom({"type": "thermal:gourmand_fuel", "ingredient": {"item": FD("beetroot_crate")}, "energy": 16000})
-    event.custom({"type": "thermal:gourmand_fuel", "ingredient": {"item": FD("cabbage_crate")}, "energy": 32000})
-    event.custom({"type": "thermal:gourmand_fuel", "ingredient": {"item": FD("onion_crate")}, "energy": 32000})
-    event.custom({"type": "thermal:gourmand_fuel", "ingredient": {"item": FD("tomato_crate")}, "energy": 16000})
+    event.custom({"type": "thermal:gourmand_fuel", "ingredient": {"item": "farmersdelight:carrot_crate"}, "energy": 48000})
+    event.custom({"type": "thermal:gourmand_fuel", "ingredient": {"item": "farmersdelight:potato_crate"}, "energy": 16000})
+    event.custom({"type": "thermal:gourmand_fuel", "ingredient": {"item": "farmersdelight:beetroot_crate"}, "energy": 16000})
+    event.custom({"type": "thermal:gourmand_fuel", "ingredient": {"item": "farmersdelight:cabbage_crate"}, "energy": 32000})
+    event.custom({"type": "thermal:gourmand_fuel", "ingredient": {"item": "farmersdelight:onion_crate"}, "energy": 32000})
+    event.custom({"type": "thermal:gourmand_fuel", "ingredient": {"item": "farmersdelight:tomato_crate"}, "energy": 16000})
     // Igneous Extruder recipes
     let bedrock_cobblegen = (adjacent, output) => {
         event.custom({
@@ -51,9 +51,9 @@ ServerEvents.recipes(event => {
             "result": { "item": output }
         })
     }
-    bedrock_cobblegen(MC("packed_ice"), MC("andesite"))
-    bedrock_cobblegen(AP("polished_packed_ice"), MC("granite"))
-    bedrock_cobblegen(AP("chiseled_packed_ice"), MC("diorite"))
+    bedrock_cobblegen("minecraft:packed_ice", "minecraft:andesite")
+    bedrock_cobblegen("architects_palette:polished_packed_ice", "minecraft:granite")
+    bedrock_cobblegen("architects_palette:chiseled_packed_ice", "minecraft:diorite")
     // Also add igneous extruder recipes for the 2 create stone gen recipes
     event.custom({
         "type": "thermal:rock_gen",
@@ -70,10 +70,10 @@ ServerEvents.recipes(event => {
     // thermal dynamics might be split into a compatability mod eventually
 
     // Energy duct recipe change
-    event.remove({ output: TE("energy_duct") })
+    event.remove({ output: "thermal:energy_duct" })
     event.shaped("8x thermal:energy_duct", [ "PMP" ], {
-        P: TE("invar_ingot"),
-        M: MC("redstone")
+        P: "thermal:invar_ingot",
+        M: "minecraft:redstone"
     })
     
     // port melting recipes for dusts, ingots and gems
@@ -176,10 +176,10 @@ ServerEvents.recipes(event => {
     })
 
     // Ball recipes
-    thermalChiller(event, MC("slime_ball"), [Fluid.of("tconstruct:earth_slime", 250), TE("chiller_ball_cast")], 5000).id("kubejs:chiller/slime_ball");
-    thermalChiller(event, TC("sky_slime_ball"), [Fluid.of("tconstruct:sky_slime", 250), TE("chiller_ball_cast")], 5000).id("kubejs:chiller/sky_slime_ball");
-    thermalChiller(event, TC("ender_slime_ball"), [Fluid.of("tconstruct:ender_slime", 250), TE("chiller_ball_cast")], 5000).id("kubejs:chiller/ender_slime_ball");
-    thermalChiller(event, TC("blood_slime_ball"), [Fluid.of("tconstruct:blood", 250), TE("chiller_ball_cast")], 5000).id("kubejs:chiller/blood_slime_ball");
+    thermalChiller(event, "minecraft:slime_ball", [Fluid.of("tconstruct:earth_slime", 250), "thermal:chiller_ball_cast"], 5000).id("kubejs:chiller/slime_ball");
+    thermalChiller(event, "tconstruct:sky_slime_ball", [Fluid.of("tconstruct:sky_slime", 250), "thermal:chiller_ball_cast"], 5000).id("kubejs:chiller/sky_slime_ball");
+    thermalChiller(event, "tconstruct:ender_slime_ball", [Fluid.of("tconstruct:ender_slime", 250), "thermal:chiller_ball_cast"], 5000).id("kubejs:chiller/ender_slime_ball");
+    thermalChiller(event, "tconstruct:blood_slime_ball", [Fluid.of("tconstruct:blood", 250), "thermal:chiller_ball_cast"], 5000).id("kubejs:chiller/blood_slime_ball");
 })
 
 ServerEvents.lowPriorityData(event => {

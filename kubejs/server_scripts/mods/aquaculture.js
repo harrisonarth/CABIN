@@ -1,8 +1,7 @@
-const AC = (id, x) => MOD("aquaculture", id, x)
 if(Platform.isLoaded("aquaculture")) {
     unregistered_axes.push("aquaculture:neptunium_axe")
 
     ServerEvents.recipes(event => {
-        event.recipes.create.crushing([Item.of(AC("neptunium_ingot", 2)), Item.of(AC("neptunium_nugget", 5)).withChance(.5)], AC("neptunes_bounty")).processingTime(500)
+        event.recipes.create.crushing([Item.of(Item.of("aquaculture:neptunium_ingot", 2)), Item.of(Item.of("aquaculture:neptunium_nugget", 5)).withChance(.5)], "aquaculture:neptunes_bounty").processingTime(500)
     })
 }

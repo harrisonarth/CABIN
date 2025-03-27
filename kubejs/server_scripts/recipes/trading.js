@@ -2,11 +2,11 @@
 ServerEvents.recipes(event => {
     event.remove({ input: "#forge:coins" })
 
-    thermalNumismaticFuel(event, TE("silver_coin"), 100000)
-    thermalNumismaticFuel(event, TE("gold_coin"), 6400000)
+    thermalNumismaticFuel(event, "thermal:silver_coin", 100000)
+    thermalNumismaticFuel(event, "thermal:gold_coin", 6400000)
     // remove all press recipes
-    event.remove({ type: TE("press") })
-    event.remove({ type: TE("numismatic_fuel") })
+    event.remove({ type: "thermal:press" })
+    event.remove({ type: "thermal:numismatic_fuel" })
 
     let trade = (card_id, ingredient, output) => {
         event.custom({
@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
         if (global.transactions[element])
             global.transactions[element].forEach(transaction => {
                 if (!Item.of(transaction.in).isEmpty() && !Item.of(transaction.out).isEmpty()) {
-                    trade(KJ("trade_card_" + element), transaction.in, transaction.out)
+                    trade("kubejs:trade_card_" + element, transaction.in, transaction.out)
                 } else console.warn(`tried to create trade, ${transaction.in} -> ${transaction.out}, but one of the items does not exist`)
             })
     });
@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
         if (global.transactions[element])
             global.transactions[element].forEach(transaction => {
                 if (!Item.of(transaction.in).isEmpty() && !Item.of(transaction.out).isEmpty()) {
-                    trade(KJ("profession_card_" + element), transaction.in, transaction.out)
+                    trade("kubejs:profession_card_" + element, transaction.in, transaction.out)
                 } else console.warn(`tried to create trade, ${transaction.in} -> ${transaction.out}, but one of the items does not exist`)
             })
     });
