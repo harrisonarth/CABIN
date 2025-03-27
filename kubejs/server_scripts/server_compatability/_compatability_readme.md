@@ -1,8 +1,10 @@
-Addon Compatibility Scripts for CABIN
+## Addon Compatibility Scripts for CABIN
+
 These are for mods that are not installed by default, sections of this script will enable if the applicable mod is installed.
 With how many create addons there are, it would not be feasible for me to add compat for them all by myself.
-If you have a create addon that you think could fit in the general theme/tone/whathaveyou of CABIN, make a PR with it.
-```
+
+If you have a create addon that you think could fit in the general theme/tone/whathaveyou of CABIN, make a PR with it. Custom textures can also be submitted, if you wish.
+```js
 if (Platform.isLoaded('YourModID')) { // Mod ID goes here
 	ServerEvents.recipes(event => {
 		// Here's a machine recipe example. The code for these functions are defined in _helper.js
