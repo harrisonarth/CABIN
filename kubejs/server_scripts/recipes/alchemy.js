@@ -4,7 +4,7 @@ ServerEvents.recipes(event => {
     }
 
     let alchemy_smelt = (output, catalyst, r1, r2, amount) => {
-        thermalSmelter(event, [Item.of(Item.of("kubejs:substrate_" + output, amount ? amount : 1)), Item.of("kubejs:substrate_" + catalyst)], [Item.of("kubejs:substrate_" + r1, 2), Item.of("kubejs:substrate_" + catalyst), Item.of("kubejs:substrate_" + r2)], 4000)
+        event.recipes.thermal.smelter([Item.of(Item.of("kubejs:substrate_" + output, amount ? amount : 1)), Item.of("kubejs:substrate_" + catalyst)], [Item.of("kubejs:substrate_" + r1, 2), Item.of("kubejs:substrate_" + catalyst), Item.of("kubejs:substrate_" + r2)], 0, 6400)
     }
 
     alchemy_mix("red", "herbal", "diorite", "andesite")

@@ -156,45 +156,6 @@ const toThermalOutputJson = (value) => {
     return json;
 }
 
-const thermalRecipe = (event, recipeType, inputCount, outputCount, inputIngredients, outputIngredients, energy, extraJson) => {
-    let json = extraJson || {}
-
-    json.type = recipeType
-    if (inputCount == 1) {
-        json.ingredient = toThermalInputJson(inputIngredients)
-    } else if (inputCount > 1) {
-        json.ingredients = (Array.isArray(inputIngredients) ? inputIngredients.map(toThermalInputJson) : toThermalInputJson(inputIngredients))
-    }
-    if (outputCount > 0) {
-        json.result = (Array.isArray(outputIngredients) ? outputIngredients.map(toThermalOutputJson) : toThermalOutputJson(outputIngredients))
-    }
-    if (energy) {
-        json.energy = energy
-    }
-    return event.custom(json)
-}
-
-const thermalBottler = (event, outputIngredients, inputIngredients, energy, extraJson) => { return thermalRecipe(event, "thermal:bottler", 2, 1, inputIngredients, outputIngredients, energy, extraJson) }
-const thermalCentrifuge = (event, outputIngredients, inputIngredients, energy, extraJson) => { return thermalRecipe(event, "thermal:centrifuge", 1, 5, inputIngredients, outputIngredients, energy, extraJson) }
-const thermalChiller = (event, outputIngredients, inputIngredients, energy, extraJson) => { return thermalRecipe(event, "thermal:chiller", 2, 1, inputIngredients, outputIngredients, energy, extraJson) }
-const thermalCrucible = (event, outputIngredients, inputIngredients, energy, extraJson) => { return thermalRecipe(event, "thermal:crucible", 1, 1, inputIngredients, outputIngredients, energy, extraJson) }
-const thermalCrystalizer = (event, outputIngredients, inputIngredients, energy, extraJson) => { return thermalRecipe(event, "thermal:crystallizer", 3, 1, inputIngredients, outputIngredients, energy, extraJson) }
-const thermalFurnace = (event, outputIngredients, inputIngredients, energy, extraJson) => { return thermalRecipe(event, "thermal:furnace", 1, 1, inputIngredients, outputIngredients, energy, extraJson) }
-const thermalInsolator = (event, outputIngredients, inputIngredients, energy, extraJson) => { return thermalRecipe(event, "thermal:insolator", 1, 4, inputIngredients, outputIngredients, energy, extraJson) }
-// const thermalPress = (event, outputIngredients, inputIngredients, energy, extraJson) => { return thermalRecipe(event, "thermal:press", 2, 2, inputIngredients, outputIngredients, energy, extraJson) }
-const thermalPulverizer = (event, outputIngredients, inputIngredients, energy, extraJson) => { return thermalRecipe(event, "thermal:pulverizer", 1, 4, inputIngredients, outputIngredients, energy, extraJson) }
-const thermalPyrolyzer = (event, outputIngredients, inputIngredients, energy, extraJson) => { return thermalRecipe(event, "thermal:pyrolyzer", 1, 5, inputIngredients, outputIngredients, energy, extraJson) }
-const thermalRefinery = (event, outputIngredients, inputIngredients, energy, extraJson) => { return thermalRecipe(event, "thermal:refinery", 1, 3, inputIngredients, outputIngredients, energy, extraJson) }
-// const thermalSawmill = (event, outputIngredients, inputIngredients, energy, extraJson) => { return thermalRecipe(event, "thermal:sawmill", 1, 4, inputIngredients, outputIngredients, energy, extraJson) }
-const thermalSmelter = (event, outputIngredients, inputIngredients, energy, extraJson) => { return thermalRecipe(event, "thermal:smelter", 3, 4, inputIngredients, outputIngredients, energy, extraJson) }
-
-const thermalNumismaticFuel = (event, inputIngredients, energy, extraJson) => { return thermalRecipe(event, "thermal:numismatic_fuel", 1, 0, inputIngredients, undefined, energy, extraJson) }
-
-/* sorry to break the immersion but this is just a reskinned sawmill */
-const thermalExtractor = (event, outputIngredients, inputIngredients, energy, extraJson) => { return thermalRecipe(event, "thermal:sawmill", 1, 4, inputIngredients, outputIngredients, energy, extraJson) }
-/* sorry to break the immersion but this is just a reskinned press */
-const thermalTradeStation = (event, outputIngredients, inputIngredients, energy, extraJson) => { return thermalRecipe(event, "thermal:press", 2, 2, inputIngredients, outputIngredients, energy, extraJson) }
-
 const addTreeOutput = (event, trunk, leaf, fluid) => {
     return event.custom({
         type: "thermal:tree_extractor",

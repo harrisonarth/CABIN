@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.create.compacting([Item.of("projectred_core:red_ingot")], [Item.of("minecraft:redstone", 4), Item.of("minecraft:copper_ingot")] )
 
-    thermalSmelter(event, "projectred_core:red_ingot", ["minecraft:copper_ingot", "minecraft:redstone"])
+    event.recipes.thermal.smelter("projectred_core:red_ingot", ["minecraft:copper_ingot", "minecraft:redstone"])
 
     // recreate the circuit plate smelting recipes
     event.smelting(Item.of("projectred_core:plate", 2), "minecraft:smooth_stone")

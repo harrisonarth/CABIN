@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.milling(Item.of("minecraft:redstone", 4), "thermal:cinnabar").processingTime(700)
     event.recipes.create.crushing(Item.of("minecraft:redstone", 6), "thermal:cinnabar").processingTime(500)
     event.remove({ id: "thermal:machines/pulverizer/pulverizer_cinnabar" })
-    thermalPulverizer(event, Item.of("minecraft:redstone", 8), "thermal:cinnabar", 10000)
+    event.recipes.thermal.pulverizer(Item.of("minecraft:redstone", 8), "thermal:cinnabar", 0, 10000)
 
     event.recipes.create.milling("thermal:sulfur_dust", "#forge:gems/sulfur").processingTime(500)
     event.recipes.create.milling("thermal:niter_dust", "#forge:gems/niter").processingTime(500)

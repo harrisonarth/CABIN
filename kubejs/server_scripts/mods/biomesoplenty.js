@@ -25,7 +25,7 @@ if(Platform.isLoaded("biomesoplenty")) {
         addTreeOutput(event, "minecraft:oak_log", "biomesoplenty:maple_leaves")
 
         // kubejs throws a duplicate recipe error, we'd need to change how resin recipes are created to avoid that error
-        /* event.custom({
+        event.custom({
 			type: "thermal:tree_extractor",
 			trunk: {
 				Name: "biomesoplenty:magic_log",
@@ -47,7 +47,7 @@ if(Platform.isLoaded("biomesoplenty")) {
 					Potion: "minecraft:thick"
 				}
 			}
-		}).id('kubejs:devices/tree_extractor/tree_extractor_magic')*/
+		})//.id('kubejs:devices/tree_extractor/tree_extractor_magic')
 
         // Wash sand into clay
         event.recipes.create.splashing([Item.of("minecraft:clay_ball", 1).withChance(0.25)], "biomesoplenty:black_sand")

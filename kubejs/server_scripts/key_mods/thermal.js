@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: "thermal:storage/potato_block" })
     event.remove({ id: "thermal:storage/beetroot_block" })
     // Obsidian pulverizing
-    thermalPulverizer(event, ["create:powdered_obsidian"], "#forge:obsidian", 7000)
+    event.recipes.thermal.pulverizer(["create:powdered_obsidian"], "#forge:obsidian", 0, 8000)
     // Ender pearl pulverizing
     event.replaceOutput({ id: "thermal:machines/pulverizer/pulverizer_ender_pearl" }, "thermal:ender_pearl_dust", "ae2:ender_dust")
     event.replaceOutput({ id: "thermal:earth_charge/ender_pearl_dust_from_ender_pearl" }, "thermal:ender_pearl_dust", "ae2:ender_dust")
@@ -33,8 +33,8 @@ ServerEvents.recipes(event => {
     event.shaped(Item.of("thermal:sapphire_block", 1), blockTemplate, { I: "#forge:gems/sapphire"	})
     event.shapeless(Item.of("thermal:sapphire", 9), ["#forge:storage_blocks/sapphire"])
     // Make molten glass with the cruicible
-    thermalCrucible(event, Fluid.of("tconstruct:molten_glass", 1000), "#forge:sand", 6000)
-    thermalCrucible(event, Fluid.of("tconstruct:molten_glass", 1000), "#forge:glass/colorless", 3000)
+    event.recipes.thermal.crucible(Fluid.of("tconstruct:molten_glass", 1000), "#forge:sand", 0, 6000)
+    event.recipes.thermal.crucible(Fluid.of("tconstruct:molten_glass", 1000), "#forge:glass/colorless", 0, 3000)
     // Gourmand fuel recipes for farmer's delight crates
     event.custom({"type": "thermal:gourmand_fuel", "ingredient": {"item": "farmersdelight:carrot_crate"}, "energy": 48000})
     event.custom({"type": "thermal:gourmand_fuel", "ingredient": {"item": "farmersdelight:potato_crate"}, "energy": 16000})
@@ -139,12 +139,12 @@ ServerEvents.recipes(event => {
         let fluid = `tconstruct:molten_${metal}`
 
         if (Ingredient.of('#'+ingotTag).first != Item.empty) {
-            thermalCrucible(event, Fluid.of(fluid, 90), '#'+ingotTag, 5000).id(`kubejs:crucible/${metal}/ingot`)
+            event.recipes.thermal.crucible(Fluid.of(fluid, 90), '#'+ingotTag, 0, 5000).id(`kubejs:crucible/${metal}/ingot`)
 
-            thermalChiller(event, getPreferredItemFromTag(ingotTag), [Fluid.of(fluid, 90), "thermal:chiller_ingot_cast"], 5000).id(`kubejs:chiller/${metal}/ingot`)
+            event.recipes.thermal.chiller(getPreferredItemFromTag(ingotTag), [Fluid.of(fluid, 90), "thermal:chiller_ingot_cast"]).id(`kubejs:chiller/${metal}/ingot`)
         }
         if (Ingredient.of('#'+rodTag).first != Item.empty) {
-            thermalChiller(event, getPreferredItemFromTag(rodTag), [Fluid.of(fluid, 45), "thermal:chiller_rod_cast"], 5000).id(`kubejs:chiller/${metal}/rod`)
+            event.recipes.thermal.chiller(getPreferredItemFromTag(rodTag), [Fluid.of(fluid, 45), "thermal:chiller_rod_cast"]).id(`kubejs:chiller/${metal}/rod`)
         }
     })
     TICGEMS.forEach(gem=>{
@@ -153,7 +153,7 @@ ServerEvents.recipes(event => {
         let fluid = `tconstruct:molten_${gem}`
 
         if (Ingredient.of(`#forge:gems/${gem}`).first != Item.empty) {
-            thermalCrucible(event, Fluid.of(fluid, 100), gemTag, 5000).id(`kubejs:crucible/${gem}/gem`)
+            event.recipes.thermal.crucible(Fluid.of(fluid, 100), '#'+gemTag, 0, 5000).id(`kubejs:crucible/${gem}/gem`)
         }
     })
 
@@ -169,17 +169,17 @@ ServerEvents.recipes(event => {
         let fluid = material.fluid
 
         if (Ingredient.of('#'+ingotTag).first != Item.empty) {
-            thermalCrucible(event, Fluid.of(fluid, 90), '#'+ingotTag, 5000).id(`kubejs:crucible/${name}`)
+            event.recipes.thermal.crucible(Fluid.of(fluid, 90), '#'+ingotTag, 0, 5000).id(`kubejs:crucible/${name}`)
 
-            thermalChiller(event, getPreferredItemFromTag(ingotTag), [Fluid.of(fluid, 90), "thermal:chiller_ingot_cast"], 5000).id(`kubejs:chiller/${name}`)
+            event.recipes.thermal.chiller(getPreferredItemFromTag(ingotTag), [Fluid.of(fluid, 90), "thermal:chiller_ingot_cast"]).id(`kubejs:chiller/${name}`)
         }
     })
 
     // Ball recipes
-    thermalChiller(event, "minecraft:slime_ball", [Fluid.of("tconstruct:earth_slime", 250), "thermal:chiller_ball_cast"], 5000).id("kubejs:chiller/slime_ball");
-    thermalChiller(event, "tconstruct:sky_slime_ball", [Fluid.of("tconstruct:sky_slime", 250), "thermal:chiller_ball_cast"], 5000).id("kubejs:chiller/sky_slime_ball");
-    thermalChiller(event, "tconstruct:ender_slime_ball", [Fluid.of("tconstruct:ender_slime", 250), "thermal:chiller_ball_cast"], 5000).id("kubejs:chiller/ender_slime_ball");
-    thermalChiller(event, "tconstruct:blood_slime_ball", [Fluid.of("tconstruct:blood", 250), "thermal:chiller_ball_cast"], 5000).id("kubejs:chiller/blood_slime_ball");
+    event.recipes.thermal.chiller("minecraft:slime_ball", [Fluid.of("tconstruct:earth_slime", 250), "thermal:chiller_ball_cast"]).id("kubejs:chiller/slime_ball");
+    event.recipes.thermal.chiller("tconstruct:sky_slime_ball", [Fluid.of("tconstruct:sky_slime", 250), "thermal:chiller_ball_cast"]).id("kubejs:chiller/sky_slime_ball");
+    event.recipes.thermal.chiller("tconstruct:ender_slime_ball", [Fluid.of("tconstruct:ender_slime", 250), "thermal:chiller_ball_cast"]).id("kubejs:chiller/ender_slime_ball");
+    event.recipes.thermal.chiller("tconstruct:blood_slime_ball", [Fluid.of("tconstruct:blood", 250), "thermal:chiller_ball_cast"]).id("kubejs:chiller/blood_slime_ball");
 })
 
 ServerEvents.lowPriorityData(event => {
