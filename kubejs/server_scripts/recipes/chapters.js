@@ -1124,7 +1124,7 @@ ServerEvents.recipes(event => {
                         "item": output
                     },
                     "acceptMirrored": false
-                })
+                }).id(`kubejs:calculation/${nums[a]}_${opNames[op]}_${nums[b]}_equals_${nums[result]}`)
 
                 event.custom({
                     "type": "create:mechanical_crafting",
@@ -1148,7 +1148,7 @@ ServerEvents.recipes(event => {
                         "item": output
                     },
                     "acceptMirrored": false
-                })
+                }).id(`kubejs:calculation/${nums[a]}_${opNames[op]}_${nums[b]}_equals_${nums[result]}_vertical`)
 
             }
         }
