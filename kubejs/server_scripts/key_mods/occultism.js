@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
     // Silver replacements
     event.replaceInput({ id: "occultism:crafting/magic_lamp_empty" }, "#forge:ingots/silver", "#forge:ingots/iron")
     event.replaceInput({ id: "occultism:crafting/lens_frame" }, "#forge:ingots/silver", "#forge:ingots/zinc")
-    
+
     event.replaceInput({ type: "occultism:ritual" }, "#forge:dusts/silver", "#forge:dusts/zinc")
     event.replaceInput({ type: "occultism:ritual" }, "#forge:ingots/silver", "#forge:ingots/zinc")
     event.replaceInput({ type: "occultism:ritual" }, "#forge:storage_blocks/silver", "#forge:storage_blocks/zinc")
@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
 // PlayerEvents.loggedIn(event => {
 
 //     if (!global.occultism_reload) {
-//         global.occultism_reload = true 
+//         global.occultism_reload = true
 //         event.server.runCommandSilent(`reload`)
 //     }
 

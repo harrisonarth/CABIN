@@ -35,7 +35,7 @@ if (Platform.isLoaded("create_crystal_clear")) {
         event.shapeless("create_crystal_clear:train_glass_casing", ["create:railway_casing", "minecraft:glass"]).id("kubejs:mods/create_crystal_clear/train_glass_casing")
         event.shapeless("create_crystal_clear:train_clear_glass_casing", ["create:railway_casing", "tconstruct:clear_glass"]).id("kubejs:mods/create_crystal_clear/train_clear_glass_casing")
     })
-    
+
     ServerEvents.blockLootTables(event => {
         // Fix broken loot tables
         let cogwheelDrop = {

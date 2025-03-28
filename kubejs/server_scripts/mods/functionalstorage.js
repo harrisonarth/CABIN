@@ -25,40 +25,40 @@ if(Platform.isLoaded("functionalstorage")) {
         event.shaped(Item.of("functionalstorage:framed_simple_compacting_drawer", 1), pattern,
             {I:"#forge:nuggets/iron", D:"functionalstorage:simple_compacting_drawer"})
 
-            event.remove({ id:"functionalstorage:copper_upgrade" })
-            event.remove({ id:"functionalstorage:gold_upgrade" })
-            event.remove({ id:"functionalstorage:diamond_upgrade" })
-            event.remove({ id:"functionalstorage:netherite_upgrade" })
-            
-            let upgradePattern = ["IBI", "CDC", "IBI"]
-            
-            event.shaped(Item.of("functionalstorage:copper_upgrade", 2), upgradePattern, {
-                B: "#forge:storage_blocks/andesite_alloy",
-                C: "#forge:chests/wooden",
-                D: "#functionalstorage:drawer",
-                I: "#forge:ingots/zinc"
-            })
-            
-            event.shaped(Item.of("functionalstorage:gold_upgrade", 2), upgradePattern, {
-                B: "functionalstorage:copper_upgrade",
-                C: "#forge:chests/wooden",
-                D: "#functionalstorage:drawer",
-                I: "#forge:ingots/amethyst_bronze"
-            })
+        event.remove({ id: "functionalstorage:copper_upgrade" })
+        event.remove({ id: "functionalstorage:gold_upgrade" })
+        event.remove({ id: "functionalstorage:diamond_upgrade" })
+        event.remove({ id: "functionalstorage:netherite_upgrade" })
 
-            event.shaped(Item.of("functionalstorage:diamond_upgrade", 2), upgradePattern, {
-                B: "functionalstorage:gold_upgrade",
-                C: "#forge:chests/wooden",
-                D: "#functionalstorage:drawer",
-                I: "#forge:ingots/lumium"
-            })
+        let upgradePattern = ["IBI", "CDC", "IBI"]
 
-            event.shaped(Item.of("functionalstorage:netherite_upgrade", 2), upgradePattern, {
-                B: "functionalstorage:diamond_upgrade",
-                C: "#forge:chests/wooden",
-                D: "#functionalstorage:drawer",
-                I: "#forge:ingots/hepatizon"
-            })
+        event.shaped(Item.of("functionalstorage:copper_upgrade", 2), upgradePattern, {
+            B: "#forge:storage_blocks/andesite_alloy",
+            C: "#forge:chests/wooden",
+            D: "#functionalstorage:drawer",
+            I: "#forge:ingots/zinc"
+        })
+
+        event.shaped(Item.of("functionalstorage:gold_upgrade", 2), upgradePattern, {
+            B: "functionalstorage:copper_upgrade",
+            C: "#forge:chests/wooden",
+            D: "#functionalstorage:drawer",
+            I: "#forge:ingots/amethyst_bronze"
+        })
+
+        event.shaped(Item.of("functionalstorage:diamond_upgrade", 2), upgradePattern, {
+            B: "functionalstorage:gold_upgrade",
+            C: "#forge:chests/wooden",
+            D: "#functionalstorage:drawer",
+            I: "#forge:ingots/lumium"
+        })
+
+        event.shaped(Item.of("functionalstorage:netherite_upgrade", 2), upgradePattern, {
+            B: "functionalstorage:diamond_upgrade",
+            C: "#forge:chests/wooden",
+            D: "#functionalstorage:drawer",
+            I: "#forge:ingots/hepatizon"
+        })
 
         event.remove({ id:"functionalstorage:iron_downgrade" })
         donutCraft(event, Item.of("functionalstorage:iron_downgrade", 4), "#functionalstorage:drawer", "#forge:ingots/iron")

@@ -463,13 +463,13 @@ function process(level, block, entity, face) {
     nbt.Items.clear()
 
     let resultItemNBT = {}
-    //let resultItemTagNBT = {}
-    //let resultItemLoreNBT = {}
-    //let resultItemLoreList = []
+    // let resultItemTagNBT = {}
+    // let resultItemLoreNBT = {}
+    // let resultItemLoreList = []
 
-    //resultItemLoreList.push({text: "' + guessedString + '", italic: false})
-    //resultItemLoreNBT.Lore = resultItemLoreList
-    //resultItemTagNBT.display = resultItemLoreNBT
+    // resultItemLoreList.push({text: "' + guessedString + '", italic: false})
+    // resultItemLoreNBT.Lore = resultItemLoreList
+    // resultItemTagNBT.display = resultItemLoreNBT
 
     resultItemNBT.Slot = 0
     resultItemNBT.id = resultItem

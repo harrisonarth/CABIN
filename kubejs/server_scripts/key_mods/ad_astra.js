@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
-    //Most Ad Astra Recipes are added in chapters.js
+    // Most Ad Astra Recipes are added in chapters.js
     event.recipes.create.mixing(("3x ad_astra:steel_ingot"),["3x minecraft:iron_ingot", "minecraft:coal"]).heated()
-    
+
     event.remove({type: "ad_astra:alloying"})
     event.remove({type: "ad_astra:compressing"})
     event.remove({type: "ad_astra:cryo_freezing"})
@@ -15,8 +15,8 @@ ServerEvents.recipes(event => {
         "steel_cable", "desh_cable", "desh_fluid_pipe", "ostrum_fluid_pipe", "cable_duct", "fluid_pipe_duct",
         "coal_generator", "compressor", "etrionic_blast_furnace", "nasa_workbench", "fuel_refinery", "oxygen_loader",
         "solar_panel", "water_pump", "oxygen_distributor", "gravity_normalizer", "energizer", "cryo_freezer", "oxygen_sensor",
-        /*"ti_69", "wrench",*/ "zip_gun",
-        "etrionic_capacitor", "gas_tank", "large_gas_tank", //"photovoltaic_etrium_cell",
+        /* "ti_69", "wrench",*/ "zip_gun",
+        "etrionic_capacitor", "gas_tank", "large_gas_tank", // "photovoltaic_etrium_cell",
         "oxygen_gear", "wheel", "engine_frame", "fan", "rocket_nose_cone",
         "rocket_fin"
     ]

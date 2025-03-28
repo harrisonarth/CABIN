@@ -8,9 +8,9 @@ ServerEvents.recipes(event => {
     }
 
     if (Platform.isLoaded("moreminecarts")) {
-        event.replaceInput({}, 'minecraft:phantom_membrane', "thermal:blitz_powder")
+        event.replaceInput({}, "minecraft:phantom_membrane", "thermal:blitz_powder")
         event.recipes.create.crushing([Item.of("moreminecarts:levitation_powder"), Item.of("moreminecarts:levitation_powder", 1).withChance(.5)], "thermal:blitz_powder")
-    }    
+    }
     // alternate double jump recipe
     event.custom({
         "type": "tconstruct:modifier",

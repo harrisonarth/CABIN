@@ -75,7 +75,7 @@ ServerEvents.recipes(event => {
         P: "thermal:invar_ingot",
         M: "minecraft:redstone"
     })
-    
+
     // port melting recipes for dusts, ingots and gems
     const TICMETALS = [
         "aluminum",
@@ -138,12 +138,12 @@ ServerEvents.recipes(event => {
 
         let fluid = `tconstruct:molten_${metal}`
 
-        if (Ingredient.of('#'+ingotTag).first != Item.empty) {
-            event.recipes.thermal.crucible(Fluid.of(fluid, 90), '#'+ingotTag, 0, 5000).id(`kubejs:crucible/${metal}/ingot`)
+        if (Ingredient.of("#" + ingotTag).first != Item.empty) {
+            event.recipes.thermal.crucible(Fluid.of(fluid, 90), "#" + ingotTag, 0, 5000).id(`kubejs:crucible/${metal}/ingot`)
 
             event.recipes.thermal.chiller(getPreferredItemFromTag(ingotTag), [Fluid.of(fluid, 90), "thermal:chiller_ingot_cast"]).id(`kubejs:chiller/${metal}/ingot`)
         }
-        if (Ingredient.of('#'+rodTag).first != Item.empty) {
+        if (Ingredient.of("#" + rodTag).first != Item.empty) {
             event.recipes.thermal.chiller(getPreferredItemFromTag(rodTag), [Fluid.of(fluid, 45), "thermal:chiller_rod_cast"]).id(`kubejs:chiller/${metal}/rod`)
         }
     })
@@ -153,7 +153,7 @@ ServerEvents.recipes(event => {
         let fluid = `tconstruct:molten_${gem}`
 
         if (Ingredient.of(`#forge:gems/${gem}`).first != Item.empty) {
-            event.recipes.thermal.crucible(Fluid.of(fluid, 100), '#'+gemTag, 0, 5000).id(`kubejs:crucible/${gem}/gem`)
+            event.recipes.thermal.crucible(Fluid.of(fluid, 100), "#" + gemTag, 0, 5000).id(`kubejs:crucible/${gem}/gem`)
         }
     })
 
@@ -168,8 +168,8 @@ ServerEvents.recipes(event => {
         let ingotTag = "forge:ingots/" + material.name
         let fluid = material.fluid
 
-        if (Ingredient.of('#'+ingotTag).first != Item.empty) {
-            event.recipes.thermal.crucible(Fluid.of(fluid, 90), '#'+ingotTag, 0, 5000).id(`kubejs:crucible/${name}`)
+        if (Ingredient.of("#" + ingotTag).first != Item.empty) {
+            event.recipes.thermal.crucible(Fluid.of(fluid, 90), "#" + ingotTag, 0, 5000).id(`kubejs:crucible/${name}`)
 
             event.recipes.thermal.chiller(getPreferredItemFromTag(ingotTag), [Fluid.of(fluid, 90), "thermal:chiller_ingot_cast"]).id(`kubejs:chiller/${name}`)
         }

@@ -34,7 +34,7 @@ if (Platform.isLoaded("prettypipes")) {
 
         let module = (type, result) => {
             // event.remove({ output: "prettypipes:"+result })
-            event.stonecutting("prettypipes:"+result, "kubejs:pipe_module_" + type)
+            event.stonecutting("prettypipes:" + result, "kubejs:pipe_module_" + type)
         }
 
         module("utility", "filter_increase_modifier")

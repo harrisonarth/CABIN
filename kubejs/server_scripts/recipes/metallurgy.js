@@ -289,18 +289,18 @@ ServerEvents.recipes(event => {
         // raw ore block compression and decompression
         event.replaceInput({type: "minecraft:crafting_shaped"}, rawOreTag, crushedOre)
         event.replaceOutput({type: "minecraft:crafting_shapeless"}, rawOreTag, crushedOre)
-        
+
         event.remove([
-            { type: 'minecraft:smelting', input: rawOreTag },
-            { type: 'minecraft:blasting', input: rawOreTag },
-            { type: 'create:crushing', input: rawOreTag },
-            { type: 'occultism:crushing', input: rawOreTag },
-            { type: 'tconstruct:ore_melting', input: rawOreTag }
+            { type: "minecraft:smelting", input: rawOreTag },
+            { type: "minecraft:blasting", input: rawOreTag },
+            { type: "create:crushing", input: rawOreTag },
+            { type: "occultism:crushing", input: rawOreTag },
+            { type: "tconstruct:ore_melting", input: rawOreTag }
         ])
 
         event.remove({ id: `thermal:machines/pulverizer/pulverizer_raw_${materialName}`})
         event.remove({ id: `thermal:machines/smelter/smelter_raw_${materialName}`})
-        
+
         event.remove([
             { type: "thermal:smelter", input: oreTag },
             { type: "thermal:pulverizer", input: oreTag },
@@ -311,16 +311,16 @@ ServerEvents.recipes(event => {
             { type: "occultism:crushing", input: oreTag },
 
         ])
-        
+
         event.remove({ id: `thermal:machines/pulverizer/pulverizer_${materialName}_ore` })
         event.remove({ id: `thermal:machines/smelter/smelter_${materialName}_ore` })
 
         event.remove([
-            { type: 'minecraft:smelting', input: crushedOreBlockTag },
-            { type: 'minecraft:blasting', input: crushedOreBlockTag },
-            { type: 'create:crushing', input: crushedOreBlockTag },
-            { type: 'occultism:crushing', input: crushedOreBlockTag },
-            { type: 'tconstruct:ore_melting', input: crushedOreBlockTag }
+            { type: "minecraft:smelting", input: crushedOreBlockTag },
+            { type: "minecraft:blasting", input: crushedOreBlockTag },
+            { type: "create:crushing", input: crushedOreBlockTag },
+            { type: "occultism:crushing", input: crushedOreBlockTag },
+            { type: "tconstruct:ore_melting", input: crushedOreBlockTag }
         ])
 
         // 'concentrated ore' to crushed ore
@@ -350,7 +350,7 @@ ServerEvents.recipes(event => {
 
         // ingots to fluid
         // event.recipes.thermal.crucible(Fluid.of(fluid, 90), ingot, 2000).id('kubejs:ore_processing/crucible/ingot/'+materialName) //now automatically ported
-        
+
         // melting crushed ores to nuggets
         event.custom({
             "type": "thermal:smelter",
@@ -363,7 +363,7 @@ ServerEvents.recipes(event => {
             "experience": 0.2,
             "energy": 3200
         }).id("kubejs:ore_processing/induction_smelting/crushed/" + materialName)
-        
+
         // melting ore dusts to fluid
         event.custom({
             "type": "tconstruct:melting",
@@ -386,14 +386,14 @@ ServerEvents.recipes(event => {
     event.remove([
         { type: "minecraft:crafting_shaped", input: "#forge:raw_materials/silver" },
         { type: "minecraft:crafting_shapeless", input: "#forge:raw_materials/silver" },
-        { type: 'minecraft:smelting', input: "#forge:raw_materials/silver" },
-        { type: 'minecraft:blasting', input: "#forge:raw_materials/silver" },
-        { type: 'create:crushing', input: "#forge:raw_materials/silver" },
-        { type: 'occultism:crushing', input: "#forge:raw_materials/silver" },
-        { type: 'tconstruct:ore_melting', input: "#forge:raw_materials/silver" }
+        { type: "minecraft:smelting", input: "#forge:raw_materials/silver" },
+        { type: "minecraft:blasting", input: "#forge:raw_materials/silver" },
+        { type: "create:crushing", input: "#forge:raw_materials/silver" },
+        { type: "occultism:crushing", input: "#forge:raw_materials/silver" },
+        { type: "tconstruct:ore_melting", input: "#forge:raw_materials/silver" }
     ])
-    event.remove({ id: `thermal:machines/pulverizer/pulverizer_raw_silver`})
-    event.remove({ id: `thermal:machines/smelter/smelter_raw_silver`})
+    event.remove({ id: "thermal:machines/pulverizer/pulverizer_raw_silver"})
+    event.remove({ id: "thermal:machines/smelter/smelter_raw_silver"})
 
 
     event.replaceInput({ id: "thermal:machine/smelter/smelter_iron_ore" }, "minecraft:iron_ore", "create:crushed_raw_iron")

@@ -1,8 +1,8 @@
-StartupEvents.modifyCreativeTab('create:base', event => {
+StartupEvents.modifyCreativeTab("create:base", event => {
     event.addAfter("create:brass_ingot", ["create:chromatic_compound", "create:refined_radiance", "create:shadow_steel"])
 })
 
-StartupEvents.modifyCreativeTab('minecraft:tools_and_utilities', event => {
+StartupEvents.modifyCreativeTab("minecraft:tools_and_utilities", event => {
     event.addAfter("minecraft:recovery_compass", "minecraft:bundle")
 
     event.add("cb_microblock:stone_saw")

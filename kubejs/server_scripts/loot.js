@@ -1,78 +1,79 @@
 let metal_ores_drop_dust = (id, crushedId, dustId) => {
     return {
-    "type": "minecraft:block",
-    "pools": [
-        {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "minecraft:alternatives",
-                    "children": [
-                        {
-                            "type": "minecraft:item",
-                            "name": dustId,
-                            "functions": [
-                                {
-                                    "function": "minecraft:set_count",
-                                    "count": 9
-                                }
-                            ],
-                            "conditions": [
-                                {
-                                    "condition": "tconstruct:has_modifier",
-                                    "modifier": "tconstruct:melting"
-                                }
-                            ]
-                        },
-                        {
-                            "type": "minecraft:item",
-                            "name": id,
-                            "conditions": [
-                                {
-                                    "condition": "minecraft:match_tool",
-                                    "predicate": {
-                                        "enchantments": [
-                                            {
-                                                "enchantment": "minecraft:silk_touch",
-                                                "levels": {
-                                                    "min": 1
-                                                }
-                                            }
-                                        ]
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "type": "minecraft:item",
-                            "name": crushedId,
-                            "functions": [
-                                {
-                                    "function": "minecraft:set_count",
-                                    "count":
+        "type": "minecraft:block",
+        "pools": [
+            {
+                "rolls": 1,
+                "entries": [
+                    {
+                        "type": "minecraft:alternatives",
+                        "children": [
+                            {
+                                "type": "minecraft:item",
+                                "name": dustId,
+                                "functions": [
                                     {
-                                        "min": 2.0,
-                                        "max": 3.0,
-                                        "type": "minecraft:uniform"
+                                        "function": "minecraft:set_count",
+                                        "count": 9
                                     }
-                                },
-                                {
-                                    "function": "minecraft:apply_bonus",
-                                    "enchantment": "minecraft:fortune",
-                                    "formula": "minecraft:uniform_bonus_count",
-                                    "parameters": { "bonusMultiplier": 1 }
-                                },
-                                {
-                                    "function": "minecraft:explosion_decay"
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
-}}
+                                ],
+                                "conditions": [
+                                    {
+                                        "condition": "tconstruct:has_modifier",
+                                        "modifier": "tconstruct:melting"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "minecraft:item",
+                                "name": id,
+                                "conditions": [
+                                    {
+                                        "condition": "minecraft:match_tool",
+                                        "predicate": {
+                                            "enchantments": [
+                                                {
+                                                    "enchantment": "minecraft:silk_touch",
+                                                    "levels": {
+                                                        "min": 1
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "minecraft:item",
+                                "name": crushedId,
+                                "functions": [
+                                    {
+                                        "function": "minecraft:set_count",
+                                        "count":
+                                        {
+                                            "min": 2.0,
+                                            "max": 3.0,
+                                            "type": "minecraft:uniform"
+                                        }
+                                    },
+                                    {
+                                        "function": "minecraft:apply_bonus",
+                                        "enchantment": "minecraft:fortune",
+                                        "formula": "minecraft:uniform_bonus_count",
+                                        "parameters": { "bonusMultiplier": 1 }
+                                    },
+                                    {
+                                        "function": "minecraft:explosion_decay"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
 
 ServerEvents.blockLootTables(event => {
 

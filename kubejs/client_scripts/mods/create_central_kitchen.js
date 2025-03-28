@@ -17,11 +17,11 @@ if(Platform.isLoaded("create_central_kitchen")) {
         ];
 
         if (!Platform.isLoaded("upgrade_aquatic")) emiHide.push("item:create_central_kitchen:mulberry_pie_slice")
-            if (!Platform.isLoaded("peculiars")) {
-                emiHide.push("item:create_central_kitchen:aloe_cake_slice")
-                emiHide.push("item:create_central_kitchen:yucca_cake_slice")
-                emiHide.push("item:create_central_kitchen:passionfruit_cake_slice")
-            }
+        if (!Platform.isLoaded("peculiars")) {
+            emiHide.push("item:create_central_kitchen:aloe_cake_slice")
+            emiHide.push("item:create_central_kitchen:yucca_cake_slice")
+            emiHide.push("item:create_central_kitchen:passionfruit_cake_slice")
+        }
         if (!Platform.isLoaded("seasonals")) {
             emiHide.push("item:create_central_kitchen:pumpkin_cake_slice")
             emiHide.push("item:create_central_kitchen:sweet_berry_cake_slice")
@@ -35,8 +35,8 @@ if(Platform.isLoaded("create_central_kitchen")) {
             removed: emiHide
         }
         event.add("emi:index/stacks/create_central_kitchen_removed_stacks", json)
-        
-        //Hide CABIN's fern deploying recipes from EMI since cck has an automated cuting tab.
+
+        // Hide CABIN's fern deploying recipes from EMI since cck has an automated cuting tab.
         let hiddenRecipes = [
             "jei:/kubejs/deploying/earth_slime_fern_leaf_using_deployer",
             "jei:/kubejs/deploying/sky_slime_fern_leaf_using_deployer",
@@ -48,6 +48,5 @@ if(Platform.isLoaded("create_central_kitchen")) {
         }
 
         event.add("emi:recipe/filters/create_central_kitchen_hidden_recipes", json)
-        
     })
 }

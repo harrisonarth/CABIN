@@ -318,14 +318,14 @@ StartupEvents.registry("block", event => {
     catalyst(0x3EDBF0, 0xC0FEFC, "gem", "Gemstone")
     category()
 
-    substrateblock(0xb200ed, 0xff66cc, `substrate_chaos`, "Chaos Catalyst", "cabin:block/chaos_catalyst")
-        .item(item => item.rarity('rare'))
+    substrateblock(0xb200ed, 0xff66cc, "substrate_chaos", "Chaos Catalyst", "cabin:block/chaos_catalyst")
+        .item(item => item.rarity("rare"))
 
-    substrateblock(0x474449, 0x967DA0, `substrate_silicon`, "Silicon Reagent", "cabin:block/substrate")
-        .item(item => item.rarity('rare'))
+    substrateblock(0x474449, 0x967DA0, "substrate_silicon", "Silicon Reagent", "cabin:block/substrate")
+        .item(item => item.rarity("rare"))
 
-    substrateblock(0x9FADB4, 0xBECCD2, `substrate_silver`, "Silver Reagent", "cabin:block/substrate")
-        .item(item=>item.rarity('rare'))
+    substrateblock(0x9FADB4, 0xBECCD2, "substrate_silver", "Silver Reagent", "cabin:block/substrate")
+        .item(item=>item.rarity("rare"))
 
     acceleratorBlock(0xFFBC5E, "accellerator_glowstone", "Glowstone Accelerator", "cabin:block/accellerator")
 

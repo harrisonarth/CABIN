@@ -486,8 +486,8 @@ ServerEvents.recipes(event => {
 
     // - - - - - Chapter 2A - - - - -
     // Vine Transmutation
-    donutCraft(event, "minecraft:weeping_vines", 'occultism:spirit_attuned_gem', "minecraft:twisting_vines")
-    donutCraft(event, "minecraft:twisting_vines", 'occultism:spirit_attuned_gem', "minecraft:weeping_vines")
+    donutCraft(event, "minecraft:weeping_vines", "occultism:spirit_attuned_gem", "minecraft:twisting_vines")
+    donutCraft(event, "minecraft:twisting_vines", "occultism:spirit_attuned_gem", "minecraft:weeping_vines")
     // Liquid soul sand
     event.remove({ id: "tconstruct:smeltery/melting/soul/sand" })
     event.recipes.create.mixing(Fluid.of("tconstruct:liquid_soul", 500), ["minecraft:twisting_vines", "minecraft:weeping_vines"]).heated()
@@ -635,7 +635,7 @@ ServerEvents.recipes(event => {
 
     donutCraft(event, "kubejs:lead_machine", "kubejs:lead_casing", "kubejs:logistic_mechanism")
 
-    leadMachine(event, Item.of("create:package_frogport", 1), '#forge:slimeballs')
+    leadMachine(event, Item.of("create:package_frogport", 1), "#forge:slimeballs")
     leadMachine(event, Item.of("create:item_hatch", 4))
     leadMachine(event, Item.of("create:packager", 1), "create:cardboard_block")
     leadMachine(event, Item.of("create:repackager", 1), "create:bound_cardboard_block")
@@ -650,9 +650,9 @@ ServerEvents.recipes(event => {
     let fern1 = "kubejs:ender_slimy_fern_leaf"
     let fern2 = "kubejs:sky_slimy_fern_leaf"
     let fern3 = "kubejs:earth_slimy_fern_leaf"
-    event.shapeless(fern1, ['occultism:spirit_attuned_gem', fern2, fern2, fern2, fern2, fern3, fern3, fern3, fern3])
-    event.shapeless(fern2, ['occultism:spirit_attuned_gem', fern3, fern3, fern3, fern3, fern1, fern1, fern1, fern1])
-    event.shapeless(fern3, ['occultism:spirit_attuned_gem', fern2, fern2, fern2, fern2, fern1, fern1, fern1, fern1])
+    event.shapeless(fern1, ["occultism:spirit_attuned_gem", fern2, fern2, fern2, fern2, fern3, fern3, fern3, fern3])
+    event.shapeless(fern2, ["occultism:spirit_attuned_gem", fern3, fern3, fern3, fern3, fern1, fern1, fern1, fern1])
+    event.shapeless(fern3, ["occultism:spirit_attuned_gem", fern2, fern2, fern2, fern2, fern1, fern1, fern1, fern1])
     // Fern Cutting
     let chop = (type, output) => {
         let fern = `tconstruct:${type}_slime_fern`
@@ -753,7 +753,7 @@ ServerEvents.recipes(event => {
     invarMachine(event, Item.of("thermal:dynamo_compression", 1), "thermal:rf_coil")
     invarMachine(event, Item.of("kubejs:pipe_module_tier_2", 4))
     // Disenchantment Upgrade
-    createMachine("thermal:dynamo_compression", event, Item.of("thermal:dynamo_disenchantment", 1), 'occultism:spirit_attuned_gem')
+    createMachine("thermal:dynamo_compression", event, Item.of("thermal:dynamo_disenchantment", 1), "occultism:spirit_attuned_gem")
     // Default thermal machine recipes are kept in.
     // Check older versions of the script to see commented out code for thermal machine crafting recipes
 
@@ -858,7 +858,7 @@ ServerEvents.recipes(event => {
         S: "ae2:fluix_crystal"
     })
     let blizz = "thermal:blizz_powder"; let basalz = "thermal:basalz_powder"
-    //remove handcrafting recipes for blizz and basalz powder
+    // remove handcrafting recipes for blizz and basalz powder
     event.remove({ id:blizz })
     event.remove({ id:basalz })
     event.remove({ id:"thermal:machines/pulverizer/pulverizer_blizz_rod" })
@@ -1102,7 +1102,7 @@ ServerEvents.recipes(event => {
                 else if (result % 1 != 0)
                     continue
                 else
-                    output = "kubejs:"+nums[result]
+                    output = "kubejs:" + nums[result]
 
                 event.custom({
                     "type": "create:mechanical_crafting",
@@ -1111,13 +1111,13 @@ ServerEvents.recipes(event => {
                     ],
                     "key": {
                         "A": {
-                            "item": "kubejs:"+nums[a]
+                            "item": "kubejs:" + nums[a]
                         },
                         "O": {
-                            "item": "kubejs:"+opNames[op]
+                            "item": "kubejs:" + opNames[op]
                         },
                         "B": {
-                            "item": "kubejs:"+nums[b]
+                            "item": "kubejs:" + nums[b]
                         }
                     },
                     "result": {
@@ -1135,13 +1135,13 @@ ServerEvents.recipes(event => {
                     ],
                     "key": {
                         "A": {
-                            "item": "kubejs:"+nums[a]
+                            "item": "kubejs:" + nums[a]
                         },
                         "O": {
-                            "item": "kubejs:"+opNames[op]
+                            "item": "kubejs:" + opNames[op]
                         },
                         "B": {
-                            "item": "kubejs:"+nums[b]
+                            "item": "kubejs:" + nums[b]
                         }
                     },
                     "result": {
@@ -1212,7 +1212,7 @@ ServerEvents.recipes(event => {
         "cooling_time": 20
     })
 
-    //Ad Astra Recipe Removals are found in ad_astra.js
+    // Ad Astra Recipe Removals are found in ad_astra.js
 
     // Matter Plastics
     event.recipes.create.compacting("kubejs:matter_plastics", ["ae2:matter_ball", "ae2:matter_ball", "ae2:matter_ball", "ae2:matter_ball", "ae2:matter_ball", "ae2:matter_ball", "ae2:matter_ball", "ae2:matter_ball", "ae2:matter_ball"]).superheated()
@@ -1246,11 +1246,11 @@ ServerEvents.recipes(event => {
         "AMA"
     ], materials)
     // Oxygen Sensor
-        event.recipes.create.mechanical_crafting("ad_astra:oxygen_sensor", [
-            "AAA",
-            "GSG",
-            "AMA"
-        ], Object.assign(materials, {M:"minecraft:redstone_block"}))
+    event.recipes.create.mechanical_crafting("ad_astra:oxygen_sensor", [
+        "AAA",
+        "GSG",
+        "AMA"
+    ], Object.assign(materials, {M:"minecraft:redstone_block"}))
     // Lander Deployer
     materials.S = "create:empty_schematic"
     event.recipes.create.mechanical_crafting("kubejs:lander_deployer", [
@@ -1283,7 +1283,7 @@ ServerEvents.recipes(event => {
     materials.S = "minecraft:iron_boots"
     event.recipes.create.mechanical_crafting("ad_astra:space_boots", pattern, materials)
 
-    //Gas Tanks
+    // Gas Tanks
     materials = {
         A: "kubejs:matter_plastics",
         G: "#forge:plates/gold"
@@ -1301,14 +1301,12 @@ ServerEvents.recipes(event => {
         "ATA"
     ], materials)
 
-    //Zip Gun
+    // Zip Gun
     materials.T = "ad_astra:large_gas_tank"
     event.recipes.create.mechanical_crafting("ad_astra:zip_gun", [
         "AAG",
         "T  "
     ], materials)
-
-
 
     // Rocket Launch Pad
     event.recipes.create.deploying(Item.of("ad_astra:launch_pad"), ["architects_palette:heavy_stone_bricks", "kubejs:matter_plastics"])
@@ -1367,7 +1365,7 @@ ServerEvents.recipes(event => {
         C: "thermal:dynamo_compression"
     })
 
-    //Solar Panel
+    // Solar Panel
     event.recipes.create.mechanical_crafting("ad_astra:solar_panel", [
         "CCC",
         "DMD",
@@ -1378,7 +1376,7 @@ ServerEvents.recipes(event => {
         D: "#forge:plates/desh"
     })
 
-    //Gravity Normalizer
+    // Gravity Normalizer
     transitional = "kubejs:incomplete_gravity_normalizer"
     event.recipes.create.sequenced_assembly([
         "ad_astra:gravity_normalizer",
