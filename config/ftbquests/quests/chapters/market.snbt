@@ -1079,15 +1079,22 @@
 				{
 					team_reward: "false"
 					count: 4
-					id: "4BCFE98EB9FF9DB4"
-					item: "minecraft:flowering_azalea"
+					id: "3E7E4B570C7EDF5F"
+					item: "minecraft:cherry_sapling"
 					type: "item"
 				}
 				{
 					team_reward: "false"
 					count: 4
-					id: "3E7E4B570C7EDF5F"
-					item: "minecraft:cherry_sapling"
+					id: "6D61111C4CF926DE"
+					item: "minecraft:mangrove_propagule"
+					type: "item"
+				}
+				{
+					team_reward: "false"
+					count: 4
+					id: "4BCFE98EB9FF9DB4"
+					item: "minecraft:flowering_azalea"
 					type: "item"
 				}
 				{
