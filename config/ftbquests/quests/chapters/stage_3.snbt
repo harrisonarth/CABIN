@@ -17,7 +17,7 @@
 				""
 				"{cabin.quest.397232F676CB621B.description3}"
 			]
-			hide_until_deps_visible: true
+			hide_until_deps_complete: true
 			icon: "create:precision_mechanism"
 			id: "397232F676CB621B"
 			rewards: [{
@@ -719,7 +719,7 @@
 				"{cabin.quest.38B063C8DE71E86D.description2}"
 			]
 			hide_dependency_lines: true
-			hide_until_deps_visible: true
+			hide_until_deps_complete: true
 			id: "38B063C8DE71E86D"
 			shape: "circle"
 			tasks: [{
@@ -758,7 +758,7 @@
 			]
 			description: ["{cabin.quest.05C7E580ED88B556.description1}"]
 			hide_dependency_lines: true
-			hide_until_deps_visible: true
+			hide_until_deps_complete: true
 			icon: "minecraft:end_portal_frame"
 			id: "05C7E580ED88B556"
 			shape: "circle"
@@ -1018,7 +1018,7 @@
 			]
 			description: ["{cabin.quest.3BFC4DFCE765F3EA.description1}"]
 			hide_dependency_lines: true
-			hide_until_deps_visible: true
+			hide_until_deps_complete: true
 			id: "3BFC4DFCE765F3EA"
 			shape: "circle"
 			tasks: [{

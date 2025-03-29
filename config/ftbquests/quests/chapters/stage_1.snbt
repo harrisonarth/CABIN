@@ -421,7 +421,7 @@
 				""
 				"{cabin.quest.5799D55BB26BA52C.description3}"
 			]
-			hide_until_deps_visible: true
+			hide_until_deps_complete: true
 			icon: "create:wrench"
 			id: "5799D55BB26BA52C"
 			rewards: [{

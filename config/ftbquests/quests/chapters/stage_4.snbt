@@ -15,7 +15,7 @@
 				""
 				"{cabin.quest.4B80A801A5BE4A01.description2}"
 			]
-			hide_until_deps_visible: true
+			hide_until_deps_complete: true
 			icon: "kubejs:inductive_mechanism"
 			id: "4B80A801A5BE4A01"
 			rewards: [{
@@ -616,7 +616,7 @@
 			dependencies: ["3B431AAADE8845FA"]
 			description: ["{cabin.quest.0CE88FEA070DC46C.description1}"]
 			disable_toast: true
-			hide_until_deps_visible: true
+			hide_until_deps_complete: true
 			icon: "kubejs:substrate_silicon"
 			id: "0CE88FEA070DC46C"
 			shape: "hexagon"

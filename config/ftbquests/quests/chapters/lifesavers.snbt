@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "lifesavers"
-	group: "331B6409EF6A7840"
+	group: "3BE4B4DE6A6F6C40"
 	icon: "minecraft:totem_of_undying"
 	id: "0D0BC5B3F6623669"
-	order_index: 8
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{

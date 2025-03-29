@@ -15,7 +15,7 @@
 				""
 				"{cabin.quest.727B43FD95C4A512.description2}"
 			]
-			hide_until_deps_visible: true
+			hide_until_deps_complete: true
 			icon: "kubejs:kinetic_mechanism"
 			id: "727B43FD95C4A512"
 			rewards: [{
@@ -494,7 +494,7 @@
 				"{cabin.quest.1D9D65FBD06DD481.description2}"
 			]
 			hide_dependency_lines: true
-			hide_until_deps_visible: true
+			hide_until_deps_complete: true
 			icon: "minecraft:lava_bucket"
 			id: "1D9D65FBD06DD481"
 			subtitle: "{cabin.quest.1D9D65FBD06DD481.subtitle}"
@@ -551,7 +551,7 @@
 				"{cabin.quest.223BB57AD0239511.description2}"
 			]
 			hide_dependency_lines: true
-			hide_until_deps_visible: true
+			hide_until_deps_complete: true
 			icon: "minecraft:twisting_vines"
 			id: "223BB57AD0239511"
 			subtitle: "{cabin.quest.223BB57AD0239511.subtitle}"
@@ -582,7 +582,7 @@
 				"{cabin.quest.7E59B7DC239E621E.description2}"
 			]
 			hide_dependency_lines: true
-			hide_until_deps_visible: true
+			hide_until_deps_complete: true
 			icon: "minecraft:weeping_vines"
 			id: "7E59B7DC239E621E"
 			subtitle: "{cabin.quest.7E59B7DC239E621E.subtitle}"
@@ -691,7 +691,7 @@
 			]
 			description: ["{cabin.quest.5DCF9C8212AA3BE3.description1}"]
 			hide_dependency_lines: true
-			hide_until_deps_visible: true
+			hide_until_deps_complete: true
 			id: "5DCF9C8212AA3BE3"
 			shape: "circle"
 			tasks: [{
@@ -710,6 +710,7 @@
 			]
 			description: ["{cabin.quest.6C029983EE2035A5.description1}"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: "minecraft:nether_wart"
 			id: "6C029983EE2035A5"
 			subtitle: "{cabin.quest.6C029983EE2035A5.subtitle}"
@@ -768,6 +769,7 @@
 			]
 			description: ["{cabin.quest.4B891E9ED8DE6BB2.description1}"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: "minecraft:glow_berries"
 			id: "4B891E9ED8DE6BB2"
 			subtitle: "{cabin.quest.4B891E9ED8DE6BB2.subtitle}"
@@ -816,6 +818,7 @@
 			]
 			description: ["{cabin.quest.1A06FA866B74E75B.description1}"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: "kubejs:liquid_pulp_bucket"
 			id: "1A06FA866B74E75B"
 			subtitle: "{cabin.quest.1A06FA866B74E75B.subtitle}"

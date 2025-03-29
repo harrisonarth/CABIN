@@ -17,7 +17,7 @@
 				""
 				"{cabin.quest.05446225038D260A.description3}"
 			]
-			hide_until_deps_visible: true
+			hide_until_deps_complete: true
 			icon: "kubejs:inductive_mechanism"
 			id: "05446225038D260A"
 			rewards: [{
@@ -710,9 +710,8 @@
 				""
 				"{cabin.quest.1D1D1FEAF49C5E11.description4}"
 			]
-			icon: "projectred_illumination:lime_inverted_cage_light"
+			icon: "ad_astra:small_orange_industrial_lamp"
 			id: "1D1D1FEAF49C5E11"
-			can_repeat: true
 			rewards: [{
 				command: "/create ponder kubejs:alchemical_laser"
 				icon: {

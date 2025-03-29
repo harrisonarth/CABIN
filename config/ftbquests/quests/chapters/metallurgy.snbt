@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "metallurgy"
-	group: "331B6409EF6A7840"
-	icon: "thermal:silver_ingot"
+	group: "3BE4B4DE6A6F6C40"
+	icon: "minecraft:gold_ingot"
 	id: "1B927DD15CF28E13"
-	order_index: 7
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
