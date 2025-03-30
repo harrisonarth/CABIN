@@ -39,7 +39,6 @@
 				auto: "enabled"
 				id: "0A6DEF2E19943F9F"
 				item: "kubejs:trade_card_exchange_currencies"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "circle"
@@ -62,7 +61,6 @@
 				auto: "enabled"
 				id: "73B5632934CB5398"
 				item: "kubejs:trade_card_dirt"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -87,7 +85,6 @@
 				auto: "enabled"
 				id: "4D3AAC1C8DC9CEEF"
 				item: "kubejs:trade_card_sand"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -112,7 +109,6 @@
 				auto: "enabled"
 				id: "092706A1932A2BC2"
 				item: "kubejs:trade_card_gravel"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -137,7 +133,6 @@
 				auto: "enabled"
 				id: "5DC9D20E6BC4A51C"
 				item: "kubejs:trade_card_clay"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -162,7 +157,6 @@
 				auto: "enabled"
 				id: "5626AD1C3B237DBF"
 				item: "kubejs:trade_card_ice"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -187,7 +181,6 @@
 				auto: "enabled"
 				id: "5A7B73A55C927126"
 				item: "kubejs:trade_card_blackstone"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -212,7 +205,6 @@
 				auto: "enabled"
 				id: "0D2D48CDD087D4FA"
 				item: "kubejs:trade_card_grout"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -237,7 +229,6 @@
 				auto: "enabled"
 				id: "268F87140B2BE1A5"
 				item: "kubejs:trade_card_cobblestone"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -262,7 +253,6 @@
 				auto: "enabled"
 				id: "2E3F385127229261"
 				item: "kubejs:trade_card_granite"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -287,7 +277,6 @@
 				auto: "enabled"
 				id: "17357E149CEB22EB"
 				item: "kubejs:trade_card_diorite"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -312,7 +301,6 @@
 				auto: "enabled"
 				id: "57557C8A54D21B68"
 				item: "kubejs:trade_card_andesite"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -337,7 +325,6 @@
 				auto: "enabled"
 				id: "798D923EE57A6442"
 				item: "kubejs:trade_card_limestone"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -362,7 +349,6 @@
 				auto: "enabled"
 				id: "16054B2D679D6012"
 				item: "kubejs:trade_card_scoria"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -387,7 +373,6 @@
 				auto: "enabled"
 				id: "6EC8FA21CEFFBB20"
 				item: "kubejs:trade_card_obsidian"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -412,7 +397,6 @@
 				auto: "enabled"
 				id: "203B1118E5E16C63"
 				item: "kubejs:trade_card_dead_log"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -437,7 +421,6 @@
 				auto: "enabled"
 				id: "41B4166C32732193"
 				item: "kubejs:trade_card_oak_log"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -462,7 +445,6 @@
 				auto: "enabled"
 				id: "153D65A8A0BB38FA"
 				item: "kubejs:trade_card_birch_log"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -487,7 +469,6 @@
 				auto: "enabled"
 				id: "795C72A7059A47C2"
 				item: "kubejs:trade_card_spruce_log"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -512,7 +493,6 @@
 				auto: "enabled"
 				id: "7A2F2E7AFBF5E2C0"
 				item: "kubejs:trade_card_jungle_log"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -537,7 +517,6 @@
 				auto: "enabled"
 				id: "32FB1ED239878B55"
 				item: "kubejs:trade_card_acacia_log"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -562,7 +541,6 @@
 				auto: "enabled"
 				id: "1854BD659ABE0EC5"
 				item: "kubejs:trade_card_dark_oak_log"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -587,7 +565,6 @@
 				auto: "enabled"
 				id: "4DDDA8FE8957E1B3"
 				item: "kubejs:trade_card_crimson_stem"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -612,7 +589,6 @@
 				auto: "enabled"
 				id: "2EFE654C949DA5E2"
 				item: "kubejs:trade_card_warped_stem"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -637,7 +613,6 @@
 				auto: "enabled"
 				id: "04EFE1B1037D4425"
 				item: "kubejs:trade_card_iron_ingot"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -662,7 +637,6 @@
 				auto: "enabled"
 				id: "5D700D1565692EE1"
 				item: "kubejs:trade_card_zinc_ingot"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -687,7 +661,6 @@
 				auto: "enabled"
 				id: "5FDA4963F53EC5F5"
 				item: "kubejs:trade_card_copper_ingot"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -712,7 +685,6 @@
 				auto: "enabled"
 				id: "645226D860AF3F5E"
 				item: "kubejs:trade_card_nickel_ingot"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -737,7 +709,6 @@
 				auto: "enabled"
 				id: "5FB6D6D6595BFA31"
 				item: "kubejs:trade_card_lead_ingot"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -762,7 +733,6 @@
 				auto: "enabled"
 				id: "5DF7A47F2DF28050"
 				item: "kubejs:trade_card_gold_ingot"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -787,7 +757,6 @@
 				auto: "enabled"
 				id: "086F1AC96402FBDE"
 				item: "kubejs:trade_card_andesite_alloy"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -812,7 +781,6 @@
 				auto: "enabled"
 				id: "7FDA0A2FE7C3CC29"
 				item: "kubejs:trade_card_amethyst"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -837,7 +805,6 @@
 				auto: "enabled"
 				id: "5BBBE855F52ED029"
 				item: "kubejs:trade_card_brass_ingot"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -862,7 +829,6 @@
 				auto: "enabled"
 				id: "302C6F91CA94F1E1"
 				item: "kubejs:trade_card_invar_ingot"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -887,7 +853,6 @@
 				auto: "enabled"
 				id: "2EBABA88E1067F51"
 				item: "kubejs:trade_card_coal"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -912,7 +877,6 @@
 				auto: "enabled"
 				id: "3E183FFAFED2D1D9"
 				item: "kubejs:trade_card_flint"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -937,7 +901,6 @@
 				auto: "enabled"
 				id: "48E779E7241F8B64"
 				item: "kubejs:trade_card_cinnabar"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -962,7 +925,6 @@
 				auto: "enabled"
 				id: "288A91044CFC9BEA"
 				item: "kubejs:trade_card_redstone_dust"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -987,7 +949,6 @@
 				auto: "enabled"
 				id: "703407B7CF1C8911"
 				item: "kubejs:trade_card_diamond"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1012,7 +973,6 @@
 				auto: "enabled"
 				id: "0351079CD0288700"
 				item: "kubejs:trade_card_lapis_lazuli"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1037,7 +997,6 @@
 				auto: "enabled"
 				id: "14762B422E1D7D3B"
 				item: "kubejs:trade_card_emerald"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1062,7 +1021,6 @@
 				auto: "enabled"
 				id: "1F521871F7BF5D3B"
 				item: "kubejs:trade_card_sulfur"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1087,7 +1045,6 @@
 				auto: "enabled"
 				id: "2FC89C2C89DA4253"
 				item: "kubejs:trade_card_apatite"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1112,7 +1069,6 @@
 				auto: "enabled"
 				id: "2064E44195ACEC5B"
 				item: "kubejs:trade_card_niter"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1137,7 +1093,6 @@
 				auto: "enabled"
 				id: "13C6D81EC3938304"
 				item: "kubejs:trade_card_nether_quartz"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1162,7 +1117,6 @@
 				auto: "enabled"
 				id: "4DE00DE8BF5936C9"
 				item: "kubejs:trade_card_certus_quartz"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1187,7 +1141,6 @@
 				auto: "enabled"
 				id: "08DDDFEFD8A7C4D7"
 				item: "kubejs:trade_card_fluix_quartz"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1212,7 +1165,6 @@
 				auto: "enabled"
 				id: "22DD9D3AF87567E2"
 				item: "kubejs:trade_card_cured_rubber"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1237,7 +1189,6 @@
 				auto: "enabled"
 				id: "4E2898367E1E0619"
 				item: "kubejs:trade_card_scaffolding"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1262,7 +1213,6 @@
 				auto: "enabled"
 				id: "36A65ACB4695944E"
 				item: "kubejs:trade_card_wool"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1287,7 +1237,6 @@
 				auto: "enabled"
 				id: "53B0394912B56DD3"
 				item: "kubejs:trade_card_sponge"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1312,7 +1261,6 @@
 				auto: "enabled"
 				id: "4CD2BDCF1A0AF73B"
 				item: "kubejs:trade_card_cobweb"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1337,7 +1285,6 @@
 				auto: "enabled"
 				id: "3A5740C10BBF0430"
 				item: "kubejs:trade_card_rice"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1362,7 +1309,6 @@
 				auto: "enabled"
 				id: "78B01F12E7EDFC53"
 				item: "kubejs:trade_card_straw"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1387,7 +1333,6 @@
 				auto: "enabled"
 				id: "6056A6105CB0C763"
 				item: "kubejs:trade_card_glowshroom"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1412,7 +1357,6 @@
 				auto: "enabled"
 				id: "7B54EAB8073173F1"
 				item: "kubejs:trade_card_bramble"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1437,7 +1381,6 @@
 				auto: "enabled"
 				id: "3EE0DCF1E01DE583"
 				item: "kubejs:trade_card_barley"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1462,7 +1405,6 @@
 				auto: "enabled"
 				id: "05836F075B2DD93C"
 				item: "kubejs:trade_card_watergrass"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1487,7 +1429,6 @@
 				auto: "enabled"
 				id: "5DF1491360FCF3FA"
 				item: "kubejs:trade_card_reed"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1512,7 +1453,6 @@
 				auto: "enabled"
 				id: "07C4BD06D929D08A"
 				item: "kubejs:trade_card_clover_petal"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1537,7 +1477,6 @@
 				auto: "enabled"
 				id: "1D32702F20FE8AAB"
 				item: "kubejs:trade_card_spanish_moss"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1562,7 +1501,6 @@
 				auto: "enabled"
 				id: "0A9B1BF968F82301"
 				item: "kubejs:trade_card_willow_vine"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1587,7 +1525,6 @@
 				auto: "enabled"
 				id: "1BD8FA059ED750C8"
 				item: "kubejs:trade_card_cattail"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1612,7 +1549,6 @@
 				auto: "enabled"
 				id: "3D70673520E3563B"
 				item: "kubejs:trade_card_sugar_cane"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1637,7 +1573,6 @@
 				auto: "enabled"
 				id: "51D175FD782BBBB1"
 				item: "kubejs:trade_card_kelp"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1662,7 +1597,6 @@
 				auto: "enabled"
 				id: "1C92DCE87F116947"
 				item: "kubejs:trade_card_bamboo"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1687,7 +1621,6 @@
 				auto: "enabled"
 				id: "68F58624A48FD804"
 				item: "kubejs:trade_card_sweet_berries"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1712,7 +1645,6 @@
 				auto: "enabled"
 				id: "10F61F3602889BF0"
 				item: "kubejs:trade_card_vines"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1737,7 +1669,6 @@
 				auto: "enabled"
 				id: "24A86054AF92BE82"
 				item: "kubejs:trade_card_tree_fertilizer"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1762,7 +1693,6 @@
 				auto: "enabled"
 				id: "16A5440919178342"
 				item: "kubejs:trade_card_daub"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1787,7 +1717,6 @@
 				auto: "enabled"
 				id: "2944EA4C610DACB4"
 				item: "kubejs:trade_card_clear_glass"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1812,7 +1741,6 @@
 				auto: "enabled"
 				id: "26925EEB466FCEBD"
 				item: "kubejs:trade_card_copper_shingles"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1837,7 +1765,6 @@
 				auto: "enabled"
 				id: "72F40F26027377A2"
 				item: "kubejs:trade_card_algal_bricks"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1862,7 +1789,6 @@
 				auto: "enabled"
 				id: "4F7BF38D3490B8C2"
 				item: "kubejs:trade_card_olivestone_bricks"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1887,7 +1813,6 @@
 				auto: "enabled"
 				id: "32A8DF7DE9B0A29A"
 				item: "kubejs:trade_card_sunmetal"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1912,7 +1837,6 @@
 				auto: "enabled"
 				id: "72E68D6D7A7E8F25"
 				item: "kubejs:trade_card_plating_block"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1937,7 +1861,6 @@
 				auto: "enabled"
 				id: "22523CAC4C6C6970"
 				item: "kubejs:trade_card_twisted_planks"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1962,7 +1885,6 @@
 				auto: "enabled"
 				id: "1E7F2B3B05EA97E2"
 				item: "kubejs:trade_card_osseous_bricks"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1987,7 +1909,6 @@
 				auto: "enabled"
 				id: "50F49365A310C7AF"
 				item: "kubejs:trade_card_seared_stone"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2012,7 +1933,6 @@
 				auto: "enabled"
 				id: "2212B9D7C3CE5596"
 				item: "kubejs:trade_card_scorched_stone"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2037,7 +1957,6 @@
 				auto: "enabled"
 				id: "2D46F83411D1BE3E"
 				item: "kubejs:trade_card_lantern"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2062,7 +1981,6 @@
 				auto: "enabled"
 				id: "7902C2C3CA649D96"
 				item: "kubejs:trade_card_soul_lantern"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2086,7 +2004,6 @@
 				auto: "enabled"
 				id: "45FEF3A32F7766AD"
 				item: "kubejs:trade_card_myalite"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2111,7 +2028,6 @@
 				auto: "enabled"
 				id: "2E705AE0E825C6B5"
 				item: "kubejs:trade_card_jasper"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2136,7 +2052,6 @@
 				auto: "enabled"
 				id: "576ECF50EAF96452"
 				item: "kubejs:trade_card_slime_ball"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2161,7 +2076,6 @@
 				auto: "enabled"
 				id: "7B223CF62CA3E5E3"
 				item: "kubejs:trade_card_string"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2186,7 +2100,6 @@
 				auto: "enabled"
 				id: "1522E7E6CC270122"
 				item: "kubejs:trade_card_feather"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2211,7 +2124,6 @@
 				auto: "enabled"
 				id: "2A5CE406A8184B62"
 				item: "kubejs:trade_card_gunpowder"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2236,7 +2148,6 @@
 				auto: "enabled"
 				id: "74F3E9B2AFC611AE"
 				item: "kubejs:trade_card_leather"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2261,7 +2172,6 @@
 				auto: "enabled"
 				id: "505F6AE0E7831D5A"
 				item: "kubejs:trade_card_ink_sac"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2286,7 +2196,6 @@
 				auto: "enabled"
 				id: "4C973FACE23E9458"
 				item: "kubejs:trade_card_experience"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2311,7 +2220,6 @@
 				auto: "enabled"
 				id: "303058DFD6FFB21A"
 				item: "kubejs:trade_card_shulker_shell"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2336,7 +2244,6 @@
 				auto: "enabled"
 				id: "27371A9101CF9D19"
 				item: "kubejs:trade_card_spider_eye"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2361,7 +2268,6 @@
 				auto: "enabled"
 				id: "1F0E6C70D37E2509"
 				item: "kubejs:trade_card_ender_pearl"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2386,7 +2292,6 @@
 				auto: "enabled"
 				id: "7C5CB53B93CA20F6"
 				item: "kubejs:trade_card_rotten_flesh"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2411,7 +2316,6 @@
 				auto: "enabled"
 				id: "17E28B4A42E7977B"
 				item: "kubejs:trade_card_blaze_rod"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2436,7 +2340,6 @@
 				auto: "enabled"
 				id: "3AE918FEFE0A3CB9"
 				item: "kubejs:trade_card_bone"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2461,7 +2364,6 @@
 				auto: "enabled"
 				id: "2D8C5A5E22AB7A9A"
 				item: "kubejs:trade_card_prismarine_shard"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2486,7 +2388,6 @@
 				auto: "enabled"
 				id: "77F93921DB94E45A"
 				item: "kubejs:trade_card_prismarine_crystals"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2511,7 +2412,6 @@
 				auto: "enabled"
 				id: "3BFE36CE8DEED04B"
 				item: "kubejs:trade_card_witch_hat"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2536,7 +2436,6 @@
 				auto: "enabled"
 				id: "2683AEBC65309590"
 				item: "kubejs:trade_card_zombie_heart"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2561,7 +2460,6 @@
 				auto: "enabled"
 				id: "08D7DF6BC677E813"
 				item: "kubejs:trade_card_squid_beak"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2586,7 +2484,6 @@
 				auto: "enabled"
 				id: "5B6DB6D9D5226D0E"
 				item: "kubejs:trade_card_rib_bone"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2611,7 +2508,6 @@
 				auto: "enabled"
 				id: "3045E27533693F14"
 				item: "kubejs:trade_card_catalyzing_gland"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2636,7 +2532,6 @@
 				auto: "enabled"
 				id: "4F8FF287C3AC4EB4"
 				item: "kubejs:trade_card_chelicerae"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2661,7 +2556,6 @@
 				auto: "enabled"
 				id: "3DD074848EA13D6A"
 				item: "kubejs:trade_card_slime_pearl"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2686,7 +2580,6 @@
 				auto: "enabled"
 				id: "1F9F748792E58E29"
 				item: "kubejs:trade_card_bat_wing"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2711,7 +2604,6 @@
 				auto: "enabled"
 				id: "1DF2FEEF65D1FE87"
 				item: "kubejs:trade_card_withered_rib"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2736,7 +2628,6 @@
 				auto: "enabled"
 				id: "716125125B3BC02C"
 				item: "kubejs:trade_card_molten_core"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2761,7 +2652,6 @@
 				auto: "enabled"
 				id: "70F1845989BF7E3D"
 				item: "kubejs:trade_card_eye_of_the_storm"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2786,7 +2676,6 @@
 				auto: "enabled"
 				id: "4AA8F100108F0558"
 				item: "kubejs:trade_card_frozen_core"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2811,7 +2700,6 @@
 				auto: "enabled"
 				id: "327EA87B6F1EB3B3"
 				item: "kubejs:trade_card_nebulous_heart"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2836,7 +2724,6 @@
 				auto: "enabled"
 				id: "138ED529F3D10981"
 				item: "kubejs:trade_card_guardian_spike"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2861,7 +2748,6 @@
 				auto: "enabled"
 				id: "00ECC786C2F2BD74"
 				item: "kubejs:trade_card_breeze_rod"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2886,7 +2772,6 @@
 				auto: "enabled"
 				id: "2523CFB9FE014C2B"
 				item: "kubejs:trade_card_blaze_cake"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2916,7 +2801,6 @@
 					auto: "enabled"
 					id: "26C6A3ACA1B59772"
 					item: "thermal:machine_press"
-					team_reward: false
 					type: "item"
 				}
 				{
@@ -2946,7 +2830,6 @@
 				auto: "enabled"
 				id: "1B9ABC1FB22D5A5F"
 				item: "kubejs:trade_card_shale"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2970,7 +2853,6 @@
 				auto: "enabled"
 				id: "392B8B372A0EFB42"
 				item: "kubejs:trade_card_glow_berries"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2994,7 +2876,6 @@
 					auto: "enabled"
 					id: "24F734399AE4D396"
 					item: "kubejs:trade_card_glow_lichen"
-					team_reward: false
 					type: "item"
 				}
 				{
@@ -3025,7 +2906,6 @@
 				auto: "enabled"
 				id: "027915A405B20646"
 				item: "kubejs:trade_card_moss_block"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -3048,7 +2928,6 @@
 				auto: "enabled"
 				id: "3734299704FB3F86"
 				item: "kubejs:trade_card_glowing_moss_block"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -3071,7 +2950,6 @@
 				auto: "enabled"
 				id: "17462E7C5F835004"
 				item: "kubejs:trade_card_glow_ink_sac"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -3096,7 +2974,6 @@
 				auto: "enabled"
 				id: "4BC62D1FB35515D6"
 				item: "kubejs:trade_card_cobbled_deepslate"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -3122,7 +2999,6 @@
 					auto: "enabled"
 					id: "28C9BA04E5E7E281"
 					item: "kubejs:trade_card_honeycomb_block"
-					team_reward: false
 					type: "item"
 				}
 				{
@@ -3153,7 +3029,6 @@
 				auto: "enabled"
 				id: "7B2ED7C22E8D675B"
 				item: "kubejs:trade_card_bitumen"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -3178,7 +3053,6 @@
 				auto: "enabled"
 				id: "0F61EDD703FCC266"
 				item: "kubejs:trade_card_cherry_log"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -3201,7 +3075,6 @@
 				auto: "enabled"
 				id: "3C7C6226724A6520"
 				item: "kubejs:trade_card_sculk"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -3224,7 +3097,6 @@
 				auto: "enabled"
 				id: "3A35385CDE57FC2D"
 				item: "kubejs:trade_card_pink_petals"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -3247,7 +3119,6 @@
 				auto: "enabled"
 				id: "068A1A1CEB5E7F76"
 				item: "kubejs:trade_card_big_dripleaf"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"

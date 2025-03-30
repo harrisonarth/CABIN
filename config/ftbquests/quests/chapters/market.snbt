@@ -108,7 +108,6 @@
 						}
 					}
 				}
-				team_reward: false
 				type: "item"
 			}]
 			subtitle: "{cabin.quest.4F953BACF4D1C151.subtitle}"
@@ -168,7 +167,6 @@
 						}
 					}
 				}
-				team_reward: false
 				type: "item"
 			}]
 			subtitle: "{cabin.quest.4F953BACF4D1C151.subtitle}"
@@ -228,7 +226,6 @@
 						}
 					}
 				}
-				team_reward: false
 				type: "item"
 			}]
 			subtitle: "{cabin.quest.00D6DD6AE8E3C014.subtitle}"
@@ -286,7 +283,6 @@
 				icon: "kubejs:silver_coin"
 				id: "26512E93CE404069"
 				item: "thermal:silver_coin"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "circle"
@@ -310,7 +306,6 @@
 				auto: "enabled"
 				id: "66BE3DDEC92812C4"
 				item: "thermal:gold_coin"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "circle"
@@ -335,35 +330,30 @@
 					count: 4
 					id: "05B553B614119E4A"
 					item: "farmersdelight:steak_and_potatoes"
-					team_reward: false
 					type: "item"
 				}
 				{
 					count: 4
 					id: "607D48921297C475"
 					item: "create:builders_tea"
-					team_reward: false
 					type: "item"
 				}
 				{
 					count: 2
 					id: "37DB33F821AD0AFE"
 					item: "minecraft:bread"
-					team_reward: false
 					type: "item"
 				}
 				{
 					count: 4
 					id: "51A8014ACD2153F6"
 					item: "farmersdelight:mixed_salad"
-					team_reward: false
 					type: "item"
 				}
 				{
 					count: 4
 					id: "5CD27D9058DAFAAB"
 					item: "farmersdelight:sweet_berry_cookie"
-					team_reward: false
 					type: "item"
 				}
 			]
@@ -388,21 +378,18 @@
 					count: 64
 					id: "65597F84B69546EF"
 					item: "minecraft:dirt"
-					team_reward: false
 					type: "item"
 				}
 				{
 					count: 64
 					id: "5ED9F3AFC25DD60E"
 					item: "minecraft:dirt"
-					team_reward: false
 					type: "item"
 				}
 				{
 					count: 64
 					id: "1A8CE751232C7235"
 					item: "minecraft:dirt"
-					team_reward: false
 					type: "item"
 				}
 			]
@@ -540,7 +527,6 @@
 						}
 					}
 				}
-				team_reward: false
 				type: "item"
 			}]
 			subtitle: "{cabin.quest.09EA580B3D32FEEB.subtitle}"
@@ -562,7 +548,6 @@
 			rewards: [{
 				id: "440DF47BEF341626"
 				item: "sophisticatedbackpacks:backpack"
-				team_reward: false
 				type: "item"
 			}]
 			subtitle: "{cabin.quest.09DC2E2BE2BE32F4.subtitle}"
@@ -603,7 +588,6 @@
 						}
 					}
 				}
-				team_reward: false
 				type: "item"
 			}]
 			subtitle: "{cabin.quest.0CCF34BF1C5829AE.subtitle}"
@@ -624,7 +608,6 @@
 			rewards: [{
 				id: "6BCBFB22A82A5698"
 				item: "minecraft:totem_of_undying"
-				team_reward: false
 				type: "item"
 			}]
 			subtitle: "{cabin.quest.2F2BA8C2AC2E0B93.subtitle}"
@@ -647,13 +630,11 @@
 				{
 					id: "0257303302DADA1B"
 					item: "create:peculiar_bell"
-					team_reward: false
 					type: "item"
 				}
 				{
 					id: "30D4605E06FF45B6"
 					item: "minecraft:soul_campfire"
-					team_reward: false
 					type: "item"
 				}
 			]
@@ -704,7 +685,6 @@
 						}
 					}
 				}
-				team_reward: false
 				type: "item"
 			}]
 			subtitle: "{cabin.quest.00D6DD6AE8E3C014.subtitle}"
@@ -740,7 +720,6 @@
 				count: 4
 				id: "51ABA96DE3477D3B"
 				item: "kubejs:circuit_scrap"
-				team_reward: false
 				type: "item"
 			}]
 			subtitle: "{cabin.quest.4BAC95CCC72369AD.subtitle}"
@@ -763,7 +742,6 @@
 			rewards: [{
 				id: "500098FD4762A38F"
 				item: "minecraft:axolotl_bucket"
-				team_reward: false
 				type: "item"
 			}]
 			subtitle: "{cabin.quest.04468935C9A7298F.subtitle}"
@@ -792,7 +770,6 @@
 			rewards: [{
 				id: "198DC310752F341F"
 				item: "minecraft:netherite_upgrade_smithing_template"
-				team_reward: false
 				type: "item"
 			}]
 			subtitle: "{cabin.quest.093FB7B7FEC6B886.subtitle}"
@@ -816,28 +793,24 @@
 					count: 8
 					id: "1C6218230C6D71A0"
 					item: "thermal:explosive_grenade"
-					team_reward: false
 					type: "item"
 				}
 				{
 					count: 8
 					id: "2D1A3F35DF8894FF"
 					item: "thermal:glowstone_grenade"
-					team_reward: false
 					type: "item"
 				}
 				{
 					count: 8
 					id: "093F58649A1E0DD6"
 					item: "thermal:ice_grenade"
-					team_reward: false
 					type: "item"
 				}
 				{
 					count: 8
 					id: "71BB0C93A4A7BC04"
 					item: "thermal:earth_grenade"
-					team_reward: false
 					type: "item"
 				}
 			]
@@ -861,28 +834,24 @@
 					count: 8
 					id: "26A16DC998FEF595"
 					item: "farmersdelight:organic_compost"
-					team_reward: false
 					type: "item"
 				}
 				{
 					count: 8
 					id: "5DEDD7BBA8A712AA"
 					item: "minecraft:flower_pot"
-					team_reward: false
 					type: "item"
 				}
 				{
 					count: 4
 					id: "01196A417139EA21"
 					item: "supplementaries:flower_box"
-					team_reward: false
 					type: "item"
 				}
 				{
 					count: 4
 					id: "648B819C1B484A3F"
 					item: "minecraft:grass_block"
-					team_reward: false
 					type: "item"
 				}
 			]
@@ -906,56 +875,48 @@
 					count: 16
 					id: "6375AD9CBA9276E0"
 					item: "minecraft:white_wool"
-					team_reward: false
 					type: "item"
 				}
 				{
 					count: 12
 					id: "72F57D408AD5C84A"
 					item: "minecraft:white_dye"
-					team_reward: false
 					type: "item"
 				}
 				{
 					count: 12
 					id: "3477DB4BB2003475"
 					item: "minecraft:yellow_dye"
-					team_reward: false
 					type: "item"
 				}
 				{
 					count: 12
 					id: "14FE738419E8578F"
 					item: "minecraft:black_dye"
-					team_reward: false
 					type: "item"
 				}
 				{
 					count: 12
 					id: "4D37425F17A9D45F"
 					item: "minecraft:blue_dye"
-					team_reward: false
 					type: "item"
 				}
 				{
 					count: 12
 					id: "4A3F1D820F9F1D26"
 					item: "minecraft:green_dye"
-					team_reward: false
 					type: "item"
 				}
 				{
 					count: 12
 					id: "4FFD3D4728DFBB16"
 					item: "minecraft:red_dye"
-					team_reward: false
 					type: "item"
 				}
 				{
 					count: 12
 					id: "0F0A7101131FFC08"
 					item: "minecraft:brown_dye"
-					team_reward: false
 					type: "item"
 				}
 			]
@@ -979,7 +940,6 @@
 				count: 128
 				id: "738387AED344C59B"
 				item: "create:track"
-				team_reward: false
 				type: "item"
 			}]
 			subtitle: "{cabin.quest.07081911727142C8.subtitle}"
@@ -1002,34 +962,29 @@
 					count: 4
 					id: "4961B49D79004571"
 					item: "minecraft:name_tag"
-					team_reward: false
 					type: "item"
 				}
 				{
 					count: 8
 					id: "054AEE030B3B81F6"
 					item: "minecraft:bone"
-					team_reward: false
 					type: "item"
 				}
 				{
 					count: 8
 					id: "29F276B6CDE4D6B5"
 					item: "minecraft:tropical_fish"
-					team_reward: false
 					type: "item"
 				}
 				{
 					id: "53AA2AF7CA1EF02C"
 					item: "minecraft:saddle"
-					team_reward: false
 					type: "item"
 				}
 				{
 					count: 2
 					id: "762BB57B2AFDB21F"
 					item: "minecraft:lead"
-					team_reward: false
 					type: "item"
 				}
 			]
@@ -1058,56 +1013,48 @@
 					count: 4
 					id: "17FCE9D6C12A7822"
 					item: "quark:blue_blossom_sapling"
-					team_reward: false
 					type: "item"
 				}
 				{
 					count: 4
 					id: "5B801D097C1C538F"
 					item: "quark:lavender_blossom_sapling"
-					team_reward: false
 					type: "item"
 				}
 				{
 					count: 4
 					id: "15B0F60077A03C61"
 					item: "biomesoplenty:yellow_maple_sapling"
-					team_reward: false
 					type: "item"
 				}
 				{
 					count: 4
 					id: "745C64C48231B0CA"
 					item: "biomesoplenty:orange_maple_sapling"
-					team_reward: false
 					type: "item"
 				}
 				{
 					count: 4
 					id: "3E7E4B570C7EDF5F"
 					item: "minecraft:cherry_sapling"
-					team_reward: false
 					type: "item"
 				}
 				{
 					count: 4
 					id: "6D61111C4CF926DE"
 					item: "minecraft:mangrove_propagule"
-					team_reward: false
 					type: "item"
 				}
 				{
 					count: 4
 					id: "4BCFE98EB9FF9DB4"
 					item: "minecraft:flowering_azalea"
-					team_reward: false
 					type: "item"
 				}
 				{
 					count: 4
 					id: "444BD72F5023FDF1"
 					item: "minecraft:bamboo"
-					team_reward: false
 					type: "item"
 				}
 			]
@@ -1131,14 +1078,12 @@
 				{
 					id: "773C4F5E97BD82B8"
 					item: "minecraft:bee_nest"
-					team_reward: false
 					type: "item"
 				}
 				{
 					count: 2
 					id: "0C8C369DEF6B0FD4"
 					item: "minecraft:bee_spawn_egg"
-					team_reward: false
 					type: "item"
 				}
 			]
@@ -1177,7 +1122,6 @@
 				count: 15
 				id: "4420617E22747710"
 				item: "minecraft:kelp"
-				team_reward: false
 				type: "item"
 			}]
 			subtitle: "{cabin.quest.04468935C9A7298F.subtitle}"
@@ -1199,19 +1143,16 @@
 				{
 					id: "67E1EFF44408867B"
 					item: "sophisticatedbackpacks:crafting_upgrade"
-					team_reward: false
 					type: "item"
 				}
 				{
 					id: "401831CDED2C1763"
 					item: "sophisticatedbackpacks:pickup_upgrade"
-					team_reward: false
 					type: "item"
 				}
 				{
 					id: "192D6973AB74C953"
 					item: "sophisticatedbackpacks:advanced_compacting_upgrade"
-					team_reward: false
 					type: "item"
 				}
 			]
@@ -1251,7 +1192,6 @@
 						zoomLevel: 2
 					}
 				}
-				team_reward: false
 				type: "item"
 			}]
 			subtitle: "{cabin.quest.093FB7B7FEC6B886.subtitle}"

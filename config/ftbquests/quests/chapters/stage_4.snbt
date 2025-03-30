@@ -659,7 +659,6 @@
 					}
 				}
 				id: "14F213F493035F9B"
-				team_reward: false
 				title: "{cabin.reward.14F213F493035F9B}"
 				type: "command"
 			}]

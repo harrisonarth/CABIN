@@ -66,7 +66,6 @@
 				auto: "enabled"
 				id: "556BBA8B09E4BA0C"
 				item: "kubejs:profession_card_mining"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -149,7 +148,6 @@
 				auto: "enabled"
 				id: "4F0E97B8E88BF530"
 				item: "kubejs:profession_card_farming"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -221,7 +219,6 @@
 				auto: "enabled"
 				id: "570B46650865045E"
 				item: "kubejs:profession_card_carpentry"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -253,7 +250,6 @@
 				auto: "enabled"
 				id: "382E25CBB362EB84"
 				item: "kubejs:profession_card_cooking"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -331,7 +327,6 @@
 				auto: "enabled"
 				id: "1617766BFFC620D2"
 				item: "kubejs:profession_card_masonry"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -403,7 +398,6 @@
 				auto: "enabled"
 				id: "242009705F048500"
 				item: "kubejs:profession_card_hunting"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -461,7 +455,6 @@
 				icon: "kubejs:silver_coin"
 				id: "60DDCBCC377BA8B6"
 				item: "thermal:silver_coin"
-				team_reward: false
 				type: "item"
 			}]
 			subtitle: "{cabin.quest.0CCF34BF1C5829AE.subtitle}"
@@ -518,7 +511,6 @@
 				auto: "enabled"
 				id: "70312C750F6E2115"
 				item: "kubejs:profession_card_fishing"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -542,7 +534,6 @@
 				icon: "kubejs:silver_coin"
 				id: "6C5F42C1888F0C63"
 				item: "thermal:silver_coin"
-				team_reward: false
 				type: "item"
 			}]
 			subtitle: "{cabin.quest.1C5EA1173F4E592B.subtitle}"
@@ -576,7 +567,6 @@
 				auto: "enabled"
 				id: "2E450774C09EF266"
 				item: "kubejs:profession_card_smithing"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -600,7 +590,6 @@
 				icon: "kubejs:silver_coin"
 				id: "5CEE44BA4F587BB2"
 				item: "thermal:silver_coin"
-				team_reward: false
 				type: "item"
 			}]
 			subtitle: "{cabin.quest.08DB1CFAE4555525.subtitle}"
@@ -638,7 +627,6 @@
 				icon: "kubejs:silver_coin"
 				id: "7FA1F28AC13E3742"
 				item: "thermal:silver_coin"
-				team_reward: false
 				type: "item"
 			}]
 			subtitle: "{cabin.quest.0CCF34BF1C5829AE.subtitle}"
@@ -682,7 +670,6 @@
 				icon: "kubejs:silver_coin"
 				id: "158BDC6AB3DED2C8"
 				item: "thermal:silver_coin"
-				team_reward: false
 				type: "item"
 			}]
 			subtitle: "{cabin.quest.08DB1CFAE4555525.subtitle}"
@@ -728,7 +715,6 @@
 				icon: "kubejs:silver_coin"
 				id: "76F8080C0E176A08"
 				item: "thermal:silver_coin"
-				team_reward: false
 				type: "item"
 			}]
 			subtitle: "{cabin.quest.01F3EDC327B63908.subtitle}"
@@ -756,7 +742,6 @@
 				icon: "kubejs:silver_coin"
 				id: "3D573B952A099408"
 				item: "thermal:silver_coin"
-				team_reward: false
 				type: "item"
 			}]
 			subtitle: "{cabin.quest.0CCF34BF1C5829AE.subtitle}"
@@ -799,7 +784,6 @@
 				icon: "kubejs:silver_coin"
 				id: "191FAA4E0A99AF43"
 				item: "thermal:silver_coin"
-				team_reward: false
 				type: "item"
 			}]
 			subtitle: "{cabin.quest.08DB1CFAE4555525.subtitle}"
@@ -835,7 +819,6 @@
 				icon: "kubejs:silver_coin"
 				id: "3125103507C80C78"
 				item: "thermal:silver_coin"
-				team_reward: false
 				type: "item"
 			}]
 			subtitle: "{cabin.quest.1C5EA1173F4E592B.subtitle}"
@@ -857,7 +840,6 @@
 				icon: "kubejs:silver_coin"
 				id: "001C0326E6B6F1FF"
 				item: "thermal:silver_coin"
-				team_reward: false
 				type: "item"
 			}]
 			subtitle: "{cabin.quest.0CCF34BF1C5829AE.subtitle}"
@@ -912,7 +894,6 @@
 				icon: "kubejs:silver_coin"
 				id: "2EE90E45D02D23F1"
 				item: "thermal:silver_coin"
-				team_reward: false
 				type: "item"
 			}]
 			subtitle: "{cabin.quest.08DB1CFAE4555525.subtitle}"
@@ -966,7 +947,6 @@
 				icon: "kubejs:silver_coin"
 				id: "652AE60D13691604"
 				item: "thermal:silver_coin"
-				team_reward: false
 				type: "item"
 			}]
 			subtitle: "{cabin.quest.7932D19BE114264A.subtitle}"
@@ -1005,7 +985,6 @@
 				icon: "kubejs:silver_coin"
 				id: "15ACAE1E4D900E4C"
 				item: "thermal:silver_coin"
-				team_reward: false
 				type: "item"
 			}]
 			subtitle: "{cabin.quest.39D56A2B01DBD865.subtitle}"
@@ -1027,7 +1006,6 @@
 				icon: "kubejs:silver_coin"
 				id: "57CF6CE48FF1115D"
 				item: "thermal:silver_coin"
-				team_reward: false
 				type: "item"
 			}]
 			subtitle: "{cabin.quest.09EA580B3D32FEEB.subtitle}"
@@ -1049,7 +1027,6 @@
 				icon: "kubejs:silver_coin"
 				id: "5D7DB09D0FA7B0A5"
 				item: "thermal:silver_coin"
-				team_reward: false
 				type: "item"
 			}]
 			subtitle: "{cabin.quest.09EA580B3D32FEEB.subtitle}"
@@ -1071,7 +1048,6 @@
 				icon: "kubejs:gold_coin"
 				id: "0D8EB996DBC24C64"
 				item: "thermal:gold_coin"
-				team_reward: false
 				type: "item"
 			}]
 			subtitle: "{cabin.quest.093FB7B7FEC6B886.subtitle}"
@@ -1091,7 +1067,6 @@
 				icon: "kubejs:silver_coin"
 				id: "76F2C38DE80E75F0"
 				item: "thermal:silver_coin"
-				team_reward: false
 				type: "item"
 			}]
 			subtitle: "{cabin.quest.1C5EA1173F4E592B.subtitle}"
@@ -1115,7 +1090,6 @@
 				icon: "kubejs:silver_coin"
 				id: "1727FE45C409A64E"
 				item: "thermal:silver_coin"
-				team_reward: false
 				type: "item"
 			}]
 			subtitle: "{cabin.quest.39D56A2B01DBD865.subtitle}"
@@ -1178,7 +1152,6 @@
 				icon: "kubejs:silver_coin"
 				id: "72ADE787CA674127"
 				item: "thermal:silver_coin"
-				team_reward: false
 				type: "item"
 			}]
 			subtitle: "{cabin.quest.09DC2E2BE2BE32F4.subtitle}"
@@ -1258,7 +1231,6 @@
 				icon: "kubejs:silver_coin"
 				id: "52C6094274D540AB"
 				item: "thermal:silver_coin"
-				team_reward: false
 				type: "item"
 			}]
 			subtitle: "{cabin.quest.2F2BA8C2AC2E0B93.subtitle}"
