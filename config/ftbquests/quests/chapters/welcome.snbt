@@ -21,7 +21,7 @@
 			rewards: [
 				{
 					id: "732AA66A91BA5C2B"
-					item: "biomesoplenty:wildflower"
+					item: "minecraft:orange_tulip"
 					type: "item"
 				}
 				{
