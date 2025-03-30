@@ -35,7 +35,11 @@
 		}
 		{
 			dependencies: ["727B43FD95C4A512"]
-			description: ["{cabin.quest.0AF5F19F5D9FB5C9.description1}"]
+			description: [
+				"{cabin.quest.0AF5F19F5D9FB5C9.description1}"
+				""
+				"{cabin.quest.0AF5F19F5D9FB5C9.description2}"
+			]
 			hide_dependency_lines: true
 			id: "0AF5F19F5D9FB5C9"
 			shape: "circle"
@@ -237,7 +241,7 @@
 			subtitle: "{cabin.quest.2167272204B6627B.subtitle}"
 			tasks: [{
 				id: "75C982848F2CEA85"
-				title: "{cabin.task.75C982848F2CEA85}"
+				title: "{cabin.task.0842082756DA73FE}"
 				type: "checkmark"
 			}]
 			title: "{cabin.quest.2167272204B6627B.title}"

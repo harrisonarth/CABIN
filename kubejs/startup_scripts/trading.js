@@ -73,16 +73,18 @@ StartupEvents.registry("item", event => {
         { in: "64x biomesoplenty:dead_log", out: S(1) },
         { in: "64x minecraft:acacia_log", out: S(2) },
         { in: "64x minecraft:birch_log", out: S(2) },
+        { in: "64x minecraft:birch_log", out: S(2) },
+        { in: "64x minecraft:cherry_log", out: S(2) },
         { in: "64x biomesoplenty:cherry_log", out: S(2) },
         { in: "64x biomesoplenty:willow_log", out: S(3) },
         { in: "64x biomesoplenty:palm_log", out: S(3) },
         { in: "64x biomesoplenty:mahogany_log", out: S(3) },
         { in: "64x biomesoplenty:magic_log", out: S(3) },
-        { in: "64x quark:azalea_log", out: S(3) },
-        { in: "64x quark:blossom_log", out: S(3) },
+        { in: "64x quark:azalea_log", out: S(2) },
+        { in: "64x quark:blossom_log", out: S(2) },
         { in: "64x minecraft:crimson_stem", out: S(4) },
         { in: "64x minecraft:warped_stem", out: S(4) },
-        { in: "64x biomesoplenty:hellbark_log", out: S(8) }
+        { in: "64x biomesoplenty:hellbark_log", out: S(5) }
     ])
 
     profession("Mining", 0x1C1124, 0x88FFF7, [
