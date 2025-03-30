@@ -73,7 +73,6 @@ StartupEvents.registry("item", event => {
         { in: "64x biomesoplenty:dead_log", out: S(1) },
         { in: "64x minecraft:acacia_log", out: S(2) },
         { in: "64x minecraft:birch_log", out: S(2) },
-        { in: "64x minecraft:birch_log", out: S(2) },
         { in: "64x minecraft:cherry_log", out: S(2) },
         { in: "64x biomesoplenty:cherry_log", out: S(2) },
         { in: "64x biomesoplenty:willow_log", out: S(3) },
