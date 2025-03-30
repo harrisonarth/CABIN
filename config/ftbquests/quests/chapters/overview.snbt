@@ -6,6 +6,7 @@
 	icon: "minecraft:oak_sapling"
 	id: "1F9517DCFB1DB297"
 	order_index: 0
+	progression_mode: "linear"
 	quest_links: [ ]
 	quests: [
 		{

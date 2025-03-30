@@ -220,5 +220,6 @@
     "item.kubejs.trial.details": "§7An odd form of copper caused by a reaction between Copper and Lumisense.",
     "item.kubejs.trial.special_info": "§7It's far cheaper than regular copper but does not oxidize. Perfect for base building!",
     "item.spirit_fire.info": "§7A mysterious fire that is capable of transmuation. Will never burn out.",
-    "item.spirit_fire.creation": "§7Created by igniting Demon's Dream Fruit with Flint and Steel."
+    "item.spirit_fire.creation": "§7Created by igniting Demon's Dream Fruit with Flint and Steel.",
+    "filled_map.fortress": "Fortress Locator Map"
 }
