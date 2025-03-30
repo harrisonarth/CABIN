@@ -153,7 +153,7 @@
 			subtitle: "{cabin.quest.6B7F0631060A9E62.subtitle}"
 			tasks: [{
 				id: "0C764FDD555E8CCD"
-				title: "{cabin.task.0C764FDD555E8CCD}"
+				title: "{cabin.task.0842082756DA73FE}"
 				type: "checkmark"
 			}]
 			title: "{cabin.quest.6B7F0631060A9E62.title}"
@@ -485,7 +485,7 @@
 				"681DACF11F193771"
 			]
 			description: ["{cabin.quest.3728DF562D6DCE3A.description1}"]
-			hide_until_deps_visible: true
+			hide_until_deps_complete: true
 			icon: "thermal:resin_bucket"
 			id: "3728DF562D6DCE3A"
 			shape: "square"
@@ -633,7 +633,7 @@
 				""
 				"{cabin.quest.5C4F6E63B02A25F0.description2}"
 			]
-			hide_until_deps_visible: true
+			hide_until_deps_complete: true
 			icon: "minecraft:deepslate"
 			id: "5C4F6E63B02A25F0"
 			subtitle: "{cabin.quest.5C4F6E63B02A25F0.subtitle}"
