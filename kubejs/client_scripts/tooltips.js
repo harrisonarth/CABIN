@@ -83,4 +83,6 @@ ItemEvents.tooltip(tooltip => {
             text.add(3, Text.translatable("item.spirit_fire.creation"));
         }
     });
+
+    tooltip.add("trials:crafter", Text.red(Text.translatable("cabin.trials.crafter.deprecation.tooltip")))
 });

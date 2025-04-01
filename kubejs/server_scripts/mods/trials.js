@@ -1,5 +1,12 @@
 // Trial Chamber backport
 if (Platform.isLoaded("trials")) {
+    ServerEvents.recipes(event => {
+        // Broken Item
+        event.remove({ id:"trials:crafter" })
+        if (Platform.isLoaded("quark")) {
+            event.shapeless("quark:crafter", ["trials:crafter"])
+        }
+    })
     ServerEvents.lowPriorityData(event => {
 
         // Make a Trial Processor using IntegratedAPI and Lithostitched

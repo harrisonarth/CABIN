@@ -62,7 +62,7 @@
 	"Dispensers Place Blocks" = false
 	Chute = false
 	"Chains Connect Blocks" = false
-	Crafter = false
+	Crafter = true
 
 	[automation.pistons_move_tile_entities]
 		"Enable Chests Moving Together" = true

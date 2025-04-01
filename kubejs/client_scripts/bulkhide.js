@@ -168,6 +168,7 @@ JEIEvents.hideItems(event => {
     event.hide("ae2:facade")
     event.hide("chiselsandbits:block_bit")
 
+    event.hide("trials:crafter")
 })
 
 JEIEvents.hideFluids(event => {
