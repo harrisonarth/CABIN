@@ -10,42 +10,29 @@ ServerEvents.recipes(event => {
     event.remove({ output: "#forge:gears/tin" })
 
     // metal replacements
-    event.replaceInput({ type: "minecraft:crafting_shaped" }, "#forge:ingots/tin", "#forge:ingots/zinc")
-    event.replaceInput({}, "#forge:gears/tin", "#forge:gears/lead")
+    const replacementFilter = [{ mod:"thermal", type:"minecraft:crafting_shaped"}, { mod:"thermal", type:"minecraft:crafting_shapeless"}, { mod:"exchangers", type:"minecraft:crafting_shaped"}]
+    event.replaceInput(replacementFilter, "#forge:ingots/tin", "#forge:ingots/zinc")
+    event.replaceInput(replacementFilter, "#forge:gears/tin", "#forge:gears/lead")
 
-    event.replaceInput({}, "#forge:plates/bronze", "#forge:plates/nickel")
-    event.replaceInput({}, "#forge:gears/bronze", "#forge:gears/nickel")
+    event.replaceInput(replacementFilter, "#forge:plates/bronze", "#forge:plates/nickel")
+    event.replaceInput(replacementFilter, "#forge:gears/bronze", "#forge:gears/nickel")
 
-    event.replaceInput({}, "#forge:plates/silver", "#forge:ingots/invar")
-    event.replaceInput({}, "#forge:gears/silver", "#forge:gears/invar")
+    event.replaceInput(replacementFilter, "#forge:plates/silver", "#forge:ingots/invar")
+    event.replaceInput(replacementFilter, "#forge:gears/silver", "#forge:gears/invar")
 
-    event.replaceInput({}, "#forge:plates/constantan", "#forge:plates/signalum")
-    event.replaceInput({}, "#forge:gears/constantan", "#forge:gears/signalum")
+    event.replaceInput(replacementFilter, "#forge:plates/constantan", "#forge:plates/signalum")
+    event.replaceInput(replacementFilter, "#forge:gears/constantan", "#forge:gears/signalum")
 
-    event.replaceInput({}, "#forge:ingots/electrum", "#forge:ingots/constantan")
-    event.replaceInput({}, "#forge:plates/electrum", "#forge:plates/constantan")
-    event.replaceInput({}, "#forge:gears/electrum", "#forge:gears/constantan")
+    event.replaceInput(replacementFilter, "#forge:ingots/electrum", "#forge:ingots/constantan")
+    event.replaceInput(replacementFilter, "#forge:plates/electrum", "#forge:plates/constantan")
+    event.replaceInput(replacementFilter, "#forge:gears/electrum", "#forge:gears/constantan")
 
-    event.replaceInput({}, "#forge:plates/invar", "#forge:ingots/invar")
+    event.replaceInput(replacementFilter, "#forge:plates/invar", "#forge:ingots/invar")
 
-    // fix recipes broken by replacement
-    event.remove( {id: "thermal:machines/pulverizer/pulverizer_invar_plate_to_dust" })
-    event.replaceInput({ id: "thermal:machines/pulverizer/pulverizer_silver_plate_to_dust" }, "thermal:invar_ingot", "#forge:plates/silver")
-    event.replaceInput({ id: "thermal:machines/pulverizer/pulverizer_bronze_plate_to_dust" }, "thermal:nickel_plate", "#forge:plates/bronze")
-    event.replaceInput({ id: "thermal:machines/pulverizer/pulverizer_constantan_plate_to_dust" }, "thermal:signalum_plate", "#forge:plates/constantan")
-    event.replaceInput({ id: "thermal:machines/pulverizer/pulverizer_electrum_plate_to_dust" }, "thermal:constantan_plate", "#forge:plates/electrum")
-
-    event.remove( {id: "thermal:machines/smelter/smelter_invar_plate_to_ingot" })
-    event.replaceInput({ id: "thermal:machines/smelter/smelter_silver_plate_to_ingot" }, "thermal:invar_ingot", "#forge:plates/silver")
-    event.replaceInput({ id: "thermal:machines/smelter/smelter_bronze_plate_to_ingot" }, "thermal:nickel_plate", "#forge:plates/bronze")
-    event.replaceInput({ id: "thermal:machines/smelter/smelter_constantan_plate_to_ingot" }, "thermal:signalum_plate", "#forge:plates/constantan")
-    event.replaceInput({ id: "thermal:machines/smelter/smelter_electrum_plate_to_ingot" }, "thermal:constantan_plate", "#forge:plates/electrum")
-
+    // // fix recipes broken by replacement
     event.replaceInput({ id: "thermal:storage/electrum_nugget_from_ingot" }, "thermal:constantan_ingot", "#forge:ingots/electrum")
     event.replaceInput({ id: "thermal:storage/electrum_block" }, "thermal:constantan_ingot", "#forge:ingots/electrum")
     event.replaceInput({ id: "thermal:parts/electrum_gear" }, "thermal:constantan_ingot", "#forge:ingots/electrum")
-    event.replaceInput({ id: "occultism:crushing/electrum_dust_from_ingot" }, "thermal:constantan_ingot", "#forge:ingots/electrum")
-    event.replaceInput({ id: "thermal:machines/pulverizer/pulverizer_electrum_ingot_to_dust" }, "thermal:constantan_ingot", "#forge:ingots/electrum")
 
     // Redstone exists in jei to provide a tooltip, we want to remove all of its recipes
     event.remove({ input: "#forge:ores/redstone" })
