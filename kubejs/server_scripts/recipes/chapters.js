@@ -207,7 +207,7 @@ ServerEvents.recipes(event => {
     ], "kubejs:kinetic_mechanism", [
         event.recipes.create.deploying(transitional, [transitional, "thermal:cured_rubber"]),
         event.recipes.create.deploying(transitional, [transitional, "thermal:cured_rubber"]),
-        event.recipes.create.deploying(transitional, [transitional, "#forge:slimeballs"])// .keepHeldItem(true)
+        event.recipes.create.pressing(transitional, [transitional])
     ]).transitionalItem(transitional)
         .loops(1)
         .id("kubejs:sealed_mechanism")
@@ -217,7 +217,7 @@ ServerEvents.recipes(event => {
     ], {
         C: "kubejs:kinetic_mechanism",
         S: "thermal:cured_rubber"
-    })
+    }).id("kubejs:sealed_mechanism_manual_only")
 
     // Copper Machines
     donutCraft(event, "kubejs:copper_machine", "create:copper_casing", "kubejs:sealed_mechanism")
@@ -248,75 +248,23 @@ ServerEvents.recipes(event => {
     event.blasting("minecraft:magma_block", "minecraft:deepslate")
     // Magma to obsidian is a vanilla create recipe
     // reinforced mechanism assembly
-    event.custom({
-        "type": "create:sequenced_assembly",
-        "ingredient": {
-            "item": "kubejs:kinetic_mechanism"
-        },
-        "loops": 1,
-        "results": [
-            {
-                "item": "kubejs:reinforced_mechanism"
-            }
-        ],
-        "sequence": [
-            {
-                "type": "create:deploying",
-                "ingredients": [
-                    {
-                        "item": "kubejs:incomplete_reinforced_mechanism"
-                    },
-                    {
-                        "item": "minecraft:obsidian"
-                    }
-                ],
-                "results": [
-                    {
-                        "item": "kubejs:incomplete_reinforced_mechanism"
-                    }
-                ]
-            },
-            {
-                "type": "create:deploying",
-                "ingredients": [
-                    {
-                        "item": "kubejs:incomplete_reinforced_mechanism"
-                    },
-                    {
-                        "item": "minecraft:obsidian"
-                    }
-                ],
-                "results": [
-                    {
-                        "item": "kubejs:incomplete_reinforced_mechanism"
-                    }
-                ]
-            },
-            {
-                "type": "create:pressing",
-                "ingredients": [
-                    {
-                        "item": "kubejs:incomplete_reinforced_mechanism"
-                    }
-                ],
-                "results": [
-                    {
-                        "item": "kubejs:incomplete_reinforced_mechanism"
-                    }
-                ]
-            }
-        ],
-        "transitionalItem": {
-            "item": "kubejs:incomplete_reinforced_mechanism"
-        }
-    })
+    transitional = "kubejs:incomplete_reinforced_mechanism"
+    event.recipes.create.sequenced_assembly([
+        "kubejs:reinforced_mechanism",
+    ], "kubejs:kinetic_mechanism", [
+        event.recipes.create.deploying(transitional, [transitional, "minecraft:obsidian"]),
+        event.recipes.create.deploying(transitional, [transitional, "minecraft:obsidian"]),
+        event.recipes.create.pressing(transitional, [transitional])
+    ]).transitionalItem(transitional)
+        .loops(1)
+        .id("kubejs:reinforced_mechanism")
     // manual crafting
     event.shaped("kubejs:reinforced_mechanism", [
         "OCO"
     ], {
         C: "kubejs:kinetic_mechanism",
         O: "minecraft:obsidian"
-    })
+    }).id("kubejs:reinforced_mechanism_manual_only")
     // Gold machine
     donutCraft(event, "kubejs:gold_machine", "create:railway_casing", "kubejs:reinforced_mechanism")
 
