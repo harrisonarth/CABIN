@@ -278,7 +278,6 @@
 			icon: "kubejs:silver_coin"
 			id: "5326F6482C45D22A"
 			rewards: [{
-				auto: "enabled"
 				count: 64
 				icon: "kubejs:silver_coin"
 				id: "26512E93CE404069"
@@ -303,7 +302,6 @@
 			icon: "thermal:gold_coin"
 			id: "1A566C74B1F7F050"
 			rewards: [{
-				auto: "enabled"
 				id: "66BE3DDEC92812C4"
 				item: "thermal:gold_coin"
 				type: "item"

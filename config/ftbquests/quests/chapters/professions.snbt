@@ -63,7 +63,6 @@
 			}
 			id: "1E26046FA8177616"
 			rewards: [{
-				auto: "enabled"
 				id: "556BBA8B09E4BA0C"
 				item: "kubejs:profession_card_mining"
 				type: "item"
@@ -145,7 +144,6 @@
 			}
 			id: "12B37E99B1D3837E"
 			rewards: [{
-				auto: "enabled"
 				id: "4F0E97B8E88BF530"
 				item: "kubejs:profession_card_farming"
 				type: "item"
@@ -216,7 +214,6 @@
 			}
 			id: "3A48FDC224D029BF"
 			rewards: [{
-				auto: "enabled"
 				id: "570B46650865045E"
 				item: "kubejs:profession_card_carpentry"
 				type: "item"
@@ -247,7 +244,6 @@
 			}
 			id: "66DA9BE9277FABF1"
 			rewards: [{
-				auto: "enabled"
 				id: "382E25CBB362EB84"
 				item: "kubejs:profession_card_cooking"
 				type: "item"
@@ -324,7 +320,6 @@
 			}
 			id: "683AA93BE7DEA512"
 			rewards: [{
-				auto: "enabled"
 				id: "1617766BFFC620D2"
 				item: "kubejs:profession_card_masonry"
 				type: "item"
@@ -395,7 +390,6 @@
 			}
 			id: "66DDDE912A191E57"
 			rewards: [{
-				auto: "enabled"
 				id: "242009705F048500"
 				item: "kubejs:profession_card_hunting"
 				type: "item"
@@ -508,7 +502,6 @@
 			}
 			id: "6C0EC278451434AC"
 			rewards: [{
-				auto: "enabled"
 				id: "70312C750F6E2115"
 				item: "kubejs:profession_card_fishing"
 				type: "item"
@@ -564,7 +557,6 @@
 			}
 			id: "32C46B11BDAD7632"
 			rewards: [{
-				auto: "enabled"
 				id: "2E450774C09EF266"
 				item: "kubejs:profession_card_smithing"
 				type: "item"
@@ -710,7 +702,6 @@
 			icon: "minecraft:music_disc_13"
 			id: "436DA1A1AB8C0734"
 			rewards: [{
-				auto: "enabled"
 				count: 32
 				icon: "kubejs:silver_coin"
 				id: "76F8080C0E176A08"
@@ -1147,7 +1138,6 @@
 			}
 			id: "76E3B76D47A1F889"
 			rewards: [{
-				auto: "enabled"
 				count: 10
 				icon: "kubejs:silver_coin"
 				id: "72ADE787CA674127"

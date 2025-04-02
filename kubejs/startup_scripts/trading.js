@@ -320,6 +320,7 @@ StartupEvents.registry("item", event => {
 
         let template = `
 		{
+            can_repeat: true
 			title: "${amount}x ${name}"
 			icon: "${id}"
 			disable_toast: true
@@ -336,15 +337,7 @@ StartupEvents.registry("item", event => {
 			rewards: [
 				{
 					type: "item"
-					auto: "enabled"
 					item: "${card_id}"
-				}
-				{
-					type: "custom"
-					title: "Repeatable"
-					icon: "thermal:machine_cycle_augment"
-					tags: ["reset"]
-					auto: "no_toast"
 				}
 			]
 		}`
