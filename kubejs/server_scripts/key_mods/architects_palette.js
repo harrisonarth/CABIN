@@ -1,4 +1,7 @@
 // priority: 1
+
+wood_types.push("architects_palette:twisted")
+
 ServerEvents.recipes(event => {
     event.remove({ id: "architects_palette:smelting/charcoal_block_from_logs_that_burn_smoking" })
     event.remove({ id: "architects_palette:charcoal_block" })

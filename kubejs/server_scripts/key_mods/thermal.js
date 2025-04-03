@@ -1,4 +1,6 @@
 // priority: 1
+
+wood_types.push("thermal:rubberwood")
 ServerEvents.recipes(event => {
     // filter augment recipe change
     event.remove({ id: "thermal:augments/item_filter_augment" })

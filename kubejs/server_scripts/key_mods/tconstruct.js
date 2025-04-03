@@ -1,4 +1,10 @@
 // priority: 1
+
+wood_types.push("tconstruct:greenheart")
+wood_types.push("tconstruct:skyroot")
+wood_types.push("tconstruct:bloodshroom")
+wood_types.push("tconstruct:enderbark")
+
 ServerEvents.recipes(event => {
 
     // Obsidian pane crafting

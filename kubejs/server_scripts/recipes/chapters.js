@@ -22,13 +22,13 @@ ServerEvents.recipes(event => {
     // - - - - - Chapter 1 - - - - -
     // Wood slab cutting
     let plankCutting = (wood) => {
-        let planks = wood + "_planks"
-        let slab = wood + "_slab"
-        if (!Item.exists(slab)) {
-            // Some mods name their wood slabs 'planks slab' for some reason
-            slab = wood + "_planks_slab"
+        // Some mods name their wood slabs 'planks_slab' for some reason
+        // Mods that do this don't get given auto-generated slab cutting recipes by Create
+        if (!Item.exists(wood + "_slab")) {
+            let planks = wood + "_planks"
+            let slab = wood + "_planks_slab"
+            event.recipes.create.cutting(Item.of(slab, 2), planks).processingTime(150).id(`kubejs:cutting/${wood.split(":")[1]}_slab`)
         }
-        event.recipes.create.cutting(Item.of(slab, 2), planks).processingTime(150)
     }
     wood_types.forEach(plankCutting)
 

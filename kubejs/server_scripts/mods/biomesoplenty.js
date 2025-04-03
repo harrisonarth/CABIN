@@ -1,5 +1,7 @@
 if(Platform.isLoaded("biomesoplenty")) {
     wood_types.push("biomesoplenty:fir")
+    wood_types.push("biomesoplenty:pine")
+    wood_types.push("biomesoplenty:maple")
     wood_types.push("biomesoplenty:redwood")
     wood_types.push("biomesoplenty:mahogany")
     wood_types.push("biomesoplenty:jacaranda")
@@ -9,6 +11,7 @@ if(Platform.isLoaded("biomesoplenty")) {
     wood_types.push("biomesoplenty:magic")
     wood_types.push("biomesoplenty:umbran")
     wood_types.push("biomesoplenty:hellbark")
+    wood_types.push("biomesoplenty:empyreal")
 
     ServerEvents.tags("item", event => {
         event.get("forge:vines").add("biomesoplenty:willow_vine").add("biomesoplenty:spanish_moss")
@@ -19,10 +22,12 @@ if(Platform.isLoaded("biomesoplenty")) {
         // Tree Extracting recipes for leaves that don't match their log names
         addTreeOutput(event, "minecraft:oak_log", "biomesoplenty:origin_leaves")
         addTreeOutput(event, "minecraft:oak_log", "biomesoplenty:flowering_oak_leaves")
+        addTreeOutput(event, "minecraft:spruce_log", "biomesoplenty:cypress_leaves")
         addTreeOutput(event, "minecraft:birch_log", "biomesoplenty:rainbow_birch_leaves")
-        addTreeOutput(event, "minecraft:birch_log", "biomesoplenty:yellow_autumn_leaves")
-        addTreeOutput(event, "minecraft:dark_oak_log", "biomesoplenty:orange_autumn_leaves")
-        addTreeOutput(event, "minecraft:oak_log", "biomesoplenty:maple_leaves")
+        addTreeOutput(event, "minecraft:cherry_log", "biomesoplenty:snowblossom_leaves")
+        addTreeOutput(event, "biomesoplenty:maple_log", "biomesoplenty:yellow_maple_leaves")
+        addTreeOutput(event, "biomesoplenty:maple_log", "biomesoplenty:orange_maple_leaves")
+        addTreeOutput(event, "biomesoplenty:maple_log", "biomesoplenty:red_maple_leaves")
 
         // kubejs throws a duplicate recipe error, we'd need to change how resin recipes are created to avoid that error
         // event.custom({

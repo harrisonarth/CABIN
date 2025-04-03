@@ -1,6 +1,7 @@
 if(Platform.isLoaded("quark")) {
 
     // Add quark wood types to the arrays of wood types
+    wood_types.push("quark:ancient")
     wood_types.push("quark:azalea")
     wood_types.push("quark:blossom")
 
@@ -21,7 +22,6 @@ if(Platform.isLoaded("quark")) {
         addTreeOutput(event, "quark:blossom_log", "quark:orange_blossom_leaves")
         addTreeOutput(event, "quark:blossom_log", "quark:yellow_blossom_leaves")
         addTreeOutput(event, "quark:blossom_log", "quark:red_blossom_leaves")
-        addTreeOutput(event, "quark:blossom_log", "quark:snowblossom_leaves")
 
         // Stone generation
         event.custom({
