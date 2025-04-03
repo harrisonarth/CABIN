@@ -223,5 +223,5 @@
     "item.spirit_fire.creation": "§7Created by igniting Demon's Dream Fruit with Flint and Steel.",
     "filled_map.fortress": "Fortress Locator Map",
     
-    "cabin.trials.crafter.deprecation.tooltip": "Deprecate. Craft into a Crafter from Quark"
+    "cabin.trials.crafter.deprecation.tooltip": "Deprecated. Craft into a Crafter from Quark"
 }
