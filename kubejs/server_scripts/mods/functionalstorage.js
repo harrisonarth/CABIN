@@ -10,6 +10,8 @@ if(Platform.isLoaded("functionalstorage")) {
         enderiumMachine(event, Item.of("functionalstorage:ender_drawer", 1))
 
         event.remove({id:"functionalstorage:oak_drawer_alternate_x1"})
+        event.remove({id:"functionalstorage:oak_drawer_alternate_x2"})
+        event.remove({id:"functionalstorage:oak_drawer_alternate_x4"})
         // framed drawers
         event.remove({id:"functionalstorage:compacting_framed_drawer"})
         event.remove({id:"functionalstorage:framed_storage_controller"})
