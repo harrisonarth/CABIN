@@ -1,4 +1,4 @@
-FTBQuestsEvents.completed('252B9DD5BFB8184A', event => {
+FTBQuestsEvents.completed("252B9DD5BFB8184A", event => {
 
     // let runCommand = (cmd) => {
     //     event.server.scheduleInTicks(10, event.server, function (callback) {
@@ -7,7 +7,7 @@ FTBQuestsEvents.completed('252B9DD5BFB8184A', event => {
     // }
     //     let message;
     //     let refund = false;
-        
+
     //     if (event.player.level.dimension = 'minecraft:nether') {
     //         let structureName = Platform.isLoaded("betterfortresses") ? "betterfortresses:fortress" : "fortress";
     //         let playerLevel = event.player.getLevel().getDimension().getPath();
@@ -36,5 +36,5 @@ FTBQuestsEvents.completed('252B9DD5BFB8184A', event => {
     //         }
     //         callback.data.runCommand(`/tell ${event.player.name.text} ${message}`)
     //     })
-  
+
 })

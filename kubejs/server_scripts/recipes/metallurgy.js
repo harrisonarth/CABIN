@@ -104,7 +104,7 @@ ServerEvents.recipes(event => {
     event.remove({ type: "minecraft:crafting_shapeless", output: "thermal:invar_dust" })
 
     // Create new alloying recipes
-    // mixing alloys
+    // Mixing Alloys
     let moltenAlloy = function (fluidAlloy, fluid1, fluid2) {
         // Recipe ids are actually important here since the id that comes later in alphabetical order is the one that is prioritized
         event.custom({
