@@ -27,6 +27,9 @@ if(Platform.isLoaded("create_central_kitchen")) {
         ]).transitionalItem(transitional)
             .loops(1)
             .id("kubejs:hamburger")
+
+        event.remove({ mod: "create_central_kitchen", output: "create:dough" })
+
     })
 
     ServerEvents.tags("item", event => {
