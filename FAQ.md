@@ -67,7 +67,7 @@ Thermal Expansion Dynamos will only output energy while producing it.
 
 **Q. How do I update CABIN on my server?**
 
-In your server directory delete config-overrides, config, defaultconfig, kubejs, and mods. Then from the new CABIN server zip copy over those same directories to replace the ones you removed. Enjoy!
+In your server directory delete config-overrides, config, defaultconfig, kubejs, ldlib, and mods. Then from the new CABIN server zip copy over those same directories to replace the ones you removed. Enjoy!
 
 
 ### Other Issues
