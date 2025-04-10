@@ -194,7 +194,7 @@
 			id: "00003FCBB33E62C4"
 			rewards: [{
 				id: "67E25D801A479C56"
-				item: "minecraft:writable_book"
+				item: "create:clipboard"
 				type: "item"
 			}]
 			shape: "hexagon"
