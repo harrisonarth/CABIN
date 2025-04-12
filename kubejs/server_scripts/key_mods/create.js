@@ -49,4 +49,10 @@ ServerEvents.recipes(event => {
         Item.of(Item.of("minecraft:gold_nugget", 2)).withChance(0.125),
         Item.of("minecraft:dead_bush").withChance(0.05)
     ], "minecraft:red_sand")
+
+    // unify dough and allow the slime recipe to take dough from farmer's delight
+    event.remove({ id: "create:crafting/appliances/dough" })
+    event.replaceOutput({ id: "farmersdelight:wheat_dough_from_water" }, 'farmersdelight:wheat_dough', 'create:dough')
+    event.replaceOutput({ id: "farmersdelight:wheat_dough_from_eggs" }, 'farmersdelight:wheat_dough', 'create:dough')
+    event.replaceInput({ id: "create:crafting/appliances/slime_ball" }, 'create:dough', '#forge:dough')
 })
