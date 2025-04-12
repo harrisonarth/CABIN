@@ -270,32 +270,25 @@ ServerEvents.tags("block", event => {
 
     event.add("create:wrench_pickup", "cb_multipart:multipart")
 
-    // I really don't know why these blocks are missing the pressure plate tag
-    // All the other pressure plates from quark and forbidden have the tag.
-    event.add("minecraft:pressure_plates", "forbidden_arcanus:polished_darkstone_pressure_plate")
-    
+
     // Add tags to basic vanilla-like chests and inventories to allow function with create contraptions
-    event.get('create:chest_mounted_storage')
-        // Quark chests
+    event.get("create:chest_mounted_storage")
         .add(/^quark:.*_chest$|^everycomp:q.*_chest$/)
-    event.get('create:simple_mounted_storage')
-        // Farmer's Delight cabinets
+
+    event.get("create:simple_mounted_storage")
         .add(/^farmersdelight:.*_cabinet$|^everycomp:fd.*_cabinet$/)
         // AE2 Sky stone chests (These don't work with the create:chest_mounted_storage tag for some reason so they are here instead)
-        .add('ae2:sky_stone_chest')
-        .add('ae2:smooth_sky_stone_chest')
+        .add("ae2:sky_stone_chest")
+        .add("ae2:smooth_sky_stone_chest")
 })
 
 ServerEvents.tags("block_entity_type", event => {
 
     // Add tags to basic vanilla-like chests and inventories to allow function with tinker's side inventory feature on crafting stations
-    event.get('tconstruct:side_inventories')
-        // Quark chests
-        .add('quark:variant_chest')
-        .add('quark:variant_trapped_chest')
+    event.get("tconstruct:side_inventories")
+        .add("quark:variant_chest")
+        .add("quark:variant_trapped_chest")
         .add(/^everycomp:q.*_chest$/)
-        // Farmer's Delight cabinets
-        .add('farmersdelight:cabinet')
-        // AE2 Sky stone chests
-        .add('ae2:sky_chest')
+        .add("farmersdelight:cabinet")
+        .add("ae2:sky_chest")
 })
