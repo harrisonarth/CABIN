@@ -100,7 +100,7 @@ StartupEvents.registry("item", event => {
     event.create("coke_chunk").texture("cabin:item/coke_chunk").displayName("Coke Chunks")
 
     event.create("matter_plastics").texture("cabin:item/matter_plastics").displayName("Matter Plastics")
-    event.create("nickel_compound").texture("cabin:item/nickel_compound").displayName("Nickel Compound")
+    event.create("nickel_compound").texture("cabin:item/nickel_compound").displayName("Nickel Compound").unstackable()
     event.create("invar_compound","create:sequenced_assembly").texture("cabin:item/invar_compound").displayName("Unprocessed Invar Ingot")
     event.create("dye_entangled_singularity").texture("cabin:item/dye_entangled_singularity").unstackable().displayName("Chromatic Singularity")
 
