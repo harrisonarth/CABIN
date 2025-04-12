@@ -273,6 +273,7 @@ ServerEvents.tags("block", event => {
     // I really don't know why these blocks are missing the pressure plate tag
     // All the other pressure plates from quark and forbidden have the tag.
     event.add("minecraft:pressure_plates", "forbidden_arcanus:polished_darkstone_pressure_plate")
+    
     // Add tags to basic vanilla-like chests and inventories to allow function with create contraptions
     event.get('create:chest_mounted_storage')
         // Quark chests
