@@ -7,6 +7,43 @@ wood_types.push("tconstruct:enderbark")
 
 ServerEvents.recipes(event => {
 
+    // It is possible to duplicate rails in 1.20.1 Minecraft, so we need to remove rail melting
+    event.custom({
+        "type": "tconstruct:melting",
+        "ingredient": [
+            {
+                "item": "minecraft:iron_bars"
+            }
+        ],
+        "result": {
+            "amount": 30,
+            "tag": "forge:molten_iron"
+        },
+        "temperature": 800,
+        "time": 35
+    }).id("tconstruct:smeltery/melting/metal/iron/nugget_3")
+    event.custom({
+        "type": "tconstruct:melting",
+        "ingredient": [
+            {
+                "item": "minecraft:stonecutter"
+            },
+            {
+                "item": "minecraft:piston"
+            },
+            {
+                "item": "minecraft:sticky_piston"
+            }
+        ],
+        "result": {
+            "amount": 90,
+            "tag": "forge:molten_iron"
+        },
+        "temperature": 800,
+        "time": 60
+    }).id("tconstruct:smeltery/melting/metal/iron/ingot_1")
+    event.remove({ id: "tconstruct:smeltery/melting/metal/gold/powered_rail" })
+
     // Obsidian pane crafting
     // Not sure where the original recipe went
     event.shaped(Item.of("tconstruct:obsidian_pane", 8), [
