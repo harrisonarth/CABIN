@@ -573,12 +573,12 @@ BlockEvents.leftClicked(event => {
         let laserVec3i = face.getNormal();
         let laserVec3d = new Vec3d(laserVec3i.x, laserVec3i.y, laserVec3i.z)
         // Note that the block's coordinate is located at the north-east-bottom corner of a block. So we need to use AABB.of x-2 to x+3
-        let aa = new Vec3d(x - 1, y - 1, z - 1).add(laserVec3d)
-        let bb = new Vec3d(x + 2, y + 2, z + 2).add(laserVec3d)
+        let aa = new Vec3d(x - 0.25, y - 0.25, z - 0.25).add(laserVec3d.multiply(0.25, 0.25, 0.25))
+        let bb = new Vec3d(x + 1.25, y + 1.25, z + 1.25).add(laserVec3d.multiply(0.25, 0.25, 0.25))
         if (face.getAxisDirection().equals(AxisDirection.POSITIVE)) {
-            bb = bb.add(laserVec3d.multiply(3, 3, 3))
+            bb = bb.add(laserVec3d.multiply(3.75, 3.75, 3.75))
         } else {
-            aa = aa.add(laserVec3d.multiply(3, 3, 3))
+            aa = aa.add(laserVec3d.multiply(3.75, 3.75, 3.75))
         }
         let entities = level.getEntitiesWithin(AABB.of(aa.x(), aa.y(), aa.z(), bb.x(), bb.y(), bb.z()))
 
