@@ -86,8 +86,6 @@
     "block.kubejs.invar_casing": "Invar Casing",
     "block.kubejs.fluix_casing": "Fluix Casing",
     "block.kubejs.computation_matrix": "Computation Matrix",
-    "block.kubejs.ponder_laser_lamp": "Laser Lamp (For Ponder)",
-    "block.kubejs.ponder_laser_lamp_on": "Laser Lamp (For Ponder)",
     "block.kubejs.navigation_computer": "Navigation Computer",
     "block.kubejs.lander_deployer": "Lander Deployer",
     "block.kubejs.andesite_machine": "Andesite Machine",

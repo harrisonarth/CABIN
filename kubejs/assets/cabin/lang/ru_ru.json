@@ -84,8 +84,6 @@
     "block.kubejs.invar_casing": "Инварный корпус",
     "block.kubejs.fluix_casing": "Флюисовый корпус",
     "block.kubejs.computation_matrix": "Расчётная матрица",
-    "block.kubejs.ponder_laser_lamp": "Лазерная лампа (для Размышлений)",
-    "block.kubejs.ponder_laser_lamp_on": "Лазерная лампа (для Размышлений)",
     "block.kubejs.navigation_computer": "Навигационый компьютер",
     "block.kubejs.lander_deployer": "Развертыватель посадочного модуля",
     "block.kubejs.andesite_machine": "Андезитовое устройство",

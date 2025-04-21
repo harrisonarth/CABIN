@@ -84,8 +84,6 @@
     "block.kubejs.invar_casing": "Revêtement en Invar",
     "block.kubejs.fluix_casing": "Revêtement en Fluix",
     "block.kubejs.computation_matrix": "Matrice de Calcul",
-    "block.kubejs.ponder_laser_lamp": "Lampe à laser (pour Analyse)",
-    "block.kubejs.ponder_laser_lamp_on": "Lampe à laser (pour Analyse)",
     "block.kubejs.navigation_computer": "Ordinateur de navigation",
     "block.kubejs.lander_deployer": "Déployeur d'atterrisseur",
     "block.kubejs.andesite_machine": "Machine en Andesite",

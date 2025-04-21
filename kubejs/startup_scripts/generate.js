@@ -5,6 +5,7 @@ const BlockStateProperties = Java.loadClass("net.minecraft.world.level.block.sta
 // Textures must use the 'cabin' namespace to avoid a bug involving kubejs loading textures from resource packs.
 // Textures must also be stored in a resource pack since the kubejs assets folder cannot be overridden using resource packs for whatever reason
 StartupEvents.registry("item", event => {
+    event.create("alchemical_laser").parentModel("cabin:item/alchemical_laser").displayName("Alchemical Laser (Ponder Entry)").unstackable()
 
     let types = ["Certus", "Fluix"]
     types.forEach(e => {
@@ -95,20 +96,19 @@ StartupEvents.registry("item", event => {
     event.create("rough_sand").texture("cabin:item/rough_sand").displayName("Sand Chunks")
     event.create("purified_sand").texture("cabin:item/purified_sand").displayName("Purified Sand")
     event.create("silicon_compound").texture("cabin:item/silicon_compound").displayName("Silicon Compound")
-    // event.create('smoke_mote').texture("cabin:item/smoke_mote").displayName('Tiny Smoke Cloud')
     event.create("incomplete_coke_chunk","create:sequenced_assembly").texture("cabin:item/incomplete_coke_chunk").displayName("Cut Coke")
     event.create("coke_chunk").texture("cabin:item/coke_chunk").displayName("Coke Chunks")
+    // event.create('smoke_mote').texture("cabin:item/smoke_mote").displayName('Tiny Smoke Cloud')
 
     event.create("matter_plastics").texture("cabin:item/matter_plastics").displayName("Matter Plastics")
     event.create("nickel_compound").texture("cabin:item/nickel_compound").displayName("Nickel Compound").unstackable()
     event.create("invar_compound","create:sequenced_assembly").texture("cabin:item/invar_compound").displayName("Unprocessed Invar Ingot")
     event.create("dye_entangled_singularity").texture("cabin:item/dye_entangled_singularity").unstackable().displayName("Chromatic Singularity")
 
+    event.create("strainer_filter").texture("waterstrainer:items/strainer_survivalist").displayName("Strainer Filter").maxDamage(384)
     event.create("chromatic_resonator").texture("cabin:item/chromatic_resonator").displayName("Chromatic Resonator").maxDamage(512)
     event.create("flash_drive").texture("cabin:item/boot_medium").displayName("Flash Drive").maxDamage(512)
-    event.create("strainer_filter").texture("waterstrainer:items/strainer_survivalist").displayName("Strainer Filter").maxDamage(384)
 
-    event.create("alchemical_laser").parentModel("cabin:block/ponder_laser_lamp_on").displayName("Alchemical Laser (Ponder Entry)").unstackable()
     event.create("thermal_cast").texture("cabin:item/thermal_cast").displayName("Thermal Cast").unstackable()
     event.create("three_cast").texture("cabin:item/three_cast").displayName("Integer Cast (3)").unstackable()
     event.create("eight_cast").texture("cabin:item/eight_cast").displayName("Integer Cast (8)").unstackable()
@@ -150,8 +150,8 @@ StartupEvents.registry("block", event => {
     event.create("computation_matrix").model("cabin:block/computation_matrix").soundType("lantern").hardness(0.1).displayName("Computation Matrix").fullBlock(false).notSolid().box(1,1,1,15,15,15).waterlogged().opaque(false).lightLevel(7).renderType("translucent")
         .item(i=>{i.rarity("uncommon")})
 
-    event.create("ponder_laser_lamp").model("cabin:block/ponder_laser_lamp").notSolid().renderType("translucent").displayName("Laser Lamp (For Ponder)")
-    event.create("ponder_laser_lamp_on").model("cabin:block/ponder_laser_lamp_on").notSolid().lightLevel(15).renderType("translucent").displayName("Laser Lamp (For Ponder)")
+    // event.create("ponder_laser_lamp").model("cabin:block/ponder_laser_lamp").notSolid().renderType("translucent").displayName("Laser Lamp (For Ponder)")
+    // event.create("ponder_laser_lamp_on").model("cabin:block/ponder_laser_lamp_on").notSolid().lightLevel(15).renderType("translucent").displayName("Laser Lamp (For Ponder)")
     event.create("navigation_computer", "cardinal").model("cabin:block/navigation_computer").soundType("metal").tagBlock("mineable/pickaxe").hardness(3.0).requiresTool(true).displayName("Navigation Computer")
     event.create("lander_deployer", "cardinal").model("cabin:block/lander_deployer").soundType("metal").tagBlock("mineable/pickaxe").hardness(3.0).requiresTool(true).displayName("Lander Deployer")
 
