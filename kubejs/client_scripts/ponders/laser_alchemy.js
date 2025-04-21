@@ -133,7 +133,7 @@ Ponder.registry((event) => {
             // let HopperMinecart = java("net.minecraft.entity.item.minecart.HopperMinecartEntity")
             // let cartHandle =
             // scene.special.createCart(util.vector.topOf(2, 0, 0), 0, (w, x, y, z) => new HopperMinecart(w, x, y, z))
-            scene.world.createEntity("minecraft:hopper_minecart", [2,1,0]);
+            scene.world.createEntity("minecraft:hopper_minecart", [2.5,1,0]);
             scene.idle(20)
             scene.overlay.showText(80)
                 .attachKeyFrame()
@@ -143,10 +143,10 @@ Ponder.registry((event) => {
                 .placeNearTarget()
             scene.idle(70)
 
-            scene.showControls(40, [2, 1, 0], "down")
+            scene.showControls(40, [2.5, 2, 0.5], "down")
                 .withItem("thermal:flux_magnet")
             scene.idle(5)
-            scene.showControls(35, [2, 1, 0], "up")
+            scene.showControls(35, [2.5, 1.75, 0.5], "up")
                 .withItem("minecraft:basalt")
             scene.idle(30)
 
@@ -165,10 +165,10 @@ Ponder.registry((event) => {
             scene.world.moveDeployer(util.grid.at(4, 1, 3), -1, 25);
             scene.idle(10)
 
-            scene.showControls(40, [2, 1, 0], "down")
+            scene.showControls(40, [2.5, 2, 0.5], "down")
                 .withItem("thermal:flux_magnet")
             scene.idle(5)
-            scene.showControls(35, [2, 1, 0], "up")
+            scene.showControls(35, [2.5, 1.75, 0.5], "up")
                 .withItem("thermal:basalz_rod")
 
             // scene.effects.indicateRedstone(util.grid.at(4, 2, 4))
