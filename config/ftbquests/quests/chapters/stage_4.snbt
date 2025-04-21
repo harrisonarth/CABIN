@@ -650,7 +650,7 @@
 			icon: "kubejs:alchemical_laser"
 			id: "6D26DAB7D0FF6E90"
 			rewards: [{
-				command: "/create ponder kubejs:alchemical_laser"
+				command: "/ponder kubejs:alchemical_laser"
 				icon: {
 					Count: 1
 					id: "occultism:book_of_calling_djinni_manage_machine"

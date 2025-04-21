@@ -713,7 +713,7 @@
 			icon: "ad_astra:small_orange_industrial_lamp"
 			id: "1D1D1FEAF49C5E11"
 			rewards: [{
-				command: "/create ponder kubejs:alchemical_laser"
+				command: "/ponder kubejs:alchemical_laser"
 				icon: {
 					Count: 1
 					id: "occultism:book_of_calling_djinni_manage_machine"
