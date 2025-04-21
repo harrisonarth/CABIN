@@ -150,7 +150,7 @@ function process(level, block, entity, face) {
         if (validTool.id.startsWith(entropy)) {
             if (!toProcess.equals("minecraft:snowball"))
                 return
-            let energy = validTool.tag.getDouble("internalCurrentPower") - 80 * processAmount
+            let energy = validTool.tag.getDouble("internalCurrentPower") - 40 * processAmount
             if (energy < 0)
                 return
             validTool.tag.putDouble("internalCurrentPower", energy)
@@ -167,7 +167,7 @@ function process(level, block, entity, face) {
         level.server.runCommandSilent(`/playsound minecraft:block.enchantment_table.use block @a ${entity.x} ${entity.y} ${entity.z} 0.95 1.5`)
         attackNearby(level, entity.x, entity.y, entity.z)
 
-        let resultCount = Math.ceil(processAmount / 2.0)
+        let resultCount = Math.floor(processAmount / 2.0 + new Random().nextDouble())
         nbt.Items.clear()
 
         let actualIndex = 0

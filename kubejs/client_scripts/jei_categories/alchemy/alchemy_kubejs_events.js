@@ -33,6 +33,6 @@ JEIAddedEvents.registerRecipeCatalysts(event => {
 
 JEIAddedEvents.registerRecipes((event) => {
     event.custom("kubejs:alchemy")
-        .add({input: ["thermal:flux_magnet", "minecraft:basalt"], output: "thermal:basalz_rod", energy: 80})
-        .add({input: ["ae2:entropy_manipulator", "minecraft:snowball"], output: "thermal:blizz_rod", energy: 160});
+        .add({input: ["thermal:flux_magnet", Item.of("minecraft:basalt", 2)], output: "thermal:basalz_rod", energy: 160})
+        .add({input: ["ae2:entropy_manipulator", Item.of("minecraft:snowball", 2)], output: "thermal:blizz_rod", energy: 160});
 });
