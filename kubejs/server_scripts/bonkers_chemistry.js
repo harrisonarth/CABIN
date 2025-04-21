@@ -503,6 +503,8 @@ BlockEvents.leftClicked(event => {
 
     if (!item.empty)
         return
+    if (player.miningBlock) // This is true when the player is releasing left-click
+        return
 
     //    if (player.name.text != "Deployer")
     //        return
@@ -511,31 +513,31 @@ BlockEvents.leftClicked(event => {
     let sound = false
 
     Direction.ALL.values().forEach(face => {
-        if (clickedFace == face)
+        if (clickedFace.equals(face))
             return
         let laser = block.offset(face)
 
 
-        if (!laser.hasTag("kubejs:alchemical_laser_lamp"))
+        if (!laser.hasTag("kubejs:alchemical_laser_lamps"))
             return
 
         let color = ""
 
-        if (laser.hasTag("kubejs:alchemical_laser_lamp/white")) color = "white";
-        else if (laser.hasTag("kubejs:alchemical_laser_lamp/orange")) color = "orange";
-        else if (laser.hasTag("kubejs:alchemical_laser_lamp/magenta")) color = "magenta";
-        else if (laser.hasTag("kubejs:alchemical_laser_lamp/light_blue")) color = "light_blue";
-        else if (laser.hasTag("kubejs:alchemical_laser_lamp/yellow")) color = "yellow";
-        else if (laser.hasTag("kubejs:alchemical_laser_lamp/lime")) color = "lime";
-        else if (laser.hasTag("kubejs:alchemical_laser_lamp/pink")) color = "pink";
-        else if (laser.hasTag("kubejs:alchemical_laser_lamp/gray")) color = "gray";
-        else if (laser.hasTag("kubejs:alchemical_laser_lamp/light_gray")) color = "light_gray";
-        else if (laser.hasTag("kubejs:alchemical_laser_lamp/cyan")) color = "cyan";
-        else if (laser.hasTag("kubejs:alchemical_laser_lamp/purple")) color = "purple";
-        else if (laser.hasTag("kubejs:alchemical_laser_lamp/blue")) color = "blue";
-        else if (laser.hasTag("kubejs:alchemical_laser_lamp/brown")) color = "brown";
-        else if (laser.hasTag("kubejs:alchemical_laser_lamp/green")) color = "green";
-        else if (laser.hasTag("kubejs:alchemical_laser_lamp/red")) color = "red";
+        if (laser.hasTag("kubejs:alchemical_laser_lamps/white")) color = "white";
+        else if (laser.hasTag("kubejs:alchemical_laser_lamps/orange")) color = "orange";
+        else if (laser.hasTag("kubejs:alchemical_laser_lamps/magenta")) color = "magenta";
+        else if (laser.hasTag("kubejs:alchemical_laser_lamps/light_blue")) color = "light_blue";
+        else if (laser.hasTag("kubejs:alchemical_laser_lamps/yellow")) color = "yellow";
+        else if (laser.hasTag("kubejs:alchemical_laser_lamps/lime")) color = "lime";
+        else if (laser.hasTag("kubejs:alchemical_laser_lamps/pink")) color = "pink";
+        else if (laser.hasTag("kubejs:alchemical_laser_lamps/gray")) color = "gray";
+        else if (laser.hasTag("kubejs:alchemical_laser_lamps/light_gray")) color = "light_gray";
+        else if (laser.hasTag("kubejs:alchemical_laser_lamps/cyan")) color = "cyan";
+        else if (laser.hasTag("kubejs:alchemical_laser_lamps/purple")) color = "purple";
+        else if (laser.hasTag("kubejs:alchemical_laser_lamps/blue")) color = "blue";
+        else if (laser.hasTag("kubejs:alchemical_laser_lamps/brown")) color = "brown";
+        else if (laser.hasTag("kubejs:alchemical_laser_lamps/green")) color = "green";
+        else if (laser.hasTag("kubejs:alchemical_laser_lamps/red")) color = "red";
 
         // let te = laser.getEntity()
         // if (!te)
@@ -567,7 +569,18 @@ BlockEvents.leftClicked(event => {
 
         // let list = level.minecraftWorld.func_217394_a(null, aabb, e => true)
 
-        let entities = level.getEntitiesWithin(AABB.of(x - 2,y - 2,z - 2,x + 2,y + 2,z + 2))
+
+        let laserVec3i = face.getNormal();
+        let laserVec3d = new Vec3d(laserVec3i.x, laserVec3i.y, laserVec3i.z)
+        // Note that the block's coordinate is located at the north-east-bottom corner of a block. So we need to use AABB.of x-2 to x+3
+        let aa = new Vec3d(x - 1, y - 1, z - 1).add(laserVec3d)
+        let bb = new Vec3d(x + 2, y + 2, z + 2).add(laserVec3d)
+        if (face.getAxisDirection().equals(AxisDirection.POSITIVE)) {
+            bb = bb.add(laserVec3d.multiply(3, 3, 3))
+        } else {
+            aa = aa.add(laserVec3d.multiply(3, 3, 3))
+        }
+        let entities = level.getEntitiesWithin(AABB.of(aa.x(), aa.y(), aa.z(), bb.x(), bb.y(), bb.z()))
 
         entities.forEach(e => {
             let entity = e

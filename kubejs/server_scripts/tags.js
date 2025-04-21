@@ -64,19 +64,19 @@ ServerEvents.tags("item", event => {
     for (let i = 0;i < decoLampColours.length;++i) {
         for (let j = 0;j < decoLampMaterials.length;++j) {
             let lamp = `createdeco:${decoLampColours[i]}_${decoLampMaterials[j]}_lamp`
-            event.add("kubejs:alchemical_laser_lamp", lamp)
-            event.add(`kubejs:alchemical_laser_lamp/${decoLampColours[i]}`, lamp)
+            event.add("kubejs:alchemical_laser_lamps", lamp)
+            event.add(`kubejs:alchemical_laser_lamps/${decoLampColours[i]}`, lamp)
         }
     }
 
     // Ad Astra laser lamps
     for (let i = 0;i < colours.length;++i) {
         let lamp = `ad_astra:${colours[i]}_industrial_lamp`;
-        event.add("kubejs:alchemical_laser_lamp", lamp)
-        event.add(`kubejs:alchemical_laser_lamp/${colours[i]}`, lamp)
+        event.add("kubejs:alchemical_laser_lamps", lamp)
+        event.add(`kubejs:alchemical_laser_lamps/${colours[i]}`, lamp)
         lamp = `ad_astra:small_${colours[i]}_industrial_lamp`;
-        event.add("kubejs:alchemical_laser_lamp", lamp)
-        event.add(`kubejs:alchemical_laser_lamp/${colours[i]}`, lamp)
+        event.add("kubejs:alchemical_laser_lamps", lamp)
+        event.add(`kubejs:alchemical_laser_lamps/${colours[i]}`, lamp)
     }
 
     // This tag prevents items from being consumed in press (market) recipes
@@ -215,19 +215,19 @@ ServerEvents.tags("block", event => {
     for (let i = 0;i < decoLampColours.length;++i) {
         for (let j = 0;j < decoLampMaterials.length;++j) {
             let lamp = `createdeco:${decoLampColours[i]}_${decoLampMaterials[j]}_lamp`
-            event.add("kubejs:alchemical_laser_lamp", lamp)
-            event.add(`kubejs:alchemical_laser_lamp/${decoLampColours[i]}`, lamp)
+            event.add("kubejs:alchemical_laser_lamps", lamp)
+            event.add(`kubejs:alchemical_laser_lamps/${decoLampColours[i]}`, lamp)
         }
     }
 
     // Ad Astra laser lamps
     for (let i = 0;i < colours.length;++i) {
         let lamp = `ad_astra:${colours[i]}_industrial_lamp`;
-        event.add("kubejs:alchemical_laser_lamp", lamp)
-        event.add(`kubejs:alchemical_laser_lamp/${colours[i]}`, lamp)
+        event.add("kubejs:alchemical_laser_lamps", lamp)
+        event.add(`kubejs:alchemical_laser_lamps/${colours[i]}`, lamp)
         lamp = `ad_astra:small_${colours[i]}_industrial_lamp`;
-        event.add("kubejs:alchemical_laser_lamp", lamp)
-        event.add(`kubejs:alchemical_laser_lamp/${colours[i]}`, lamp)
+        event.add("kubejs:alchemical_laser_lamps", lamp)
+        event.add(`kubejs:alchemical_laser_lamps/${colours[i]}`, lamp)
     }
 
     event.remove("minecraft:beacon_base_blocks", "thermal:bronze_block")
@@ -267,6 +267,8 @@ ServerEvents.tags("block", event => {
     event.add("create:wrench_pickup", "supplementaries:crank")
     event.add("create:wrench_pickup", "supplementaries:wind_vane")
     event.add("create:wrench_pickup", "supplementaries:faucet")
+
+    event.add("create:wrench_pickup", "#kubejs:alchemical_laser_lamps")
 
     event.add("create:wrench_pickup", "cb_multipart:multipart")
 

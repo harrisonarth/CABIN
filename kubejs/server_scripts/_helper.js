@@ -4,6 +4,7 @@
 const Registry = Java.loadClass("net.minecraft.core.Registry"); // registries, needed for almost everything involving Java classes
 // const BlockPos = Java.loadClass('net.minecraft.core.BlockPos'); //Block position. For some reason we don't need to import this?
 const TagKey = Java.loadClass("net.minecraft.tags.TagKey");
+const AxisDirection = Java.loadClass("net.minecraft.core.Direction$AxisDirection");
 
 const Random = Java.loadClass("java.util.Random")
 const InputItem = Java.loadClass("dev.latvian.mods.kubejs.item.InputItem")
